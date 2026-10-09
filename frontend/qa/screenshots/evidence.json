@@ -1,0 +1,242 @@
+[
+  {
+    "name": "leads",
+    "path": "/leads",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "catalogo",
+    "path": "/imoveis?leadId=bd9de797-df77-4610-a1d6-310986f895a3",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "dossie",
+    "path": "/imoveis/6dd20c80-de08-4ab3-af2c-8f2b6316deee",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "agenda",
+    "path": "/agenda",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "visita",
+    "path": "/visitas/3effd69e-62ff-4974-aa40-b5a8f59cff86",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "funil",
+    "path": "/funil",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "comercial",
+    "path": "/negocios/30da693f-c0a6-4188-a4fe-50707a594293",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "documento",
+    "path": "/documentos/90745d94-4228-4104-b628-59492627afb8",
+    "width": 390,
+    "documentWidth": 390,
+    "viewportWidth": 390,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "leads",
+    "path": "/leads",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "catalogo",
+    "path": "/imoveis?leadId=bd9de797-df77-4610-a1d6-310986f895a3",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "dossie",
+    "path": "/imoveis/6dd20c80-de08-4ab3-af2c-8f2b6316deee",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "agenda",
+    "path": "/agenda",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "visita",
+    "path": "/visitas/3effd69e-62ff-4974-aa40-b5a8f59cff86",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "funil",
+    "path": "/funil",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "comercial",
+    "path": "/negocios/30da693f-c0a6-4188-a4fe-50707a594293",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "documento",
+    "path": "/documentos/90745d94-4228-4104-b628-59492627afb8",
+    "width": 768,
+    "documentWidth": 768,
+    "viewportWidth": 768,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "leads",
+    "path": "/leads",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "catalogo",
+    "path": "/imoveis?leadId=bd9de797-df77-4610-a1d6-310986f895a3",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "dossie",
+    "path": "/imoveis/6dd20c80-de08-4ab3-af2c-8f2b6316deee",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "agenda",
+    "path": "/agenda",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "visita",
+    "path": "/visitas/3effd69e-62ff-4974-aa40-b5a8f59cff86",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "funil",
+    "path": "/funil",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "comercial",
+    "path": "/negocios/30da693f-c0a6-4188-a4fe-50707a594293",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  },
+  {
+    "name": "documento",
+    "path": "/documentos/90745d94-4228-4104-b628-59492627afb8",
+    "width": 1440,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "clippedFinancialValues": [],
+    "visibleOverflow": [],
+    "errors": []
+  }
+]

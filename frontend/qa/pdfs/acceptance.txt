@@ -1,0 +1,52 @@
+
+PAGE 1
+Corretor Copilot
+INTELIGÊNCIA IMOBILIÁRIA · DOCUMENTOS
+DEMONSTRAÇÃO — ASSINATURAS E LIQUIDAÇÕES SIMULADAS
+Comprovante de aceite e comissão
+Registro 6344c667-ee70-4466-9cc2-ec6bd44d4e7f · Emitido em 09/10/2026, 10:08
+1. PROFISSIONAL INTERMEDIADOR
+Nome completo
+Marina Costa
+Contato
+marina@copilot.demo
+CRECI declarado
+248.910-F
+2. CLIENTE / COMPRADOR
+Nome completo
+QA Jornada 1791551257016
+Contato
+qa-1791551258079@example.test
+3. VENDEDOR / PROPONENTE
+Nome completo
+Carlos QA
+4. OBJETO DA INTERMEDIAÇÃO
+Imóvel
+Cobertura Duplex Moema · Edifício Pássaros
+Endereço
+Av. Rouxinol, 720 · Cobertura 1801 · Moema · São Paulo
+Características
+142 m² · 3 quartos · 2 vagas
+Valor anunciado
+R$ 1.450.000,00
+5. CONDIÇÕES COMERCIAIS E HONORÁRIOS
+Valor negociado
+R$ 1.380.000,00
+Comissão acordada
+6% · R$ 82.800,00
+Condições de pagamento
+Sinal de R$ 200 mil e saldo por financiamento. Demonstração.
+Validade da proposta
+16/10/2026, 18:00
+Corretor Copilot · Demonstração · 1/2
+PAGE 2
+Aceite simulado registrado
+09/10/2026, 10:07
+CRONOGRAMA DE HONORÁRIOS
+Parcela 1 · Pendente
+R$ 41.400,00 · Não informado
+Parcela 2 · Liquidada (simulação)
+R$ 41.400,00 · 09/10/2026, 10:07
+Registro demonstrativo de assinatura
+Marina Costa
+Corretor Copilot · Demonstração · 2/2

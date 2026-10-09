@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container":"#eaedff","tertiary-fixed":"#ffddb8","tertiary-container":"#996100","secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","secondary-fixed-dim":"#4edea3","on-secondary":"#ffffff","tertiary":"#784b00","surface-container-high":"#e2e7ff","on-secondary-fixed-variant":"#005236","primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#ffeedd","inverse-on-surface":"#eef0ff","on-surface":"#131b2e","on-tertiary-fixed":"#2a1700","secondary":"#006c49","on-primary-fixed":"#00174b","surface-dim":"#d2d9f4","secondary-fixed":"#6ffbbe","on-background":"#131b2e","surface":"#faf8ff","on-tertiary":"#ffffff","surface-variant":"#dae2fd","surface-container-low":"#f2f3ff","on-tertiary-fixed-variant":"#653e00","on-error":"#ffffff","primary-fixed":"#dbe1ff","on-secondary-fixed":"#002113","on-secondary-container":"#00714d","surface-tint":"#0053db","primary-container":"#2563eb","on-primary":"#ffffff","background":"#faf8ff","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-primary-container":"#eeefff","on-primary-fixed-variant":"#003ea8","on-surface-variant":"#434655","inverse-primary":"#b4c5ff","outline-variant":"#c3c6d7","outline":"#737686","error":"#ba1a1a","inverse-surface":"#283044","primary":"#004ac6","surface-bright":"#faf8ff","surface-container-highest":"#dae2fd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-sm":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"currency-display":["Manrope"],"headline-md":["Manrope"],"currency-table":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"label-md":["Inter"],"display-lg-mobile":["Manrope"],"headline-sm":["Manrope"],"headline-lg":["Manrope"],"body-sm":["Inter"]},"fontSize":{"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Corretor</span><span class="font-headline-sm text-headline-sm text-primary font-bold">Copilot</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Inteligência Imobiliária</span></div></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">OPERAÇÃO</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">person_search</span><span>Leads</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="funil" href="#"><span class="material-symbols-outlined text-[20px]">filter_alt</span><span>Funil de Vendas</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Imóveis</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Agenda</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span>Tarefas</span></a></nav></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">GESTÃO &amp; SISTEMA</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Operações</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Configurações</span></a></nav></div></div><div class="p-space-md border-t border-outline-variant/20"><div class="bg-surface-container-low border border-primary-fixed-dim/40 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-2"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Copilot Ativo</span><span class="font-label-sm text-[10px] text-secondary font-medium">Online · IA Conectada</span></div></div><span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-[16px] text-primary">domain</span><span class="text-on-surface font-semibold">Painel Corretor</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">Gestão Ativa</span></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">schedule</span><span>14:32 BRT (GMT-3)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 border border-secondary-fixed-dim/60 text-on-secondary-container"><span class="material-symbols-outlined text-[15px]">arrow_back_ios_new</span><span class="font-label-sm text-label-sm font-semibold">Copilot Pronto</span></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-5 w-px bg-outline-variant/30"></div><div class="flex items-center gap-3 pl-1"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Corretora Autônoma · CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full relative">
+<!-- BACKGROUND CONTEXT: Dimmed Agenda View -->
+<div class="w-full pointer-events-none select-none opacity-40 blur-[1px] p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">calendar_month</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-on-surface">Agenda Diária de Visitas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Quarta-feira, 14 de Outubro · 4 visitas planejadas</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="h-10 px-4 rounded-lg bg-surface-container flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">view_timeline</span>
+<span>Visão Horária</span>
+</div>
+<div class="h-10 px-4 rounded-lg bg-primary text-on-primary flex items-center gap-2 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Nova Visita</span>
+</div>
+</div>
+</div>
+<!-- Timeline Slots Preview (Background Mock) -->
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant w-20">10:00</span>
+<div class="w-1.5 h-10 rounded-full bg-secondary"></div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Visita: Vila Mariana — Condomínio Terraço das Flores</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Com Roberto Siqueira · Concluída</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">Realizada</span>
+</div>
+<div class="bg-surface-container-high/60 p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-primary w-20 font-bold">14:00</span>
+<div class="w-1.5 h-10 rounded-full bg-error"></div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Horário Vago · Cancelado às 11:30</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Cancelamento por Rafael Almeida (Reunião Imprevista)</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold">Oportunidade de Encaixe</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant w-20">16:30</span>
+<div class="w-1.5 h-10 rounded-full bg-primary-container"></div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Visita: Cobertura Duplex Moema (CB-804)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lead: Juliana Rios · Confirmada</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">Agendada</span>
+</div>
+</div>
+</div>
+<!-- MODAL BACKDROP -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md overflow-y-auto">
+<!-- MODAL CONTAINER (Tier 3 Elevation, Executive Workbench) -->
+<div class="bg-surface-container-lowest w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden my-auto flex flex-col relative transition-all">
+<!-- TOP ACCENT BAR (Intelligent Flow Glow) -->
+<div class="h-1.5 w-full bg-gradient-to-r from-primary via-primary-container to-secondary"></div>
+<!-- MODAL HEADER -->
+<div class="px-space-xl pt-space-lg pb-space-md bg-surface-container-lowest flex items-start justify-between gap-4">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2.5 flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+              IA Copilot
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">route</span>
+              Otimização de Rota &amp; Tempo
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              94% Match de Compatibilidade
+            </span>
+</div>
+<h1 class="font-display-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">
+            Propor Encaixe Inteligente no Horário Vago (14:00 – 15:00)
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Aproveitamento logístico de cancelamento recente para potencializar seu resultado na mesma região com a lead <span class="font-semibold text-on-surface">Juliana Rios</span>.
+          </p>
+</div>
+<button aria-label="Fechar Modal" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors flex-shrink-0" onclick="window.history.back()">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- MODAL BODY -->
+<div class="px-space-xl py-space-md flex flex-col gap-space-lg max-h-[75vh] overflow-y-auto">
+<!-- SECTION 1: SLOT DISPONÍVEL VS. LOGÍSTICA DE JULIANA (BENTO COMPARISON) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Card Slot Vago -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase tracking-wider">Janela Ociosa Detectada</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-error font-label-sm text-[11px] font-semibold">Cancelamento Recente</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-headline-lg text-primary font-bold">14:00</span>
+<span class="font-body-md text-body-md text-on-surface-variant">às 15:00 · Hoje (14/10)</span>
+</div>
+<div class="mt-2.5 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-error">event_busy</span>
+<span>Rafael Almeida cancelou às 11:30</span>
+</div>
+</div>
+<!-- Route Micro Visualization -->
+<div class="mt-4 pt-3 bg-surface-container-lowest/80 rounded-lg p-2.5 flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Economia de Deslocamento</span>
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> -45 min ociosos
+                </span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[85%]"></div>
+</div>
+</div>
+</div>
+<!-- Card Contexto da Lead & Logística -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-1.5">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold font-label-md text-label-md">
+                    JR
+                  </div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Juliana Rios</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm ml-1.5">(11) 97123-4567</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                  Score 92 · Lead Quente
+                </div>
+</div>
+<!-- Agenda prévia de Juliana -->
+<div class="mt-3 bg-surface-container-low rounded-lg p-2.5 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Visita já agendada hoje às 16:30</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cobertura Duplex Moema (CB-804) · Av. Moema, 412</span>
+</div>
+</div>
+<!-- Logística de percurso -->
+<div class="grid grid-cols-2 gap-2 mt-3">
+<div class="bg-surface-container/60 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase font-medium">Tempo de Deslocamento</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">directions_car</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Apenas 12 min</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Vila Mariana ➔ Moema</span>
+</div>
+<div class="bg-surface-container/60 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase font-medium">Janela de Folga</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[16px]">hourglass_top</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">1h 15m livres</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Entre 15:15 e 16:30</span>
+</div>
+</div>
+</div>
+<div class="mt-2.5 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+                Critérios: Apto 2-3 dorms · Moema / V. Mariana · Até R$ 850k
+              </span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: ESTRATÉGIAS DE ENCAIXE (INTERACTIVE RADIO CARDS) -->
+<div class="flex flex-col gap-2.5">
+<label class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">alt_route</span>
+            Selecione a Estratégia de Encaixe
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="strategy-options">
+<!-- Opção A (Default Selecionada) -->
+<label class="strategy-card active relative p-space-md rounded-xl bg-surface-container-low transition-all cursor-pointer flex flex-col justify-between group shadow-sm">
+<input checked="" class="hidden" name="encaixe_strategy" type="radio" value="tour"/>
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[13px] font-bold">check</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">Adicionar 2º Imóvel ao Roteiro</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+                    Recomendado
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                  Apresentar o <span class="font-semibold text-on-surface">Mirante Paulista (AP-204)</span> às 14:00 antes da visita das 16:30. Transforma a tarde em uma <span class="text-primary font-semibold">Turnê Estruturada</span>.
+                </p>
+</div>
+<div class="mt-3 pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>Aumenta em 2.4x a chance de proposta no mesmo dia</span>
+</div>
+</label>
+<!-- Opção B -->
+<label class="strategy-card relative p-space-md rounded-xl bg-surface-container transition-all cursor-pointer flex flex-col justify-between group opacity-85 hover:opacity-100">
+<input class="hidden" name="encaixe_strategy" type="radio" value="antecipar"/>
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant">
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Antecipar Visita de Moema</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Requer Dono
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                  Transferir o compromisso da Cobertura de Moema das 16:30 para as 14:00, liberando o final da sua tarde (sujeito à confirmação do proprietário).
+                </p>
+</div>
+<div class="mt-3 pt-2 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>Mantém apenas 1 visita na agenda</span>
+</div>
+</label>
+</div>
+</div>
+<!-- SECTION 3: IMÓVEL PROPOSTO (CARD DE DETALHE RICO) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row gap-space-md items-center">
+<!-- Thumbnail Imóvel -->
+<div class="relative w-full md:w-56 h-36 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern renovated apartment interior in Vila Mariana Sao Paulo with sunlit living room wooden flooring and large panoramic balcony overlooking city skyline professional architectural photography warm ambient tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxnpVlCnEnOnlC1txCwBnZtmwlD_c8x27avG4g7YucYFPuN9Tx1DCLxhvnaTOaQ2dsakw9qqb0SbQsGloU6A6Bv8nAM1jgBOoeRgWbUMgTkcZlV9wA_z_9uxCAIe6os4-Dd6fdD1Geu60Ui-M_nTVcCr5cFVnsZ9gkxfZT6XSnQhllEZjfGBR_RRxINAWegXx4tPD4NBS1FyF-TGmBE5--GjCdSJBGbNjeXRD-yp5-5UmvT9phAsRfnw"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-inverse-surface/85 backdrop-blur-xs text-inverse-on-surface font-label-sm text-label-sm font-semibold">
+              AP-204
+            </div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">key</span>
+              Chave na Portaria
+            </div>
+</div>
+<!-- Dados do Imóvel -->
+<div class="flex-1 flex flex-col justify-between w-full h-full">
+<div>
+<div class="flex items-start justify-between gap-2 flex-wrap">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Edifício Mirante Paulista</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">place</span>
+<span>Rua Domingos de Morais, 1280 · Vila Mariana, SP</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-currency-display text-currency-display text-primary font-bold">R$ 620.000</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">R$ 230k abaixo do teto dela</div>
+</div>
+</div>
+<!-- Tags de características -->
+<div class="flex items-center gap-3 mt-3 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">bed</span>
+                  2 dormitórios (1 suíte)
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">square_foot</span>
+                  68 m² úteis
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">directions_car</span>
+                  1 vaga coberta
+                </span>
+</div>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+                Documentação 100% checada &amp; Aceita Financiamento
+              </span>
+<a class="text-primary hover:underline font-semibold flex items-center gap-0.5" href="#">
+                Ver ficha completa
+                <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- SECTION 4: MENSAGEM WHATSAPP GERADA PELO COPILOT -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">Sugestão de Mensagem de WhatsApp (IA Copilot)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" id="btn-tone">
+<span class="material-symbols-outlined text-[14px] text-primary">sync</span>
+                Tom: <span class="text-primary" id="tone-label">Amigável e Consultivo</span>
+</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors" id="btn-edit-copy">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+                Editar Texto
+              </button>
+</div>
+</div>
+<!-- Balão de WhatsApp Realista -->
+<div class="bg-[#DCF8C6]/80 p-space-md rounded-2xl rounded-tl-sm text-[#0F172A] font-body-md text-body-md shadow-xs leading-relaxed relative">
+<div class="absolute -top-1.5 -left-1.5 w-3 h-3 bg-[#DCF8C6]/80 rotate-45"></div>
+<p id="whatsapp-message-body">
+              "Olá <strong>Juliana</strong>, tudo bem? Aqui é a Marina Costa da Corretor Copilot! 😊 Como já temos nossa visita marcada hoje às 16:30 na Cobertura de Moema, acabou de liberar um horário exclusivo às <strong>14:00</strong> em um apartamento incrível na Vila Mariana (<strong>Edifício Mirante Paulista, 68m²</strong>), que tem exatamente o perfil que você procura e fica no mesmo trajeto!<br/><br/>
+              Gostaria de aproveitar e conhecer este imóvel também no mesmo percurso? Já organizei a logística e dá tempo com total tranquilidade!"
+            </p>
+<div class="flex items-center justify-end gap-1 text-[11px] text-[#475569] mt-2 font-label-sm">
+<span>12:05</span>
+<span class="material-symbols-outlined text-[14px] text-primary">done_all</span>
+</div>
+</div>
+<!-- Micro-Badge Informativo -->
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">timer</span>
+<span>Ao enviar, o slot das 14:00 ficará reservado com status <strong>"Aguardando Resposta do Lead"</strong> por 45 minutos.</span>
+</div>
+</div>
+</div>
+<!-- MODAL FOOTER ACTIONS -->
+<div class="px-space-xl py-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-md border-t-0 shadow-lg">
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold text-center" onclick="window.history.back()">
+            Cancelar / Voltar à Agenda
+          </button>
+<button class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+            Editar Manualmente
+          </button>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<button class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#1EBE5D] text-white font-label-md text-label-md font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 transform active:scale-95" id="send-whatsapp-trigger">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">send</span>
+<span>Enviar Convite via WhatsApp &amp; Pré-reservar Slot</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive strategy toggle
+  const cards = document.querySelectorAll('.strategy-card');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => {
+        c.classList.remove('active', 'bg-surface-container-low');
+        c.classList.add('bg-surface-container', 'opacity-85');
+        const check = c.querySelector('.w-5.h-5');
+        if (check) {
+          check.className = 'w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant';
+          check.innerHTML = '<div class="w-2 h-2 rounded-full bg-outline"></div>';
+        }
+      });
+      card.classList.add('active', 'bg-surface-container-low');
+      card.classList.remove('bg-surface-container', 'opacity-85');
+      const radio = card.querySelector('input[type="radio"]');
+      if (radio) radio.checked = true;
+      const currentCheck = card.querySelector('.w-5.h-5');
+      if (currentCheck) {
+        currentCheck.className = 'w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary';
+        currentCheck.innerHTML = '<span class="material-symbols-outlined text-[13px] font-bold">check</span>';
+      }
+    });
+  });
+
+  // Tone regeneration simulation
+  const tones = [
+    { label: "Amigável e Consultivo", text: "Olá <strong>Juliana</strong>, tudo bem? Aqui é a Marina Costa da Corretor Copilot! 😊 Como já temos nossa visita marcada hoje às 16:30 na Cobertura de Moema, acabou de liberar um horário exclusivo às <strong>14:00</strong> em um apartamento incrível na Vila Mariana (<strong>Edifício Mirante Paulista, 68m²</strong>), que tem exatamente o perfil que você procura e fica no mesmo trajeto!<br/><br/>Gostaria de aproveitar e conhecer este imóvel também no mesmo percurso? Já organizei a logística e dá tempo com total tranquilidade!" },
+    { label: "Direto e Objetivo", text: "Olá Juliana! Marina da Corretor Copilot aqui. Tivemos uma abertura às <strong>14:00</strong> no <strong>Mirante Paulista (Vila Mariana)</strong>, antes da nossa visita das 16:30 em Moema. É um 2 dormitórios excelente (R$ 620k) no mesmo trajeto. Conseguimos encaixar essa segunda visita às 14h?" },
+    { label: "Exclusivo e Urgente", text: "Juliana, ótima oportunidade: abriu uma vaga imprevista às <strong>14:00</strong> para visitar o <strong>Mirante Paulista</strong> na Vila Mariana (68m², 2 quartos). Como você já estará na região para ver a Cobertura de Moema às 16:30, reservei prioridade caso queira visitar ambos hoje. Me avisa se confirmo a chave na portaria!" }
+  ];
+
+  let currentToneIdx = 0;
+  const toneBtn = document.getElementById('btn-tone');
+  const toneLabel = document.getElementById('tone-label');
+  const messageBody = document.getElementById('whatsapp-message-body');
+
+  if (toneBtn && toneLabel && messageBody) {
+    toneBtn.addEventListener('click', () => {
+      currentToneIdx = (currentToneIdx + 1) % tones.length;
+      toneLabel.textContent = tones[currentToneIdx].label;
+      messageBody.innerHTML = tones[currentToneIdx].text;
+    });
+  }
+
+  // Two-click confirmation interaction for sending WhatsApp
+  const sendBtn = document.getElementById('send-whatsapp-trigger');
+  let isConfirming = false;
+  let confirmTimer = null;
+
+  if (sendBtn) {
+    sendBtn.addEventListener('click', () => {
+      if (!isConfirming) {
+        isConfirming = true;
+        sendBtn.classList.remove('bg-[#25D366]', 'hover:bg-[#1EBE5D]');
+        sendBtn.classList.add('bg-tertiary-container', 'hover:bg-tertiary', 'text-on-tertiary-container');
+        sendBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px] animate-pulse">priority_high</span>
+          <span>Confirmar envio para Juliana? (3s)</span>
+        `;
+        confirmTimer = setTimeout(() => {
+          resetButton();
+        }, 3000);
+      } else {
+        clearTimeout(confirmTimer);
+        sendBtn.classList.remove('bg-tertiary-container', 'hover:bg-tertiary', 'text-on-tertiary-container');
+        sendBtn.classList.add('bg-secondary', 'text-on-secondary');
+        sendBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">task_alt</span>
+          <span>Convite Enviado com Sucesso!</span>
+        `;
+        sendBtn.disabled = true;
+        setTimeout(() => {
+          alert('Proposta de encaixe enviada via WhatsApp para Juliana Rios! Slot das 14:00 bloqueado temporariamente na agenda.');
+        }, 500);
+      }
+    });
+
+    function resetButton() {
+      isConfirming = false;
+      sendBtn.classList.add('bg-[#25D366]', 'hover:bg-[#1EBE5D]', 'text-white');
+      sendBtn.classList.remove('bg-tertiary-container', 'hover:bg-tertiary', 'text-on-tertiary-container');
+      sendBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">send</span>
+        <span>Enviar Convite via WhatsApp &amp; Pré-reservar Slot</span>
+      `;
+    }
+  }
+</script></main></div></body></html>

@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "DOSSIER",
+    "id": "9b5dc589-ce2e-4dd0-9976-0509141c5983",
+    "bytes": 2869,
+    "authenticated": true
+  },
+  {
+    "kind": "DRAFT",
+    "id": "ef7a4a12-b9a7-4248-840a-493499ac899d",
+    "bytes": 3914,
+    "authenticated": true
+  },
+  {
+    "kind": "ACCEPTANCE",
+    "id": "6344c667-ee70-4466-9cc2-ec6bd44d4e7f",
+    "bytes": 3957,
+    "authenticated": true
+  },
+  {
+    "kind": "RECEIPT",
+    "id": "90745d94-4228-4104-b628-59492627afb8",
+    "bytes": 4250,
+    "authenticated": true
+  },
+  {
+    "kind": "REPORT",
+    "id": "02363998-b8aa-45e8-811e-0a63e64689f5",
+    "bytes": 3972,
+    "authenticated": true
+  },
+  {
+    "kind": "VISIT_REPORT",
+    "id": "f2ee9ee1-b8a9-4480-a026-ba38b9f5c493",
+    "bytes": 2967,
+    "authenticated": true
+  }
+]

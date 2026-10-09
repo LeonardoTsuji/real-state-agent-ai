@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#ffeedd","secondary-fixed":"#6ffbbe","on-tertiary":"#ffffff","secondary-container":"#6cf8bb","on-surface-variant":"#434655","on-surface":"#131b2e","on-error-container":"#93000a","on-secondary":"#ffffff","surface-dim":"#d2d9f4","surface-container-highest":"#dae2fd","primary-fixed":"#dbe1ff","primary-container":"#2563eb","surface-tint":"#0053db","surface-container":"#eaedff","error":"#ba1a1a","on-secondary-fixed":"#002113","surface-bright":"#faf8ff","secondary-fixed-dim":"#4edea3","on-background":"#131b2e","on-primary-container":"#eeefff","on-tertiary-fixed":"#2a1700","inverse-primary":"#b4c5ff","tertiary-container":"#996100","surface-container-high":"#e2e7ff","on-primary-fixed-variant":"#003ea8","inverse-on-surface":"#eef0ff","surface":"#faf8ff","on-error":"#ffffff","on-secondary-container":"#00714d","primary":"#004ac6","on-tertiary-fixed-variant":"#653e00","secondary":"#006c49","on-secondary-fixed-variant":"#005236","inverse-surface":"#283044","tertiary":"#784b00","background":"#faf8ff","tertiary-fixed-dim":"#ffb95f","outline":"#737686","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-primary-fixed":"#00174b","surface-variant":"#dae2fd","outline-variant":"#c3c6d7","surface-container-low":"#f2f3ff","tertiary-fixed":"#ffddb8","error-container":"#ffdad6"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1rem","space-2xl":"3rem","space-xs":"0.25rem","space-xl":"2rem","space-md":"1rem","space-sm":"0.5rem",gutter:"1.5rem",margin:"2rem"},fontFamily:{"headline-sm":["Manrope"],"currency-table":["Inter"],"headline-md":["Manrope"],"display-lg":["Manrope"],"headline-lg":["Manrope"],"display-lg-mobile":["Manrope"],"title-md":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"currency-display":["Manrope"],"body-lg":["Inter"],"label-sm":["Inter"],"body-md":["Inter"]},fontSize:{"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"currency-table":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"700"}],"title-md":["15px",{lineHeight:"22px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"currency-display":["22px",{lineHeight:"28px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.03em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-lg px-space-md"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Corretor Copilot</span><span class="font-label-sm text-label-sm text-on-surface-variant">Inteligência Imobiliária</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span>Visão Geral</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="pipeline-leads" href="#"><span class="material-symbols-outlined text-[20px]">view_kanban</span>Pipeline de Negócios</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="imoveis-carteira" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span>Carteira de Imóveis</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="copilot-atividades" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span>Copilot Insights</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="agenda-visitas" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Visitas & Agenda</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="relatorios-vendas" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span>Métricas & VGV</a></nav></div><div class="px-space-md"><div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[18px]">neurology</span>Copilot Ativo</div><p class="font-body-sm text-body-sm text-on-surface-variant">Sincronizado com WhatsApp e CRECI PR.</p></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-secondary"></span>CRECI 42890-F</div></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><div class="relative"><button class="flex items-center gap-space-sm p-1.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-all"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left pr-space-xs"><span class="font-label-md text-label-md text-on-surface font-semibold">Carlos Mendonça</span><span class="font-label-sm text-label-sm text-on-surface-variant">Corretor Associado</span></div><span class="material-symbols-outlined text-on-surface-variant text-[20px] pr-1">expand_more</span></button><div class="absolute right-0 top-14 w-64 bg-surface-container-lowest rounded-xl shadow-[0_10px_25px_-5px_rgba(15,23,42,0.1),0_8px_10px_-6px_rgba(15,23,42,0.06)] p-space-xs flex flex-col z-50"><div class="px-space-md py-space-sm flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-surface">Carlos Mendonça</span><span class="font-body-sm text-body-sm text-on-surface-variant">carlos.mendonca@imob.com</span></div><div class="h-px bg-surface-container-high my-space-xs"></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" data-path="configuracoes-usuario" href="#"><span class="material-symbols-outlined text-[18px] text-primary">settings</span>Configurações</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" data-path="copilot-preferencias" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">smart_toy</span>Preferências Copilot</a><div class="h-px bg-surface-container-high my-space-xs"></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-error hover:bg-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[18px] text-error">logout</span>Sair</a></div></div></div></header><main class="relative pt-16 w-full px-space-xl bg-background min-h-screen"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Dynamic shell overrides: Update Shell User and Navigation for Marina Costa (Corretor profile without Operações) -->
+<script>
+    (function() {
+      // 1. Atualizar nome do usuário no topo da shell
+      const nameElements = document.querySelectorAll('header span.font-label-md');
+      nameElements.forEach(el => {
+        if (el.textContent.includes('Carlos Mendonça')) {
+          el.textContent = 'Marina Costa';
+        }
+      });
+      const roleElements = document.querySelectorAll('header span.font-label-sm');
+      roleElements.forEach(el => {
+        if (el.textContent.includes('Corretor Associado')) {
+          el.textContent = 'Corretor';
+        }
+      });
+      const emailElements = document.querySelectorAll('header span.font-body-sm');
+      emailElements.forEach(el => {
+        if (el.textContent.includes('carlos.mendonca@imob.com')) {
+          el.textContent = 'marina.costa@corretorcopilot.com.br';
+        }
+      });
+
+      // 2. Ajustar itens da Sidebar estritamente para o Perfil Corretor: Leads, Imóveis, Agenda, Tarefas (Sem menu de Operações)
+      const nav = document.querySelector('aside nav');
+      if (nav) {
+        nav.innerHTML = `
+          <a href="#" data-path="leads" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150">
+            <span class="material-symbols-outlined text-[20px]">group</span>Leads
+          </a>
+          <a href="#" data-path="imoveis" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150">
+            <span class="material-symbols-outlined text-[20px]">apartment</span>Imóveis
+          </a>
+          <a href="#" data-path="agenda" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150">
+            <span class="material-symbols-outlined text-[20px]">calendar_month</span>Agenda
+          </a>
+          <a href="#" data-path="tarefas" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150">
+            <span class="material-symbols-outlined text-[20px]">checklist</span>Tarefas
+          </a>
+          <a href="#" data-path="configuracoes" class="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-sm flex items-center gap-space-sm px-space-md py-space-sm font-label-md text-label-md transition-all duration-150">
+            <span class="material-symbols-outlined text-[20px]">settings</span>Configurações
+          </a>
+        `;
+      }
+    })();
+  </script>
+<!-- Cabeçalho da Página com Breadcrumb, Título & Subtítulo -->
+<div class="flex flex-col gap-space-xs pt-space-lg mb-space-xl">
+<nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">
+<span class="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+        Preferências
+      </span>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-primary font-semibold">Configurações</span>
+</nav>
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<h1 class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">Configurações</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Gerenciamento de conta, permissões e preferências de sessão</p>
+</div>
+<!-- Tag de Perfil Ativo -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-high rounded-full shadow-sm self-start sm:self-auto">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Marina Costa (Corretor)</span>
+</div>
+</div>
+</div>
+<!-- Layout Principal em Grid Arquitetural -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- SEÇÃO 1: Minha Conta (Col 1-7) -->
+<section class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Minha Conta</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Identificação Oficial</span>
+</div>
+<!-- Cartão de Perfil Informativo (Modo Estrito de Leitura) -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-xl flex flex-col gap-space-xl relative overflow-hidden">
+<!-- Fundo sutil decorativo Copilot -->
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-gradient-to-br from-primary-fixed/20 to-transparent pointer-events-none blur-2xl"></div>
+<!-- Bloco de Avatar e Identidade -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-lg">
+<!-- Avatar Estático (Sem upload de avatar) -->
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-2xl bg-primary flex items-center justify-center text-on-primary font-headline-lg text-headline-lg font-bold shadow-md select-none tracking-tight">
+              MC
+            </div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-lg bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Nome em modo estrito de leitura -->
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Marina Costa</span>
+<!-- Badge amigável 'Corretor' -->
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold tracking-wide">
+                Corretor
+              </span>
+</div>
+<!-- E-mail em modo de leitura -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px] text-outline">mail</span>
+<span class="font-mono text-body-sm text-body-sm">marina.costa@corretorcopilot.com.br</span>
+</div>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- Detalhes em Estrutura de Informação Limpa (Sem inputs editáveis) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Campo Identificador da Conta -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Identificador da Conta</span>
+<div class="flex items-center justify-between gap-space-sm">
+<span class="font-mono font-semibold text-body-sm text-body-sm text-on-surface select-all" id="account-id-value">usr-mc-84920-br</span>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold shadow-sm transition-all duration-150 active:scale-95" id="copy-id-btn" onclick="copyAccountId()" title="Copiar ID para transferência de contexto" type="button">
+<span class="material-symbols-outlined text-[15px]" id="copy-id-icon">content_copy</span>
+<span id="copy-id-label">Copiar ID</span>
+</button>
+</div>
+</div>
+<!-- Campo Papel no Sistema -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Papel Operacional</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">person_check</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Corretor Titular</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acesso autônomo e individual</span>
+</div>
+</div>
+<!-- Estatísticas de Produtividade do Corretor -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Leads Ativos</span>
+<span class="font-display-lg text-display-lg text-primary font-bold mt-0.5">28</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Imóveis Vinculados</span>
+<span class="font-display-lg text-display-lg text-on-surface font-bold mt-0.5">14</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Agenda da Semana</span>
+<span class="font-display-lg text-display-lg text-secondary font-bold mt-0.5">09</span>
+</div>
+</div>
+<!-- Banner com a Nota Discreta Obrigatória -->
+<div class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-high">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium leading-relaxed">
+              Os dados da conta estão disponíveis para consulta nesta versão.
+            </p>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">
+              Alterações cadastrais e credenciais devem ser solicitadas diretamente à coordenação técnica.
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SEÇÃO 2: Acesso e Sessão (Col 8-12) -->
+<section class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">security</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Acesso & Sessão</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Permissões</span>
+</div>
+<!-- Cartão 'Seu acesso': Relação informativa estrita sem switches/controles -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Seu acesso</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">Perfil Corretor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Escopo de privilégios configurado para operação diária e sigilo de carteira individual:
+        </p>
+<!-- Relação Informativa de Permissões -->
+<ul class="flex flex-col gap-space-sm list-none p-0 m-0">
+<!-- Permissão Ativa 1 -->
+<li class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Gestão dos próprios leads e imóveis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cadastro, edição e movimentação no pipeline particular.</span>
+</div>
+</li>
+<!-- Permissão Ativa 2 -->
+<li class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Agenda e tarefas pessoais</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Organização de visitas, ligações e compromissos diretos.</span>
+</div>
+</li>
+<!-- Permissão Ativa 3 -->
+<li class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Assistente contextual aos próprios leads</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Copilot ativado para sugestões e roteiros de negociação.</span>
+</div>
+</li>
+<!-- Permissão Inativa 1 (Restrito) -->
+<li class="flex items-start gap-space-sm p-space-sm rounded-xl bg-error-container/20">
+<div class="w-5 h-5 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">close</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Consulta global de processamentos e métricas</span>
+<span class="font-body-sm text-body-sm text-error font-medium">Não disponível para este perfil</span>
+</div>
+</li>
+<!-- Permissão Inativa 2 (Restrito) -->
+<li class="flex items-start gap-space-sm p-space-sm rounded-xl bg-error-container/20">
+<div class="w-5 h-5 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">close</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Reenvio de jobs</span>
+<span class="font-body-sm text-body-sm text-error font-medium">Não disponível para este perfil</span>
+</div>
+</li>
+</ul>
+</div>
+<!-- Cartão 'Sessão atual' -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Sessão atual</h3>
+</div>
+<!-- Explicação obrigatória -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-outline text-[18px]">sync_problem</span>
+            Persistência em Navegador
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Recarregar a página exige um novo login. Ao sair, os dados desta sessão são removidos do navegador.
+          </p>
+</div>
+<!-- Botão Sair da conta (Logout com encaminhamento para login, sem expor tokens) -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full flex items-center justify-center gap-space-sm py-2.5 px-space-md rounded-xl bg-error hover:bg-[#961212] text-on-error font-label-md text-label-md font-semibold shadow-sm transition-all duration-150 active:scale-[0.99] group" onclick="handleLogout()" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-0.5">logout</span>
+<span>Sair da conta</span>
+</button>
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm">Conexão criptografada ponta a ponta</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Toast Notification Feedback (para ação de cópia de ID) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm bg-inverse-surface text-inverse-on-surface px-space-lg py-space-sm rounded-xl shadow-xl" id="toast-notification">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md font-medium" id="toast-message">Identificador copiado com sucesso!</span>
+</div>
+<!-- Script Interativo: Copiar ID & Logout -->
+<script>
+    function copyAccountId() {
+      const idText = document.getElementById('account-id-value').innerText.trim();
+      
+      // Fallback para navigator.clipboard
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(idText).then(onCopySuccess).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
+
+      function fallbackCopy() {
+        const tempInput = document.createElement('textarea');
+        tempInput.value = idText;
+        tempInput.style.position = 'fixed';
+        tempInput.style.left = '-9999px';
+        document.body.appendChild(tempInput);
+        tempInput.focus();
+        tempInput.select();
+        try {
+          document.execCommand('copy');
+          onCopySuccess();
+        } catch (err) {
+          console.error('Falha ao copiar:', err);
+        }
+        document.body.removeChild(tempInput);
+      }
+
+      function onCopySuccess() {
+        const copyBtn = document.getElementById('copy-id-btn');
+        const copyIcon = document.getElementById('copy-id-icon');
+        const copyLabel = document.getElementById('copy-id-label');
+        
+        copyIcon.textContent = 'check';
+        copyLabel.textContent = 'Copiado!';
+        copyBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+
+        showToast('Identificador usr-mc-84920-br copiado!');
+
+        setTimeout(() => {
+          copyIcon.textContent = 'content_copy';
+          copyLabel.textContent = 'Copiar ID';
+          copyBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        }, 2200);
+      }
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast-notification');
+      const toastMessage = document.getElementById('toast-message');
+      toastMessage.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2600);
+    }
+
+    function handleLogout() {
+      // Limpeza de sessão sem expor dados nem tokens
+      try {
+        sessionStorage.clear();
+        localStorage.removeItem('corretor_session');
+      } catch (e) {
+        // Ignora caso storage esteja restrito
+      }
+      
+      // Encaminha de volta para tela de login
+      window.location.href = '#login';
+    }
+  </script>
+</div></main></div></body></html>

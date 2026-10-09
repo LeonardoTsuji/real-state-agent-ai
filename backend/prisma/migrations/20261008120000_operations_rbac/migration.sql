@@ -1,0 +1,3 @@
+CREATE TYPE "BrokerRole" AS ENUM ('BROKER', 'OPERATOR');
+
+ALTER TABLE "brokers" ADD COLUMN "role" "BrokerRole" NOT NULL DEFAULT 'BROKER';

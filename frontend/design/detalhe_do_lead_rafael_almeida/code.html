@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-container":"#ffeedd","on-secondary-fixed-variant":"#005236","on-tertiary-fixed-variant":"#653e00","surface-container-low":"#f2f3ff","primary-fixed":"#dbe1ff","on-primary-container":"#eeefff","surface-container-lowest":"#ffffff","secondary-container":"#6cf8bb","secondary-fixed-dim":"#4edea3","error":"#ba1a1a","error-container":"#ffdad6","primary-container":"#2563eb","on-secondary":"#ffffff","primary":"#004ac6","outline-variant":"#c3c6d7","on-primary-fixed-variant":"#003ea8","surface-bright":"#faf8ff","tertiary-container":"#996100","primary-fixed-dim":"#b4c5ff","on-secondary-container":"#00714d","surface-container-high":"#e2e7ff","on-background":"#131b2e","background":"#faf8ff","on-tertiary":"#ffffff","on-error":"#ffffff","inverse-surface":"#283044","inverse-primary":"#b4c5ff","on-primary":"#ffffff","tertiary":"#784b00","on-primary-fixed":"#00174b","secondary":"#006c49","on-surface":"#131b2e","surface-dim":"#d2d9f4","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002113","outline":"#737686","on-error-container":"#93000a","secondary-fixed":"#6ffbbe","surface-variant":"#dae2fd","on-surface-variant":"#434655","surface-tint":"#0053db","on-tertiary-fixed":"#2a1700","surface":"#faf8ff","tertiary-fixed":"#ffddb8","inverse-on-surface":"#eef0ff","tertiary-fixed-dim":"#ffb95f","surface-container":"#eaedff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-2xl":"3rem","gutter":"1.5rem","gutter-mobile":"1rem","margin":"2rem"},"fontFamily":{"display-lg-mobile":["Manrope"],"label-md":["Inter"],"currency-table":["Inter"],"currency-display":["Manrope"],"display-lg":["Manrope"],"body-sm":["Inter"],"body-lg":["Inter"],"title-md":["Inter"],"headline-sm":["Manrope"],"label-sm":["Inter"],"headline-lg":["Manrope"],"headline-md":["Manrope"],"body-md":["Inter"]},"fontSize":{"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo Corretor Copilot" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WuHTKbFdGkAHzlVzrK5jvzP8tbG-KCgdwvP2YfRwo8KRhtN4R6oUVhlKuxSx_vOwbJI7PbPlwH8O6hW15KuaGjGUz5iRpMcgTaCpQljsgxLS74sXPk24x-b0sruDH9kVlY2aSjo7FB2XFYMYb71N1QeuBNwWCqcICcHxIg50lULtFG6owqvYL-GPH4Cmnh20I1VoYkzPOFirVoN3Z3hnc7S6D0z5_E_LFwmMtojcJHuA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Corretor Copilot</span><span class="inline-flex items-center mt-1 px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm w-fit leading-none">CRM + IA</span></div></div></div><div class="px-space-md pt-space-md"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Operação</span><nav class="flex flex-col gap-1 mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="leads" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-title-md text-title-md">Leads</span></div><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm leading-none">24</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="funil" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-title-md text-title-md">Funil</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="imoveis" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span><span class="font-title-md text-title-md">Imóveis</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="agenda" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-title-md text-title-md">Agenda</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="tarefas" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="font-title-md text-title-md">Tarefas</span></div></a></nav></div><div class="px-space-md pt-space-lg"><div class="h-px bg-surface-container-high mx-space-sm mb-space-md"></div><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Gestão &amp; Sistema</span><nav class="flex flex-col gap-1 mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="operacoes" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-md text-title-md">Operações</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Configurações</span></div></a></nav></div></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span><span class="font-label-md text-label-md text-on-surface">Copilot Ativo</span></div><span class="w-2 h-2 rounded-full bg-secondary"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-outline">domain</span><span>Painel Corretor</span><span class="text-outline">/</span><span class="text-on-surface font-label-md text-label-md">Gestão Ativa</span></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">schedule</span><span>Horário de Brasília (GMT-3)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2"><button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-primary text-[18px]">neurology</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Copilot Pronto</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBvYdfRfshOYKeG_T2PmFmiBW7B9eMcrjzpdEmrSiWsCyLK8EsCIvlpxoEtk5-Q4Zlv-77q2dxwcDST7eBITNanIaaJUnjSj4yvXtX3gILvgSBQ6JIK_TC9_-LOHY5TlHERISBccG5nQ_LKoGL-bqY2xERRTnGQw-nCOdgbbpbOtkMJbFcn-RrESJaPpKePfj-rXC2C1SdgeiFxyfgRgvcFcaq63j5ub8CxuCpXzbB"/><div class="hidden lg:flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-tight">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Corretora Autônoma · CRECI 248.910-F</span></div><div class="relative group"><button class="flex items-center text-outline hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">expand_more</span></button><div class="hidden group-hover:block absolute right-0 top-full pt-2 w-48 z-50"><div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_6px_-1px_rgba(15,23,42,0.07)] p-1.5 flex flex-col"><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md" data-path="perfil" href="#"><span class="material-symbols-outlined text-[18px]">person</span>Meu Perfil</a><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[18px]">settings</span>Configurações</a><div class="h-px bg-surface-container-high my-1"></div><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Sair</a></div></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-xl pb-space-2xl"><div class="flex flex-col w-full">
+<!-- Top Navigation & Stage Transition Toolbar -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<!-- Breadcrumb back link -->
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" data-path="leads" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        Voltar para Leads
+      </a>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span>
+          Lead Autenticado no CRM
+        </span>
+</div>
+</div>
+<!-- Header Action Bar -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center gap-space-md">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-headline-md text-headline-md">
+            RA
+          </div>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Rafael Almeida</h1>
+<!-- Status Badge: Qualificado -->
+<span class="px-2.5 py-0.5 rounded-full bg-[#E0E7FF] text-[#4338CA] font-label-sm text-label-sm uppercase tracking-wide" id="currentStatusBadge">
+              Qualificado
+            </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">mail</span>
+              rafael.almeida@email.com
+            </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">call</span>
+              (11) 98765-4321
+            </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+              WhatsApp Conectado
+            </span>
+</div>
+</div>
+</div>
+<!-- Deliberate Stage Selector & Record Actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm xl:pt-0 border-t border-surface-container-high xl:border-0">
+<!-- Stage selector form -->
+<div class="flex items-center gap-2 bg-surface-container-low p-1.5 rounded-lg">
+<label class="font-label-sm text-label-sm text-on-surface-variant px-2 uppercase tracking-wider" for="stageSelect">Estágio:</label>
+<div class="relative">
+<select class="h-9 pl-3 pr-8 rounded bg-surface-container-lowest text-on-surface font-title-md text-title-md focus:outline-none appearance-none cursor-pointer" id="stageSelect">
+<option value="Novo">Novo</option>
+<option value="Contatado">Contatado</option>
+<option selected="" value="Qualificado">Qualificado</option>
+<option value="Visita agendada">Visita agendada</option>
+<option value="Negociação">Negociação</option>
+<option value="Ganho">Ganho</option>
+<option value="Perdido">Perdido</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-2 text-[20px] text-outline">expand_more</span>
+</div>
+<button class="h-9 px-3 rounded bg-surface-container-highest hover:bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md transition-all flex items-center gap-1.5 active:scale-95" id="btnUpdateStage" type="button">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+            Atualizar estágio
+          </button>
+</div>
+<!-- Action buttons -->
+<div class="flex items-center gap-2">
+<button class="h-9 px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">edit</span>
+            Editar dados
+          </button>
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-error-container text-outline hover:text-on-error-container font-label-md text-label-md transition-colors flex items-center gap-1.5" id="btnOpenDeleteModal" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+            Excluir lead
+          </button>
+</div>
+</div>
+</div>
+<!-- Tabbed Navigation Ribbon -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-md rounded-xl shadow-sm overflow-x-auto">
+<div class="flex items-center gap-2 py-2">
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button">
+          1. Dados
+        </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button">
+          2. Preferências
+        </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button">
+          3. Interações
+        </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors flex items-center gap-1.5" type="button">
+<span>4. Imóveis Associados</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high font-label-sm text-label-sm">2</span>
+</button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+          5. Assistente IA Copilot ✨
+        </button>
+</div>
+<div class="hidden lg:flex items-center gap-2 pr-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Copilot Online no Lead</span>
+</div>
+</div>
+</div>
+<!-- Main View Grid: Copilot Center Stage + Live Context Column -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT / MAIN: AI Contextual Assistant Panel (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Conversation Selector Ribbon -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider pl-1">Sessões:</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant transition-colors whitespace-nowrap" type="button">
+            Atendimento inicial (12/10)
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant transition-colors whitespace-nowrap" type="button">
+            Qualificação e preferências (13/10)
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm whitespace-nowrap" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Agendamento de visita (Ativa)
+          </button>
+</div>
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors self-start sm:self-auto" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+          Nova conversa
+        </button>
+</div>
+<!-- Chat Canvas & Copilot Intelligence Stream -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-lg">
+<!-- Top Status Indicator inside chat -->
+<div class="flex items-center justify-between px-space-md py-2 bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">psychology</span>
+<span class="font-label-sm text-label-sm text-on-surface">Assistente Copilot analisando contexto da conversa do WhatsApp</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+            Assistente disponível
+          </span>
+</div>
+<!-- Chat Stream Messages -->
+<div class="flex flex-col gap-space-md">
+<!-- Broker message (Aligned Right) -->
+<div class="flex flex-col items-end self-end max-w-xl">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Marina Costa (Você)</span>
+<span class="font-label-sm text-label-sm text-outline">10:42</span>
+</div>
+<div class="bg-surface-container-high text-on-surface p- space-md rounded-2xl rounded-tr-sm shadow-sm font-body-md text-body-md">
+              Olá Rafael! Identifiquei que você se interessou pela região da Vila Mariana. Temos uma unidade impecável no Edifício Mirante Paulista que atende perfeitamente à sua busca por 2 dormitórios. Como está sua agenda para amanhã à tarde?
+            </div>
+</div>
+<!-- Lead message sync tag -->
+<div class="flex items-center justify-center my-1">
+<span class="px-3 py-1 rounded-full bg-surface-container text-outline font-label-sm text-label-sm">
+              Mensagem sincronizada via WhatsApp oficial • 10:48
+            </span>
+</div>
+<!-- Assistant Copilot response / observation (Aligned Left) -->
+<div class="flex gap-3 max-w-2xl self-start">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm mt-1">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary">Copilot IA</span>
+<span class="font-label-sm text-label-sm text-outline">10:49</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Leitura Semântica</span>
+</div>
+<div class="bg-surface-container-low text-on-surface p-space-md rounded-2xl rounded-tl-sm font-body-md text-body-md">
+                O lead acabou de responder no WhatsApp: <br/>
+<em class="text-on-surface-variant font-medium">"Perfeito, Marina! Gostei muito das fotos. Quarta-feira (14/10) a partir das 14h estou livre. Pode marcar sim!"</em>
+</div>
+</div>
+</div>
+<!-- HIGHLIGHTED AI ACTION CARD: Proposta de Visita Identificada -->
+<div class="relative bg-gradient-to-br from-surface-container-lowest to-surface-container-low p-space-lg rounded-xl shadow-md border-l-4 border-primary">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">event_available</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Proposta de Visita Identificada</h3>
+<span class="px-2 py-0.5 rounded-full bg-[#FEF3C7] text-[#D97706] font-label-sm text-label-sm font-semibold">
+                      Ação Sugerida
+                    </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                    O cliente Rafael Almeida confirmou disponibilidade para visitar o Apartamento na Vila Mariana nesta quarta-feira à tarde.
+                  </p>
+</div>
+</div>
+<!-- Expiration pill -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm self-start">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>Expira em 3 horas</span>
+</div>
+</div>
+<!-- Property & Agenda Details Snippet -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-md">
+<div class="flex items-center gap-3">
+<img class="w-16 h-16 rounded-lg object-cover" data-alt="Modern bright living room in Vila Mariana apartment with engineered wood flooring, floor-to-ceiling windows, and contemporary design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAahIcrD_t7Fv517PCQgGKZU-SgSFrpZNT0OA8JpKn9pXGS129mhof4GpuoMo4pgqW6BCSbnbnbv_NqhNfzbmjxaSkA_w54FaOFV5gS7C5ol84j-a4_5aSmsLCfb51o_m9cm7jVjxUUnjK8oDtQsOBgLBUoLsjFSpuK6SgmEG_ZHlMkrLqr8RsJjORMqC7gT-Lu2XMeqErCrzo_CHLQZx7Q9ukeGHWe_aE1W78OrXZQ"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Imóvel Selecionado</span>
+<span class="font-title-md text-title-md text-on-surface">Apartamento Vila Mariana (Cód. AP-204)</span>
+<span class="font-currency-table text-currency-table text-primary">R$ 620.000 <span class="font-body-sm text-body-sm text-on-surface-variant">· 2 quartos, 1 vaga</span></span>
+</div>
+</div>
+<div class="flex flex-col justify-center bg-surface-container-low p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase">Horário sugerido</span>
+<div class="flex items-center gap-1.5 text-on-surface font-title-md text-title-md mt-0.5">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span>
+<span>14/10/2026, das 14h00 às 15h00</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">(Horário de Brasília GMT-3)</span>
+</div>
+</div>
+<!-- Explicit Safeguard Warning Notice -->
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low mb-space-lg">
+<span class="material-symbols-outlined text-outline text-[18px]">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Aviso do Sistema:</strong> A visita só será agendada após sua confirmação deliberada. Nenhuma notificação externa foi enviada ao proprietário.
+              </span>
+</div>
+<!-- Direct Decision Triggers -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-2">
+<div class="flex items-center gap-3">
+<button class="h-10 px-5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-2 active:scale-95" id="btnConfirmVisit" type="button">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+                  Confirmar visita e adicionar à Agenda
+                </button>
+<button class="h-10 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="btnRejectVisit" type="button">
+                  Rejeitar proposta
+                </button>
+</div>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" data-path="agenda" href="#">
+                Ou realize o agendamento manual na Agenda →
+              </a>
+</div>
+</div>
+<!-- AI Extraction Box: Detected Preferences -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">filter_alt</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Preferências detectadas pela IA no histórico:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="font-semibold text-on-surface">Bairro:</span> Vila Mariana <span class="text-outline-variant">|</span>
+<span class="font-semibold text-on-surface">Tipos:</span> Apartamento <span class="text-outline-variant">|</span>
+<span class="font-semibold text-on-surface">Orçamento:</span> até R$ 650.000 <span class="text-outline-variant">|</span>
+<span class="font-semibold text-on-surface">Quartos:</span> 2 <span class="text-outline-variant">|</span>
+<span class="font-semibold text-on-surface">Vagas:</span> 1
+                </p>
+</div>
+</div>
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold shadow-sm transition-all whitespace-nowrap shrink-0 flex items-center gap-1.5" id="btnApplyPreferences" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+              Aplicar às preferências do lead
+            </button>
+</div>
+</div>
+<!-- Prompt Composer & Action Chips -->
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<!-- Quick Suggestion Action Chips -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">Atalhos rápidos:</span>
+<button class="quick-chip px-3 py-1 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed-variant font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">forum</span>
+              Sugerir mensagem para WhatsApp
+            </button>
+<button class="quick-chip px-3 py-1 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed-variant font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">search_insights</span>
+              Buscar imóveis compatíveis
+            </button>
+<button class="quick-chip px-3 py-1 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed-variant font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">summarize</span>
+              Resumir histórico
+            </button>
+</div>
+<!-- Input bar -->
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-4 pr-28 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-inner" id="copilotInput" placeholder="Instrua o Copilot ou faça uma pergunta sobre Rafael Almeida..." type="text"/>
+<div class="absolute right-2 flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button class="h-8 px-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: Lead Dossier Summary & Instant Context (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Card: Preferências Cadastradas -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Preferências Cadastradas</h2>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-semibold" type="button">Editar</button>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Objetivo</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Compra</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Tipologia</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Apartamento</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col col-span-2">
+<span class="font-label-sm text-label-sm text-outline">Orçamento Máximo</span>
+<span class="font-currency-display text-currency-display text-primary">R$ 650.000,00</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Bairro Principal</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Vila Mariana</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Configuração</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">2 Qts · 1 Vaga</span>
+</div>
+</div>
+</div>
+<!-- Card: Imóvel com Maior Compatibilidade -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">stars</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Top Compatibilidade</h2>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+            96% MATCH
+          </span>
+</div>
+<div class="relative rounded-xl overflow-hidden group">
+<img class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Charming residential apartment facade in Vila Mariana, modern architectural lines, balconies with warm evening interior lights and leafy trees in front." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFmoaR7TRf5LTvyaQ1G6YdNLzCzg0sbqJJheNXRMkF5EPJCwmKo9oRmABJpvE75NAfjtKoX7LXtM8C0ZYi0-HN3xABcrl8E6513ayg5awldHjlSEf68EJIsl_nWFW43WmEqcMvpv38Cxis9Z8YQe8H6Af9Y_EZt-JRb3_9HNgbyKsu5ZoPepl_6Inn3eORExXBK2wHyxx9HrPnUxGNN2o3boPGTOqaqNWvN1ne67p3"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface font-semibold">
+            Cód. AP-204
+          </div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Apartamento Mirante Paulista</h3>
+<span class="font-currency-table text-currency-table text-primary">R$ 620.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rua Domingos de Morais, Vila Mariana • 68m²</p>
+<div class="flex items-center gap-3 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">bed</span> 2 quartos</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">directions_car</span> 1 vaga</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">balcony</span> Varanda</span>
+</div>
+</div>
+<button class="w-full h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+          Ver detalhes do imóvel
+        </button>
+</div>
+<!-- Card: Próxima Tarefa Crítica -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">task_alt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Próxima Tarefa</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Automática</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-3">
+<input class="w-4 h-4 rounded text-primary mt-1 focus:ring-0 cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Confirmar interesse após a visita</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ligar ou disparar mensagem rápida com formulário de feedback do imóvel.</p>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-semibold mt-2">
+<span class="material-symbols-outlined text-[14px]">alarm</span>
+<span>Vence 14/10 às 16h30</span>
+</div>
+</div>
+</div>
+<button class="h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">add_task</span>
+          Criar nova tarefa para Rafael
+        </button>
+</div>
+<!-- Mini KPI Spark Summary -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Probabilidade de Fechamento</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Alta · 82%</span>
+</div>
+</div>
+<svg class="w-12 h-12 text-secondary shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="82, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Confirmation Toast / Action Feedback (Hidden State via JS) -->
+<div class="fixed bottom-6 right-6 bg-surface-container-lowest text-on-surface px-space-md py-3 rounded-xl shadow-xl border-l-4 border-secondary flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 z-50" id="toastNotification">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<span class="font-title-md text-title-md" id="toastMessage">Operação concluída com sucesso.</span>
+</div>
+<!-- Delete Modal Confirmation Backdrop & Dialog -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" id="deleteModal">
+<div class="bg-surface-container-lowest max-w-md w-full rounded-2xl shadow-2xl p-space-xl flex flex-col gap-space-lg transform transition-all">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Excluir Lead Definitivamente?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Tem certeza que deseja excluir o lead <strong>Rafael Almeida</strong>? Todas as interações associadas, notas e históricos serão removidas permanentemente.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="h-10 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="btnCancelDelete" type="button">
+          Cancelar
+        </button>
+<button class="h-10 px-5 rounded-lg bg-error text-on-error hover:bg-[#93000a] font-label-md text-label-md font-semibold transition-colors" id="btnConfirmDelete" type="button">
+          Sim, excluir lead
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const stageSelect = document.getElementById('stageSelect');
+    const btnUpdateStage = document.getElementById('btnUpdateStage');
+    const badge = document.getElementById('currentStatusBadge');
+    const toast = document.getElementById('toastNotification');
+    const toastMessage = document.getElementById('toastMessage');
+
+    const badgeStyles = {
+      'Novo': { bg: 'bg-[#F1F5F9]', text: 'text-[#475569]' },
+      'Contatado': { bg: 'bg-[#DBEAFE]', text: 'text-[#1E40AF]' },
+      'Qualificado': { bg: 'bg-[#E0E7FF]', text: 'text-[#4338CA]' },
+      'Visita agendada': { bg: 'bg-[#FEF3C7]', text: 'text-[#D97706]' },
+      'Negociação': { bg: 'bg-[#EDE9FE]', text: 'text-[#6D28D9]' },
+      'Ganho': { bg: 'bg-[#D1FAE5]', text: 'text-[#065F46]' },
+      'Perdido': { bg: 'bg-[#FEE2E2]', text: 'text-[#991B1B]' }
+    };
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastMessage.textContent = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    if (btnUpdateStage && stageSelect && badge) {
+      btnUpdateStage.addEventListener('click', () => {
+        const val = stageSelect.value;
+        badge.textContent = val;
+        
+        // Clear old classes
+        badge.className = 'px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase tracking-wide';
+        const st = badgeStyles[val] || { bg: 'bg-surface-container', text: 'text-on-surface' };
+        badge.classList.add(st.bg, st.text);
+
+        showToast('Estágio atualizado deliberadamente para: ' + val);
+      });
+    }
+
+    // Modal Handling
+    const modal = document.getElementById('deleteModal');
+    const btnOpenDelete = document.getElementById('btnOpenDeleteModal');
+    const btnCancelDelete = document.getElementById('btnCancelDelete');
+    const btnConfirmDelete = document.getElementById('btnConfirmDelete');
+
+    if (btnOpenDelete && modal) {
+      btnOpenDelete.addEventListener('click', () => modal.classList.remove('hidden'));
+    }
+    if (btnCancelDelete && modal) {
+      btnCancelDelete.addEventListener('click', () => modal.classList.add('hidden'));
+    }
+    if (btnConfirmDelete && modal) {
+      btnConfirmDelete.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        showToast('Lead Rafael Almeida removido.');
+      });
+    }
+
+    // Direct Visit Proposal Actions
+    const btnConfirmVisit = document.getElementById('btnConfirmVisit');
+    const btnRejectVisit = document.getElementById('btnRejectVisit');
+    const btnApplyPreferences = document.getElementById('btnApplyPreferences');
+
+    if (btnConfirmVisit) {
+      btnConfirmVisit.addEventListener('click', () => {
+        stageSelect.value = 'Visita agendada';
+        btnUpdateStage.click();
+        showToast('Visita confirmada e sincronizada com a Agenda!');
+        btnConfirmVisit.textContent = 'Visita confirmada no calendário';
+        btnConfirmVisit.disabled = true;
+        btnConfirmVisit.classList.add('opacity-75');
+      });
+    }
+
+    if (btnRejectVisit) {
+      btnRejectVisit.addEventListener('click', () => {
+        showToast('Proposta de visita rejeitada.');
+      });
+    }
+
+    if (btnApplyPreferences) {
+      btnApplyPreferences.addEventListener('click', () => {
+        showToast('Preferências da IA consolidadas na ficha do lead.');
+        btnApplyPreferences.textContent = 'Preferências Atualizadas!';
+      });
+    }
+
+    // Quick Composer chips
+    const quickChips = document.querySelectorAll('.quick-chip');
+    const copilotInput = document.getElementById('copilotInput');
+    quickChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        if (copilotInput) {
+          copilotInput.value = chip.innerText.trim();
+          copilotInput.focus();
+        }
+      });
+    });
+  })();
+</script></main></div></body></html>

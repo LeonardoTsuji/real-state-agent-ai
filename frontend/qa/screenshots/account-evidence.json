@@ -1,0 +1,240 @@
+{
+  "capturedAt": "2026-10-09T13:11:43.810Z",
+  "evidence": [
+    {
+      "name": "login",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "login",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "login",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "cadastro",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "cadastro",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "cadastro",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "detalhe-lead",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "detalhe-lead",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "detalhe-lead",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "preferencias-extraidas",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "preferencias-extraidas",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "preferencias-extraidas",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "preferencias",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "preferencias",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "preferencias",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "tarefas",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "tarefas",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "tarefas",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "perfil-corretora",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "perfil-corretora",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "perfil-corretora",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "acesso-negado",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "acesso-negado",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "acesso-negado",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "perfil-operador",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "perfil-operador",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "perfil-operador",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "operacoes-jobs",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "operacoes-jobs",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "operacoes-jobs",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "operacoes-job",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "operacoes-job",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "operacoes-job",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "operacoes-replay",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "operacoes-replay",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "operacoes-replay",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "name": "operacoes-metricas",
+      "width": 1440,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "name": "operacoes-metricas",
+      "width": 768,
+      "documentWidth": 768,
+      "viewportWidth": 768
+    },
+    {
+      "name": "operacoes-metricas",
+      "width": 390,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    }
+  ],
+  "failures": []
+}

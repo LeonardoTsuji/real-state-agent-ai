@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container":"#eaedff","tertiary-fixed":"#ffddb8","tertiary-container":"#996100","secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","secondary-fixed-dim":"#4edea3","on-secondary":"#ffffff","tertiary":"#784b00","surface-container-high":"#e2e7ff","on-secondary-fixed-variant":"#005236","primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#ffeedd","inverse-on-surface":"#eef0ff","on-surface":"#131b2e","on-tertiary-fixed":"#2a1700","secondary":"#006c49","on-primary-fixed":"#00174b","surface-dim":"#d2d9f4","secondary-fixed":"#6ffbbe","on-background":"#131b2e","surface":"#faf8ff","on-tertiary":"#ffffff","surface-variant":"#dae2fd","surface-container-low":"#f2f3ff","on-tertiary-fixed-variant":"#653e00","on-error":"#ffffff","primary-fixed":"#dbe1ff","on-secondary-fixed":"#002113","on-secondary-container":"#00714d","surface-tint":"#0053db","primary-container":"#2563eb","on-primary":"#ffffff","background":"#faf8ff","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-primary-container":"#eeefff","on-primary-fixed-variant":"#003ea8","on-surface-variant":"#434655","inverse-primary":"#b4c5ff","outline-variant":"#c3c6d7","outline":"#737686","error":"#ba1a1a","inverse-surface":"#283044","primary":"#004ac6","surface-bright":"#faf8ff","surface-container-highest":"#dae2fd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-sm":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"currency-display":["Manrope"],"headline-md":["Manrope"],"currency-table":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"label-md":["Inter"],"display-lg-mobile":["Manrope"],"headline-sm":["Manrope"],"headline-lg":["Manrope"],"body-sm":["Inter"]},"fontSize":{"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Corretor</span><span class="font-headline-sm text-headline-sm text-primary font-bold">Copilot</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Inteligência Imobiliária</span></div></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">OPERAÇÃO</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">person_search</span><span>Leads</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="funil" href="#"><span class="material-symbols-outlined text-[20px]">filter_alt</span><span>Funil de Vendas</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Imóveis</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Agenda</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span>Tarefas</span></a></nav></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">GESTÃO &amp; SISTEMA</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Operações</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Configurações</span></a></nav></div></div><div class="p-space-md border-t border-outline-variant/20"><div class="bg-surface-container-low border border-primary-fixed-dim/40 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-2"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Copilot Ativo</span><span class="font-label-sm text-[10px] text-secondary font-medium">Online · IA Conectada</span></div></div><span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-[16px] text-primary">domain</span><span class="text-on-surface font-semibold">Painel Corretor</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">Gestão Ativa</span></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">schedule</span><span>14:32 BRT (GMT-3)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 border border-secondary-fixed-dim/60 text-on-secondary-container"><span class="material-symbols-outlined text-[15px]">arrow_back_ios_new</span><span class="font-label-sm text-label-sm font-semibold">Copilot Pronto</span></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-5 w-px bg-outline-variant/30"></div><div class="flex items-center gap-3 pl-1"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Corretora Autônoma · CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- BREADCRUMB / HERO CONTEXT -->
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-1">
+<span>Painel Corretor</span>
+<span class="text-outline-variant">/</span>
+<span>Gestão Ativa</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Agenda de Visitas</span>
+</div>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Agenda &amp; Encaixes Operacionais</h1>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            Turnê Dupla Confirmada
+          </span>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sincronizado com Google Agenda</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 hover:bg-primary-container transition-all shadow-md hover:shadow-lg active:scale-[0.99]">
+<span class="material-symbols-outlined text-[18px]">add_alarm</span>
+<span>Novo Compromisso</span>
+</button>
+</div>
+</div>
+<!-- HIGH-PRIORITY SUCCESS RESOLUTION BANNER -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-secondary/15 via-secondary-container/30 to-surface-container-low p-space-lg shadow-sm">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col xl:flex-row xl:items-center justify-between gap-space-md z-10">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">🎉 Juliana Rios confirmou o encaixe para as 14:00 via WhatsApp!</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                Zero Ociosidade
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-4xl">
+              A pré-reserva de cancelamento foi convertida automaticamente em visita confirmada. O evento no Google Agenda foi sincronizado, a rota urbana foi otimizada (<span class="font-semibold text-on-surface">Vila Mariana ➔ Moema</span>) e a autorização de acesso já foi transmitida à portaria do Edifício Mirante Paulista.
+            </p>
+</div>
+</div>
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm shrink-0 self-end xl:self-center">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-secondary font-label-md text-label-md font-semibold flex items-center gap-2 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Abrir Conversa WhatsApp</span>
+</button>
+<button class="px-4 py-2.5 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md font-semibold flex items-center gap-2 shadow-md transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px]">route</span>
+<span>Ver Roteiro da Tarde (2 Visitas)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MAIN OPERATIONAL VIEW: 2 COLUMNS (65% TIMELINE / 35% WA & COPILOT DETAIL) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: TIMELINE (8 cols ~ 66%) -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-md">
+<!-- TIME HORIZON FILTER & METRICS BAR -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<!-- Filter Chips -->
+<div class="flex items-center gap-1.5 p-1 bg-surface-container-low rounded-lg">
+<button class="px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-xs flex items-center gap-1.5">
+<span>Hoje (14/10)</span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">
+                Esta Semana
+              </button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">
+                Próximos 15 dias
+              </button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">
+                Mês
+              </button>
+</div>
+<!-- Date display & quick calendar step -->
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<button class="p-1 rounded-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="font-semibold text-on-surface">Quarta-feira, 14 de Outubro de 2026</span>
+<button class="p-1 rounded-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- KPI Summary Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-2">
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-md bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Realizadas Hoje</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">1 Concluída</span>
+</div>
+</div>
+<div class="bg-secondary-container/20 p-3 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-md bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Confirmadas Hoje</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">2 Visitas · Turnê</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-md bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aproveitamento</span>
+<span class="font-title-md text-title-md text-primary font-bold">100% dos Slots</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TIMELINE CONTAINER -->
+<div class="space-y-space-md">
+<!-- 1. ITEM 10:00 - COMPLETED -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex items-start gap-space-md">
+<div class="flex flex-col items-center justify-center w-14 shrink-0 text-center">
+<span class="font-currency-table text-currency-table font-bold text-on-surface">10:00</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">11:00</span>
+<span class="mt-2 w-2 h-2 rounded-full bg-outline"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Concluída</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lead: Carlos Eduardo Silveira</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Studio Perdizes Prime (Unidade 42)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rua Cardoso de Almeida, 920 · Perdizes · R$ 490.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-medium bg-secondary-container/20 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                Feedback coletado
+              </span>
+<button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- 2. TRANSITION / LUNCH BREAK SLOT -->
+<div class="bg-surface-container-low rounded-xl px-space-md py-3 flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-center justify-center w-14 shrink-0 text-center">
+<span class="font-label-sm text-label-sm font-semibold text-outline">11:00</span>
+<span class="font-label-sm text-[10px] text-outline">13:45</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary">restaurant</span>
+<span>Intervalo / Almoço &amp; Deslocamento Livre</span>
+<span class="text-outline-variant font-normal">· Janela de recuperação concluída com encaixe</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">2h 45m livres</span>
+</div>
+<!-- 3. HIGHLIGHTED CARD: 14:00 CONFIRMED SLOT -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl shadow-md p-space-lg transition-all hover:shadow-lg">
+<!-- Left Emerald Accent Pill -->
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-secondary"></div>
+<div class="flex flex-col gap-space-md pl-1">
+<!-- Top Metadata Header -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-2">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-xs">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    Confirmada via WhatsApp IA
+                  </span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+                    Encaixe Inteligente Bem-sucedido
+                  </span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">mark_chat_read</span>
+<span>Confirmado às 14:38 via WhatsApp</span>
+</div>
+</div>
+<!-- Main Slot Info & Lead Preview -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<!-- Time Block -->
+<div class="md:col-span-2 flex flex-col justify-center">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-tight">14:00</span>
+<span class="font-label-md text-label-md text-on-surface-variant">até 15:00</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Horário de Pico</span>
+</div>
+<!-- Lead Profile -->
+<div class="md:col-span-5 flex items-center gap-3 bg-surface-container-low p-3 rounded-xl">
+<img class="w-12 h-12 rounded-full object-cover shrink-0 shadow-sm" data-alt="Professional headshot portrait of Juliana Rios, an elegant Brazilian businesswoman in her mid-thirties with natural makeup and confident smile, wearing a beige blazer against clean architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpTgKwpl00Y4ZE4ipASU-tJe3GdXSQDlxZ3zHrxwiE-_z9ms2YUQp2eI_xreSFzD7no1KOiJ6qvJvpf2HVsRln7fSF3Ku2hcbp0iGTlQYCVjQXi1Oe6TY9aq5Kr27D_3JsRIylv9cIrZkF8YXtouHf3uOdsN7noKuLMr52_6Y9EDVMoD07FEgkTeLVtc_03Avvmc5BbCw3jGPg2aqRZ3YfjgnKLc6bA3opJVOVwjhXUTgu49IjtmGxFg"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Juliana Rios</span>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Perfil Verificado">verified</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold uppercase tracking-wider">Lead Quente</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Score 92</span>
+</div>
+</div>
+</div>
+<!-- Property Snapshot -->
+<div class="md:col-span-5 flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Imóvel Encaixado</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Edifício Mirante Paulista (AP-204)</span>
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Vila Mariana</span>
+<span>·</span>
+<span class="font-semibold text-on-surface">R$ 620.000</span>
+<span>·</span>
+<span>68m² (2 Q)</span>
+</div>
+</div>
+</div>
+<!-- Operational Logistics Badges -->
+<div class="bg-surface-container p-3 rounded-xl flex flex-wrap items-center justify-between gap-space-sm text-on-surface">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">key</span>
+<span>Chave liberada com Zelador <span class="font-semibold text-on-surface">Seu Antenor</span> (Portaria C - Rua Domingos de Morais, 1240)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[15px] text-secondary">navigation</span>
+                    Alerta Waze ativado
+                  </span>
+<span class="px-2.5 py-1 rounded bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                    Visitante Autorizado
+                  </span>
+</div>
+</div>
+<!-- Bottom Card Quick Action Buttons -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2">
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-2 hover:bg-primary-container transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">login</span>
+<span>Check-in na Chegada</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">apartment</span>
+<span>Abrir Ficha do Imóvel</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-2 rounded-lg text-primary hover:bg-surface-container transition-colors font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">share_location</span>
+<span>Compartilhar Rota</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. LOGISTICAL ROUTE CONNECTOR (15:00 - 16:30) -->
+<div class="relative pl-6 py-2">
+<div class="bg-gradient-to-r from-surface-container-lowest to-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[20px]">directions_car</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Deslocamento Otimizado da Turnê Dupla</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/60 text-secondary font-label-sm text-[11px] font-bold">12 min · 4,3 km</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Vila Mariana ➔ Moema via Av. 23 de Maio / Av. Ibirapuera. Folga confortável de <span class="font-semibold text-on-surface">1h18</span> para alinhamento ou café com Juliana.
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-center shrink-0">
+<span class="px-3 py-1 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">traffic</span>
+                  Trânsito Livre · Chegada estimada 15:18
+                </span>
+</div>
+</div>
+</div>
+<!-- 5. ANCHOR VISIT: 16:30 COBERTURA MOEMA -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start gap-space-md">
+<div class="flex flex-col items-center justify-center w-14 shrink-0 text-center">
+<span class="font-currency-table text-currency-table font-bold text-on-surface">16:30</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">17:30</span>
+<span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Confirmada</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">Visita Âncora da Tarde</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Juliana Rios</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Cobertura Duplex Moema (Unidade 1801)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Av. Juriti, 540 · Moema Pássaros · R$ 1.450.000 (142m²)</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold bg-primary-fixed/40 px-2.5 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">map</span>
+                Ponto Final da Rota
+              </span>
+<button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: DETAILED PANEL & LIVE WHATSAPP CONVERSATION (4 cols ~ 34%) -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-md">
+<!-- CONTEXT HEADER CARD -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold font-label-sm text-label-sm">
+                #ENC
+              </div>
+<span class="font-title-md text-title-md font-bold text-on-surface">Visita #ENC-8924</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span>
+              Confirmada em Tempo Real
+            </span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">
+            Auditoria: Disparo de oportunidade executado às <span class="font-semibold text-on-surface">14:33</span> · Confirmação recebida às <span class="font-semibold text-on-surface">14:38</span> (5 min total).
+          </div>
+</div>
+<!-- WHATSAPP CONVERSATION SIMULATION CARD -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col">
+<!-- WhatsApp Mock Header -->
+<div class="bg-surface-container px-space-md py-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-xs" data-alt="Portrait closeup of Juliana Rios, stylish executive with warm expression wearing navy blazer, optimized for messenger profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9lhJQRldveQC2e19vHby-o96BdLRgr4ImaTRzaYFC6vhcmQ_3NilgywdoCT9oK05ksLeMtKOUyZ_xP4R7RbGWq6VeiyaKty_P5whjqUrDHcyh3094U5kXuGUye5JqQRBvQGmIu-_n6CxTnoo--96Ryy-lcRnj7zsV7CQVbw4aDD_NJdJTv39DlNoAsjE8ga1BM6phUt3pq4amkarAAZUqF6kwAgzGjClIKAvSyalfzIAUCL7IOQZ9EQ"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold text-on-surface">Juliana Rios</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">forum</span>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold">+55 11 97123-4567 · Online agora</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Chat Conversation Scroll Area -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-3 min-h-[380px] max-h-[440px] overflow-y-auto">
+<!-- System Timestamp Divider -->
+<div class="flex items-center justify-center my-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase font-semibold">
+                Hoje · 14 de Outubro
+              </span>
+</div>
+<!-- Bubble 1: Outgoing from Corretor Copilot -->
+<div class="flex flex-col items-end self-end max-w-[88%]">
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-xs p-3.5 shadow-sm">
+<div class="flex items-center gap-1.5 mb-1 opacity-80 text-[11px] font-label-sm">
+<span class="material-symbols-outlined text-[13px]">auto_awesome</span>
+<span>Corretor Copilot (Marina)</span>
+</div>
+<p class="font-body-sm text-body-sm leading-relaxed">
+                  Oi Juliana! Tudo bem? Como já temos nossa visita marcada hoje às 16:30 na Cobertura em Moema, tive um cancelamento às 14:00 e liberou um horário perfeito no <strong class="font-bold underline decoration-white/40">Edifício Mirante Paulista</strong> (aquele apê de 68m² na Vila Mariana com varanda gourmet que você favoritou).
+                </p>
+<p class="font-body-sm text-body-sm leading-relaxed mt-2">
+                  Fica a apenas 12 min de Moema. Gostaria de passar lá comigo antes? Consigo segurar essa vaga pra você até 15:15!
+                </p>
+<div class="flex items-center justify-end gap-1 mt-1.5 opacity-70">
+<span class="font-label-sm text-[10px]">14:33</span>
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+</div>
+</div>
+</div>
+<!-- Bubble 2: Incoming from Juliana Rios -->
+<div class="flex flex-col items-start self-start max-w-[88%]">
+<div class="bg-surface-container-lowest text-on-surface rounded-2xl rounded-tl-xs p-3.5 shadow-sm">
+<span class="font-label-sm text-[11px] text-primary font-semibold block mb-0.5">Juliana Rios</span>
+<p class="font-body-sm text-body-sm leading-relaxed text-on-surface">
+                  Nossa Marina, perfeito!! Estava justamente pensando em ver esse apartamento também. Pode confirmar sim! Estarei lá às 14h pontual na portaria. Obrigada por avisar! 😊👍
+                </p>
+<div class="flex items-center justify-end gap-1 mt-1 opacity-60">
+<span class="font-label-sm text-[10px]">14:38</span>
+</div>
+</div>
+</div>
+<!-- Bubble 3: Outgoing Automated Confirmation Response -->
+<div class="flex flex-col items-end self-end max-w-[88%]">
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-xs p-3.5 shadow-sm">
+<div class="flex items-center gap-1.5 mb-1 opacity-80 text-[11px] font-label-sm">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+<span>Confirmação Automatizada</span>
+</div>
+<p class="font-body-sm text-body-sm leading-relaxed">
+                  Excelente, Juliana! Confirmadíssimo para as 14:00 no Edifício Mirante Paulista (Rua Domingos de Morais, 1240). Já deixei seu nome liberado na portaria com o Seu Antenor. Nos vemos em breve!
+                </p>
+<div class="flex items-center justify-end gap-1 mt-1.5 opacity-70">
+<span class="font-label-sm text-[10px]">14:38</span>
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Status Bar -->
+<div class="bg-surface-container-lowest px-space-md py-2.5 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              Thread sincronizada no CRM
+            </span>
+<span class="font-label-sm text-[11px]">Canal WhatsApp Business API</span>
+</div>
+</div>
+<!-- COPILOT IMPACT METRICS -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">analytics</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Ganhos da Otimização</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Copilot Insights</span>
+</div>
+<div class="space-y-2.5">
+<div class="p-3 rounded-xl bg-secondary-container/25 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">payments</span>
+<span class="font-label-md text-label-md text-on-surface">VGV Recuperado na Janela</span>
+</div>
+<span class="font-currency-display text-currency-display text-secondary font-bold">+ R$ 620.000</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary">hourglass_empty</span>
+<span class="font-label-md text-label-md text-on-surface">Tempo Ocioso Evitado</span>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">1h 15m salvos</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">person_off</span>
+<span class="font-label-md text-label-md text-on-surface">Fila de Espera (Thiago Prado)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Desativada c/ sucesso</span>
+</div>
+</div>
+</div>
+<!-- ACTION CTAs -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-2.5">
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-md hover:bg-primary-container transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px]">navigation</span>
+<span>Iniciar Rota no Waze / Google Maps</span>
+</button>
+<button class="w-full py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>Enviar Lembrete Automático 30 min antes</span>
+</button>
+<button class="w-full py-2 rounded-xl text-primary hover:bg-primary-fixed/30 font-label-md text-label-md font-medium flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Gerar Folha de Visita &amp; Ficha Cadastral</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

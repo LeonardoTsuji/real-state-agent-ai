@@ -1,0 +1,645 @@
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/generated/prisma"
+  moduleFormat = "esm"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum BrokerRole {
+  BROKER
+  OPERATOR
+}
+
+enum PropertyPurpose {
+  SALE
+  RENT
+}
+
+enum PropertyType {
+  APARTMENT
+  HOUSE
+  LAND
+  COMMERCIAL
+}
+
+enum LeadStage {
+  NEW
+  CONTACTED
+  QUALIFIED
+  VISIT_SCHEDULED
+  NEGOTIATION
+  WON
+  LOST
+}
+
+enum MatchStatus {
+  SUGGESTED
+  SENT
+  INTERESTED
+  REJECTED
+}
+
+enum VisitStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELED
+}
+
+enum InteractionType {
+  CALL
+  EMAIL
+  WHATSAPP
+  MEETING
+  NOTE
+  OTHER
+}
+
+enum TaskStatus {
+  PENDING
+  COMPLETED
+  CANCELED
+}
+
+enum AsyncJobStatus {
+  WAITING
+  ACTIVE
+  COMPLETED
+  FAILED
+  CANCELED
+}
+
+enum OutboxStatus {
+  PENDING
+  PUBLISHED
+  CANCELED
+}
+
+enum FollowUpStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELED
+}
+
+enum MessageStatus {
+  QUEUED
+  SENT
+  FAILED
+}
+
+enum MessageRole {
+  USER
+  ASSISTANT
+  TOOL
+}
+
+enum ProposalStatus {
+  PENDING
+  CONFIRMING
+  CONFIRMED
+  REJECTED
+  EXPIRED
+}
+
+model Broker {
+  id           String     @id @default(uuid()) @db.Uuid
+  name         String     @db.VarChar(120)
+  email        String     @unique @db.VarChar(254)
+  passwordHash String     @map("password_hash")
+  role         BrokerRole @default(BROKER)
+  creci String?
+  monthlyGoalCents Int @default(12000000)
+  leadImportBatches LeadImportBatch[]
+  opportunities Opportunity[]
+  installments Installment[]
+  commercialDocuments CommercialDocument[]
+  leads        Lead[]
+  properties   Property[]
+  preferences  LeadPreference[]
+  matches      LeadPropertyMatch[]
+  visits       Visit[]
+  canceledVisits Visit[] @relation("VisitCanceledBy")
+  interactions Interaction[]
+  tasks        Task[]
+  stageHistory LeadStageHistory[]
+  stageChanges LeadStageHistory[] @relation("StageChangedBy")
+  auditLogs    AuditLog[] @relation("AuditOwner")
+  actorLogs    AuditLog[] @relation("AuditActor")
+  followUps    FollowUp[]
+  conversations Conversation[]
+  toolExecutions ToolExecution[]
+  actionProposals ActionProposal[]
+  aiDailyBudgets AiDailyBudget[]
+  importBatches PropertyImportBatch[]
+  createdAt    DateTime   @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt    DateTime   @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@map("brokers")
+}
+
+model Lead {
+  id        String   @id @default(uuid()) @db.Uuid
+  brokerId  String   @map("broker_id") @db.Uuid
+  broker    Broker   @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  name      String   @db.VarChar(120)
+  email     String?  @db.VarChar(254)
+  phone     String?  @db.VarChar(20)
+  notes     String?  @db.VarChar(2000)
+  stage     LeadStage @default(NEW)
+  source String?
+  profile String?
+  deletedAt DateTime? @map("deleted_at") @db.Timestamptz(3)
+  preference LeadPreference?
+  matches   LeadPropertyMatch[]
+  visits    Visit[]
+  interactions Interaction[]
+  tasks     Task[]
+  followUps FollowUp[]
+  conversations Conversation[]
+  stageHistory LeadStageHistory[]
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([brokerId, createdAt, id])
+  @@index([brokerId, stage, deletedAt])
+  @@unique([id, brokerId])
+  @@map("leads")
+}
+
+model Property {
+  id             String          @id @default(uuid()) @db.Uuid
+  brokerId       String          @map("broker_id") @db.Uuid
+  broker         Broker          @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  title          String          @db.VarChar(160)
+  code String?
+  address String?
+  subtype String?
+  availability String?
+  areaM2 Float?
+  suites Int?
+  bathrooms Int?
+  condominiumCents Int?
+  iptuCents Int?
+  amenities String[] @default([])
+  media Json?
+  accessInfo Json?
+  accessNotes String?
+  externalKey    String?         @map("external_key") @db.VarChar(160)
+  description    String?         @db.VarChar(5000)
+  purpose        PropertyPurpose
+  type           PropertyType
+  priceCents     Int             @map("price_cents")
+  city           String          @db.VarChar(120)
+  neighborhood   String          @db.VarChar(120)
+  bedrooms       Int
+  parkingSpaces  Int             @map("parking_spaces")
+  createdAt      DateTime        @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt      DateTime        @updatedAt @map("updated_at") @db.Timestamptz(3)
+  deletedAt      DateTime?       @map("deleted_at") @db.Timestamptz(3)
+  matches        LeadPropertyMatch[]
+  visits         Visit[]
+
+  @@index([brokerId, createdAt, id])
+  @@index([brokerId, purpose, type, priceCents])
+  @@unique([id, brokerId])
+  @@unique([brokerId, externalKey])
+  @@map("properties")
+}
+
+model LeadPreference {
+  id               String   @id @default(uuid()) @db.Uuid
+  brokerId         String   @map("broker_id") @db.Uuid
+  broker           Broker   @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId           String   @unique @map("lead_id") @db.Uuid
+  lead             Lead     @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  purposes         PropertyPurpose[] @default([])
+  types            PropertyType[] @default([])
+  minPriceCents    Int?     @map("min_price_cents")
+  maxPriceCents    Int?     @map("max_price_cents")
+  minBedrooms      Int?     @map("min_bedrooms")
+  maxBedrooms      Int?     @map("max_bedrooms")
+  minParkingSpaces Int?     @map("min_parking_spaces")
+  maxParkingSpaces Int?     @map("max_parking_spaces")
+  neighborhoods    String[] @default([])
+  notes            String?  @db.VarChar(2000)
+  createdAt        DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt        DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([brokerId, leadId])
+  @@unique([leadId, brokerId])
+  @@map("lead_preferences")
+}
+
+model LeadPropertyMatch {
+  id              String @id @default(uuid()) @db.Uuid
+  brokerId        String @map("broker_id") @db.Uuid
+  broker          Broker @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId          String @map("lead_id") @db.Uuid
+  lead            Lead @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  propertyId      String @map("property_id") @db.Uuid
+  property        Property @relation(fields: [propertyId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  notes String?
+  score           Int
+  status          MatchStatus @default(SUGGESTED)
+  rejectionReason String? @map("rejection_reason") @db.VarChar(500)
+  createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@unique([leadId, propertyId])
+  @@index([brokerId, leadId, createdAt, id])
+  @@map("lead_property_matches")
+}
+
+model Visit {
+  id           String @id @default(uuid()) @db.Uuid
+  brokerId     String @map("broker_id") @db.Uuid
+  broker       Broker @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId       String @map("lead_id") @db.Uuid
+  lead         Lead @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  propertyId   String @map("property_id") @db.Uuid
+  property     Property @relation(fields: [propertyId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  startAt      DateTime @map("start_at") @db.Timestamptz(3)
+  endAt        DateTime @map("end_at") @db.Timestamptz(3)
+  status       VisitStatus @default(SCHEDULED)
+  notes String? @db.VarChar(2000)
+  cancellationReason String? @db.VarChar(1000)
+  rescheduleReason String? @db.VarChar(1000)
+  checkedInAt DateTime? @db.Timestamptz(3)
+  checklist Json?
+  feedback Json?
+  feedbackDraft Json?
+  idempotencyKey String @unique @map("idempotency_key") @db.VarChar(200)
+  canceledAt   DateTime? @map("canceled_at") @db.Timestamptz(3)
+  canceledById String? @map("canceled_by_id") @db.Uuid
+  canceledBy   Broker? @relation("VisitCanceledBy", fields: [canceledById], references: [id], onDelete: Restrict)
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt    DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([brokerId, startAt, id])
+  @@index([brokerId, status, startAt])
+  @@map("visits")
+}
+
+model Interaction {
+  id         String @id @default(uuid()) @db.Uuid
+  brokerId   String @map("broker_id") @db.Uuid
+  broker     Broker @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId     String @map("lead_id") @db.Uuid
+  lead       Lead @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  type       InteractionType
+  occurredAt DateTime @map("occurred_at") @db.Timestamptz(3)
+  summary    String @db.VarChar(2000)
+  channel    String? @db.VarChar(80)
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@index([brokerId, leadId, occurredAt, id])
+  @@map("interactions")
+}
+
+model Task {
+  id        String @id @default(uuid()) @db.Uuid
+  brokerId  String @map("broker_id") @db.Uuid
+  broker    Broker @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId    String @map("lead_id") @db.Uuid
+  lead      Lead @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  title     String @db.VarChar(200)
+  dueAt     DateTime @map("due_at") @db.Timestamptz(3)
+  status    TaskStatus @default(PENDING)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([brokerId, status, dueAt, id])
+  @@index([brokerId, leadId, status, dueAt])
+  @@map("tasks")
+}
+
+model LeadStageHistory {
+  id        String @id @default(uuid()) @db.Uuid
+  brokerId  String @map("broker_id") @db.Uuid
+  broker    Broker @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId    String @map("lead_id") @db.Uuid
+  lead      Lead @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  actorId   String @map("actor_id") @db.Uuid
+  actor     Broker @relation("StageChangedBy", fields: [actorId], references: [id], onDelete: Restrict)
+  fromStage LeadStage? @map("from_stage")
+  toStage   LeadStage @map("to_stage")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@index([brokerId, leadId, createdAt, id])
+  @@map("lead_stage_history")
+}
+
+model AuditLog {
+  id         String @id @default(uuid()) @db.Uuid
+  brokerId   String @map("broker_id") @db.Uuid
+  broker     Broker @relation("AuditOwner", fields: [brokerId], references: [id], onDelete: Restrict)
+  actorId    String @map("actor_id") @db.Uuid
+  actor      Broker @relation("AuditActor", fields: [actorId], references: [id], onDelete: Restrict)
+  entityType String @map("entity_type") @db.VarChar(80)
+  entityId   String @map("entity_id") @db.Uuid
+  action     String @db.VarChar(40)
+  occurredAt DateTime @default(now()) @map("occurred_at") @db.Timestamptz(3)
+  requestId  String? @map("request_id") @db.VarChar(120)
+  changes    Json?
+
+  @@index([brokerId, occurredAt, id])
+  @@index([brokerId, entityType, entityId, occurredAt])
+  @@map("audit_logs")
+}
+
+model AsyncJob {
+  id              String        @id @default(uuid()) @db.Uuid
+  type            String        @db.VarChar(80)
+  payloadVersion  Int           @default(1) @map("payload_version")
+  idempotencyKey  String        @unique @map("idempotency_key") @db.VarChar(200)
+  aggregateType   String        @map("aggregate_type") @db.VarChar(80)
+  aggregateId     String        @map("aggregate_id") @db.VarChar(120)
+  payload         Json
+  correlationId   String?       @map("correlation_id") @db.VarChar(64)
+  status          AsyncJobStatus @default(WAITING)
+  attempts        Int           @default(0)
+  maxAttempts     Int           @default(5) @map("max_attempts")
+  runAt           DateTime      @default(now()) @map("run_at") @db.Timestamptz(3)
+  nextRetryAt     DateTime?     @map("next_retry_at") @db.Timestamptz(3)
+  failureCode     String?       @map("failure_code") @db.VarChar(80)
+  failureMessage  String?       @map("failure_message") @db.VarChar(240)
+  startedAt       DateTime?     @map("started_at") @db.Timestamptz(3)
+  finishedAt      DateTime?     @map("finished_at") @db.Timestamptz(3)
+  outbox          OutboxEvent?
+  createdAt       DateTime      @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime      @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([status, runAt])
+  @@index([aggregateType, aggregateId])
+  @@index([correlationId])
+  @@map("async_jobs")
+}
+
+model OutboxEvent {
+  id          String       @id @default(uuid()) @db.Uuid
+  jobId       String       @unique @map("job_id") @db.Uuid
+  job         AsyncJob     @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  status      OutboxStatus @default(PENDING)
+  attempts    Int          @default(0)
+  leaseUntil  DateTime?    @map("lease_until") @db.Timestamptz(3)
+  publishedAt DateTime?    @map("published_at") @db.Timestamptz(3)
+  lastError   String?      @map("last_error") @db.VarChar(160)
+  createdAt   DateTime     @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@index([status, leaseUntil, createdAt])
+  @@map("outbox_events")
+}
+
+model JobReceipt {
+  id             String   @id @default(uuid()) @db.Uuid
+  idempotencyKey String   @unique @map("idempotency_key") @db.VarChar(200)
+  jobId          String   @map("job_id") @db.Uuid
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@map("job_receipts")
+}
+
+model FollowUp {
+  id          String         @id @default(uuid()) @db.Uuid
+  brokerId    String         @map("broker_id") @db.Uuid
+  broker      Broker         @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId      String         @map("lead_id") @db.Uuid
+  lead        Lead           @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  title       String         @db.VarChar(200)
+  idempotencyKey String      @unique @map("idempotency_key") @db.VarChar(200)
+  dueAt       DateTime       @map("due_at") @db.Timestamptz(3)
+  timezone    String         @db.VarChar(80)
+  status      FollowUpStatus @default(SCHEDULED)
+  jobId       String?        @map("job_id") @db.Uuid
+  executedAt  DateTime?      @map("executed_at") @db.Timestamptz(3)
+  createdAt   DateTime       @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt   DateTime       @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([brokerId, status, dueAt])
+  @@map("follow_ups")
+}
+
+model PropertyImportBatch {
+  id           String   @id @default(uuid()) @db.Uuid
+  brokerId     String   @map("broker_id") @db.Uuid
+  broker       Broker   @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  idempotencyKey String @unique @map("idempotency_key") @db.VarChar(200)
+  input        Json
+  report       Json?
+  jobId        String?  @map("job_id") @db.Uuid
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  completedAt  DateTime? @map("completed_at") @db.Timestamptz(3)
+
+  @@index([brokerId, createdAt])
+  @@map("property_import_batches")
+}
+
+model Conversation {
+  id        String    @id @default(uuid()) @db.Uuid
+  brokerId  String    @map("broker_id") @db.Uuid
+  broker    Broker    @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  leadId    String    @map("lead_id") @db.Uuid
+  lead      Lead      @relation(fields: [leadId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  messages  Message[]
+  toolExecutions ToolExecution[]
+  actionProposals ActionProposal[]
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@unique([id, brokerId])
+  @@index([brokerId, leadId])
+  @@map("conversations")
+}
+
+model Message {
+  id              String        @id @default(uuid()) @db.Uuid
+  brokerId        String        @map("broker_id") @db.Uuid
+  conversationId  String        @map("conversation_id") @db.Uuid
+  conversation    Conversation  @relation(fields: [conversationId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  idempotencyKey  String        @unique @map("idempotency_key") @db.VarChar(200)
+  body            String        @db.VarChar(4000)
+  role            MessageRole   @default(ASSISTANT)
+  status          MessageStatus @default(QUEUED)
+  jobId           String?       @map("job_id") @db.Uuid
+  sentAt          DateTime?     @map("sent_at") @db.Timestamptz(3)
+  failureMessage  String?       @map("failure_message") @db.VarChar(240)
+  createdAt       DateTime      @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@index([brokerId, conversationId, createdAt])
+  @@map("messages")
+}
+
+model ToolExecution {
+  id             String   @id @default(uuid()) @db.Uuid
+  brokerId       String   @map("broker_id") @db.Uuid
+  broker         Broker   @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  conversationId String?  @map("conversation_id") @db.Uuid
+  conversation   Conversation? @relation(fields: [conversationId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  correlationId  String   @map("correlation_id") @db.VarChar(120)
+  toolName       String   @map("tool_name") @db.VarChar(80)
+  status         String   @db.VarChar(24)
+  resultCode     String?  @map("result_code") @db.VarChar(80)
+  durationMs     Int      @map("duration_ms")
+  tokenCount     Int      @default(0) @map("token_count")
+  modelVersion   String?  @map("model_version") @db.VarChar(120)
+  promptVersion  String?  @map("prompt_version") @db.VarChar(80)
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@index([brokerId, conversationId, createdAt])
+  @@map("tool_executions")
+}
+
+model AiDailyBudget {
+  brokerId       String   @map("broker_id") @db.Uuid
+  broker         Broker   @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  day            DateTime @db.Date
+  reservedTokens Int      @default(0) @map("reserved_tokens")
+  requests       Int      @default(0)
+  updatedAt      DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@id([brokerId, day])
+  @@map("ai_daily_budgets")
+}
+
+model ActionProposal {
+  id             String         @id @default(uuid()) @db.Uuid
+  brokerId       String         @map("broker_id") @db.Uuid
+  broker         Broker         @relation(fields: [brokerId], references: [id], onDelete: Restrict)
+  conversationId String         @map("conversation_id") @db.Uuid
+  conversation   Conversation  @relation(fields: [conversationId, brokerId], references: [id, brokerId], onDelete: Restrict)
+  actionType     String         @map("action_type") @db.VarChar(80)
+  arguments      Json
+  argumentsHash  String         @map("arguments_hash") @db.VarChar(64)
+  summary        String         @db.VarChar(500)
+  status         ProposalStatus @default(PENDING)
+  expiresAt      DateTime       @map("expires_at") @db.Timestamptz(3)
+  idempotencyKey String         @unique @map("idempotency_key") @db.VarChar(200)
+  createdAt      DateTime       @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt      DateTime       @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([brokerId, conversationId, status, expiresAt])
+  @@map("action_proposals")
+}
+
+model SimulatedCalendarEvent {
+  id             String   @id @default(uuid()) @db.Uuid
+  idempotencyKey String   @unique @map("idempotency_key") @db.VarChar(200)
+  visitId        String   @map("visit_id") @db.Uuid
+  remoteId       String   @unique @map("remote_id") @db.VarChar(120)
+  state          String   @db.VarChar(20)
+  startAt        DateTime @map("start_at") @db.Timestamptz(3)
+  updatedAt      DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@map("simulated_calendar_events")
+}
+
+enum ReservationStatus {
+  PENDING
+  CONFIRMED
+  CANCELED
+  EXPIRED
+}
+enum ReservationStrategy {
+  ADD_PROPERTY
+  RESCHEDULE
+}
+model CalendarOccupancy {
+  id String @id @default(uuid()) @db.Uuid
+  brokerId String @db.Uuid
+  resourceType String
+  resourceId String @db.Uuid
+  startAt DateTime @db.Timestamptz(3)
+  endAt DateTime @db.Timestamptz(3)
+  @@unique([resourceType, resourceId])
+  @@index([brokerId, startAt])
+  @@map("calendar_occupancies")
+}
+model Reservation {
+  id String @id @default(uuid()) @db.Uuid
+  brokerId String @db.Uuid
+  leadId String @db.Uuid
+  propertyId String @db.Uuid
+  visitId String? @db.Uuid
+  strategy ReservationStrategy
+  status ReservationStatus @default(PENDING)
+  startAt DateTime @db.Timestamptz(3)
+  endAt DateTime @db.Timestamptz(3)
+  expiresAt DateTime @db.Timestamptz(3)
+  idempotencyKey String @unique
+  messageId String? @db.Uuid
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  @@index([brokerId, status, expiresAt])
+  @@map("reservations")
+}
+model CalendarBlock {
+  id String @id @default(uuid()) @db.Uuid
+  brokerId String @db.Uuid
+  title String @db.VarChar(200)
+  startAt DateTime @db.Timestamptz(3)
+  endAt DateTime @db.Timestamptz(3)
+  idempotencyKey String @unique
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  @@index([brokerId, startAt])
+  @@map("calendar_blocks")
+}
+model Opportunity {
+  id String @id @default(uuid()) @db.Uuid
+  brokerId String @db.Uuid
+  broker Broker @relation(fields:[brokerId], references:[id], onDelete:Restrict)
+  leadId String @db.Uuid
+  propertyId String? @db.Uuid
+  alternativePropertyId String? @db.Uuid
+  stage String @default("FIRST_CONTACT")
+  estimatedValueCents Int
+  commissionBps Int @default(600)
+  title String?
+  proposal Json?
+  acceptance Json?
+  installments Installment[]
+  documents CommercialDocument[]
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+  @@unique([id,brokerId])
+  @@index([brokerId, stage])
+  @@map("opportunities")
+}
+model Installment {
+  id String @id @default(uuid()) @db.Uuid
+  brokerId String @db.Uuid
+  broker Broker @relation(fields:[brokerId], references:[id], onDelete:Restrict)
+  opportunityId String @db.Uuid
+  opportunity Opportunity @relation(fields:[opportunityId,brokerId], references:[id,brokerId], onDelete:Restrict)
+  amountCents Int
+  dueAt DateTime? @db.Timestamptz(3)
+  paidAt DateTime? @db.Timestamptz(3)
+  status String @default("PENDING")
+  idempotencyKey String @unique
+  @@index([brokerId,opportunityId])
+  @@map("installments")
+}
+model CommercialDocument {
+  id String @id @default(uuid()) @db.Uuid
+  brokerId String @db.Uuid
+  broker Broker @relation(fields:[brokerId], references:[id], onDelete:Restrict)
+  opportunityId String? @db.Uuid
+  opportunity Opportunity? @relation(fields:[opportunityId,brokerId], references:[id,brokerId], onDelete:Restrict)
+  kind String
+  title String
+  snapshot Json
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  @@index([brokerId,createdAt])
+  @@map("commercial_documents")
+}
+
+model LeadImportBatch {
+ id String @id @default(uuid()) @db.Uuid
+ brokerId String @db.Uuid
+ broker Broker @relation(fields:[brokerId], references:[id], onDelete:Restrict)
+ idempotencyKey String @unique
+ input Json
+ report Json?
+ createdAt DateTime @default(now()) @db.Timestamptz(3)
+ @@map("lead_import_batches")
+}

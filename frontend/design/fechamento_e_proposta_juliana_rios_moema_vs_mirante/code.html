@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#ffb95f", "surface": "#faf8ff", "primary-fixed": "#dbe1ff", "inverse-on-surface": "#eef0ff", "on-primary-fixed-variant": "#003ea8", "on-surface-variant": "#434655", "surface-tint": "#0053db", "tertiary-container": "#996100", "surface-variant": "#dae2fd", "on-secondary-fixed": "#002113", "secondary-fixed-dim": "#4edea3", "on-secondary": "#ffffff", "inverse-primary": "#b4c5ff", "surface-container": "#eaedff", "secondary": "#006c49", "primary": "#004ac6", "background": "#faf8ff", "surface-dim": "#d2d9f4", "on-primary-fixed": "#00174b", "error-container": "#ffdad6", "inverse-surface": "#283044", "primary-fixed-dim": "#b4c5ff", "surface-bright": "#faf8ff", "surface-container-high": "#e2e7ff", "on-tertiary-fixed-variant": "#653e00", "outline": "#737686", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#005236", "on-tertiary-fixed": "#2a1700", "on-secondary-container": "#00714d", "on-tertiary": "#ffffff", "surface-container-highest": "#dae2fd", "secondary-fixed": "#6ffbbe", "tertiary-fixed": "#ffddb8", "outline-variant": "#c3c6d7", "error": "#ba1a1a", "tertiary": "#784b00", "on-error-container": "#93000a", "on-tertiary-container": "#ffeedd", "surface-container-low": "#f2f3ff", "on-primary-container": "#eeefff", "on-primary": "#ffffff", "on-surface": "#131b2e", "primary-container": "#2563eb", "on-error": "#ffffff", "secondary-container": "#6cf8bb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-md": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "currency-display": [ "Manrope" ], "display-lg": [ "Manrope" ], "currency-table": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-sm": [ "Manrope" ], "body-lg": [ "Inter" ], "headline-md": [ "Manrope" ], "body-sm": [ "Inter" ], "title-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Manrope" ], "display-lg-mobile": [ "Manrope" ] }, "fontSize": { "currency-display": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "currency-table": [ "14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "title-md": [ "15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">neurology</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Corretor Copilot</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Inteligência Imobiliária</span></div></div><div class="px-space-md"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-semibold">Copilot Ativo</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v2.4</span></div></div><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Operação</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[19px]">person_search</span>Leads</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="funil-de-vendas" href="#"><span class="material-symbols-outlined text-[19px]">filter_alt</span>Funil de Vendas</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[19px]">apartment</span>Imóveis</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agenda" href="#"><span class="material-symbols-outlined text-[19px]">calendar_today</span>Agenda</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[19px]">check_circle</span>Tarefas</a></nav></div><div class="flex flex-col gap-space-xs px-space-sm pt-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Gestão &amp; Sistema</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[19px]">insights</span>Operações</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[19px]">settings</span>Configurações</a></nav></div></div><div class="px-space-md pt-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[18px] text-primary">bolt</span><span class="font-label-sm text-label-sm font-semibold">Ações de IA</span></div><span class="font-label-sm text-label-sm text-primary font-bold">12 pendentes</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Encerrar Sessão</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Copilot Pronto</span></div><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Horário de Brasília (14:32)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface leading-tight font-semibold">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant">CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Top Navigation & Header Bar -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Breadcrumb & Metadata Path -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Painel Corretor</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Turnê da Tarde</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Juliana Rios</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Fechamento de Proposta &amp; Decisão</span>
+</div>
+<!-- Main Title + Status Indicators + CTA Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Matriz Decisória &amp; Formalização de Proposta — Juliana Rios
+          </h1>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+            Turnê Concluída (2 Imóveis)
+          </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            Juliana Conectada
+          </span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">local_fire_department</span>
+            Score 94 · Altíssima Intenção
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pós-turnê dupla presencial às 14:15. Comparativo técnico e emissão formal de minuta vinculante com assinatura digital.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm self-start lg:self-center shrink-0">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">picture_as_pdf</span>
+          Exportar Dossiê (PDF)
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container transition-all flex items-center gap-2" id="btn-dispatch-minuta" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Gerar Minuta Digital</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-lowest/20 font-label-sm text-label-sm">DocuSign</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Copilot Advisory / Strategic Thermometer Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg mb-space-lg shadow-sm">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Copilot Strategic Narrative -->
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+<span>Copilot Advisory · Parecer da Sessão de Fechamento</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">Probabilidade de Sucesso 91%</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-snug font-medium">
+<span class="font-bold text-primary">Decisão da Compradora:</span> Juliana optou pela formalização imediata para a <strong class="font-semibold text-on-surface">Cobertura Duplex Moema</strong> via proposta de <strong class="text-primary font-currency-table font-bold">R$ 1.380.000</strong> (desconto tático de 4,8% sobre R$ 1.450.000). O <strong class="text-on-surface font-semibold">Edifício Mirante Paulista (R$ 620k)</strong> fica retido como contingência imediata caso haja recusa irredutível do vendedor.
+        </p>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span><strong>Alavanca Tática:</strong> Sinal express de R$ 200.000 em 48h</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span><strong>Liquidez Comprovada:</strong> Carta Itaú Prime R$ 700k emitida e auditada</span>
+</div>
+</div>
+</div>
+<!-- Acceptance Probability Meter & Metric Gauges -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Probabilidade de Aceite</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Dr. Carlos Mendonça (Vendedor)</span>
+</div>
+<span class="font-headline-lg text-headline-lg font-bold text-primary">82%</span>
+</div>
+<!-- Progress Track -->
+<div class="w-full bg-surface-container-highest h-2.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full transition-all duration-1000" style="width: 82%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Margem aceitável histórica: 5,2%</span>
+<span class="text-secondary font-semibold">Desconto solicitado: 4,8% (Dentro)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Side-by-Side Property Comparison Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- MAIN CHOICE: Moema Duplex Penthouse (8 Cols) -->
+<div class="lg:col-span-7 flex flex-col rounded-xl bg-surface-container-lowest p-space-lg shadow-sm relative overflow-hidden">
+<!-- Highlight Banner -->
+<div class="absolute top-0 right-0 left-0 h-1.5 bg-primary"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-md pt-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-md bg-primary text-on-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              ★ Proposta Selecionada
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+              Minuta em Redação
+            </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Edifício Pássaros Moema · Cobertura 1801
+          </h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+            Av. Rouxinol, 720 · Moema Pássaros, São Paulo - SP
+          </span>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Valor da Proposta</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">R$ 1.380.000</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">-R$ 70.000 vs pedido (R$ 1.450.000)</span>
+</div>
+</div>
+<!-- Penthouse Imagery Visual Mosaic -->
+<div class="grid grid-cols-3 gap-space-sm mb-space-md">
+<div class="col-span-2 relative h-48 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Luxurious duplex penthouse rooftop terrace in Moema São Paulo at dusk with private hot tub jacuzzi, warm ambient LED lighting, modern wooden deck, contemporary lounge chairs, overlooking panoramic city skyline with sunset colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnYB9P-AzCnH8hf-M4aiuSp-4zBiccWut0L3vlnCkPkVKJq0C4J_4MK_5GllXkoD4t2iaiGwbCJr0hDwtzOzV_sfdwmd1A5e8wF2PWZuXvm2dSfBGCOdTUU7UFagwuqLgXNBsi-gg66ewvyb4X25WglNKs0UsfB-Foz5TCHwF3fla_fkSdzfmc99qgF6kXDrZG9WcztHBg42PWmjLJzPxsIvyzqFc8D-jPuJgMUVR6b9XmIUmUD13b-w"/>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+            Terraço Privativo &amp; Jacuzzi
+          </div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="h-[88px] rounded-lg overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="High-end open plan living room inside contemporary duplex penthouse with double-height ceiling, large windows showing Moema neighborhood, timber flooring, minimalist designer furniture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbWsg5jNFCwt75JBH3IZzrAOeTgIDFPOuJ_-iPw-fE8I2YEYahwlYzveVEVf6UCUUz8dLAD-xf12K5jLazzCeyHsJf4jQYAOtBvzBDMSArpowGy2YqBT-1MDoRh7Q0Mh-ke-oHbvxzeREPYcfv-pjbbT204JXxEPRC6Bl0Q98XfylZAN4WYmOcJBKTwTkVhlnDYwiAugfvabXuRiYsFfmuSDASOdFwbSrLGOd7-TFZh06c7IdGcYy87g"/>
+</div>
+<div class="h-[88px] rounded-lg overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Modern master bedroom suite in duplex penthouse with customized walk-in closet, sleek lighting fixtures and private balcony access." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA29Vpt8sTmTeXsa1ota2yH-P-zC5CsgleGC5zCpAPuP5D0DCSxn4lexiumLv824fI0GptIl2Lfw0mxsYyNnYImppmr9i7zVZoe89rVD2fDJYkuteG4tGLMxjoJ0Cy3BwOkTntjDHR5L_7wwND2zISDxG3KNeLhWjuldj3M7PW63GYg48eza6zwWdf6U4fWzak9a1ucUKW3Mu5W7PcVEJKGv19mXvVg453VVJL4oOg7HpGDHxEyIjY-Vw"/>
+</div>
+</div>
+</div>
+<!-- Financial & Technical Specs Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm p-space-md rounded-lg bg-surface-container-low mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Área Útil</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">142 m²</span>
+<span class="font-label-sm text-label-sm text-outline">R$ 9.718 / m²</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Condomínio</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">R$ 1.890 /mês</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Incluso manut. SPA</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vagas &amp; Layout</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">2 vagas + 3 suítes</span>
+<span class="font-label-sm text-label-sm text-outline">Depósito subsolo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Comissão Marina (6%)</span>
+<span class="font-title-md text-title-md text-secondary font-bold">R$ 82.800</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recebimento no sinal</span>
+</div>
+</div>
+<!-- Decision Factors & Objections Handled -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Argumentos Validados na Visita</span>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px] text-secondary mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Resolução Emocional Perfeita</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Juliana enfatizou a jacuzzi e área de descompressão ao ar livre para recepção de amigos e home office. O terceiro dormitório atende exatamente seu estúdio de podcast e escritório.
+            </span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-high/60">
+<span class="material-symbols-outlined text-[20px] text-primary mt-0.5">shield</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Objeção de Condomínio Neutralizada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              A preocupação inicial com R$ 1.890/mês foi sanada após apresentar que a taxa cobre gerador full, água inclusa e portaria presencial blindada, sem necessidade de clube externo.
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECONDARY CHOICE / CONTINGENCY PLAN B: Mirante Paulista (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+              Plano de Contingência (B)
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium">
+              Stand-by Estratégico
+            </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Edifício Mirante Paulista · AP-204
+          </h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+            Rua Domingos de Morais, 1340 · Vila Mariana, SP
+          </span>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Valor Pedido</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">R$ 620.000</span>
+<span class="font-label-sm text-label-sm text-outline">Proposta B: R$ 600.000</span>
+</div>
+</div>
+<!-- Secondary Photo -->
+<div class="relative h-48 rounded-lg overflow-hidden bg-surface-container mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Charming compact apartment living room with integrated gourmet balcony overlooking tree-lined street in Vila Mariana São Paulo, cozy warm afternoon sunlight, clean wooden finishes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNPdFCGoFGXARUn4pfRQ9cDG6q0Jkou33qvCcAP6GgJwCSBrSgInwHZLmNZkyUovr64IicYvHkXXVteg0zzQkES_h1hGw4PLALEB7-w6hDWtaomW-Aj1T8UwD0_Z_KdwPCvjJZm1myzP_TH22sOsNo7PgSIwbz484Gx6mSkmiQOVvDxdMRX2xnPV0Q-e48mTiJYrSPi0zM3SQSkZT3YQkjHSRQj-2UqHeJ6oNxl4fUzePwJRhzPB1JNA"/>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+          Varanda Gourmet Integrada
+        </div>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm font-semibold text-on-surface">
+          Liquidez Imediata
+        </div>
+</div>
+<!-- Compact Specs -->
+<div class="grid grid-cols-2 gap-space-sm p-space-md rounded-lg bg-surface-container-low mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Área &amp; Custo m²</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">68 m²</span>
+<span class="font-label-sm text-label-sm text-outline">R$ 9.117 / m²</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Condomínio Mensal</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">R$ 680 /mês</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Baixíssimo custo fixo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Distribuição</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">2 Dormitórios (1 suíte)</span>
+<span class="font-label-sm text-label-sm text-outline">1 vaga coberta</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Comissão Marina (6%)</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">R$ 36.000</span>
+<span class="font-label-sm text-label-sm text-outline">Opção de menor ticket</span>
+</div>
+</div>
+<!-- Contingency Rationale -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 mb-space-sm">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Gatilho de Contingência Ativado</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Se o proprietário de Moema recusar a contraproposta até 18:00 de amanhã, Juliana emitirá proposta fechada de R$ 600.000 para este imóvel, garantindo fechamento seguro no mesmo ciclo semanal.
+        </p>
+</div>
+<div class="mt-auto pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">timer</span>
+          Stand-by válido até amanhã às 18h
+        </span>
+<button class="text-primary font-semibold hover:underline" type="button">Ver ficha técnica</button>
+</div>
+</div>
+</div>
+<!-- Bottom Workspace: Structured Proposal Deal Sheet & Side Dispatch Engine -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Deal Structure & Payment Terms (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm border-b-0 mb-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">request_quote</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+              Condições Vinculantes da Proposta Comercial
+            </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Minuta estruturada segundo acordado na turnê com Juliana Rios</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+          48h de Validade
+        </span>
+</div>
+<!-- Financial Split Breakdown Table -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">1. Sinal e Entrada Imediata (TED)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Transferência em conta garantia / Cartório em 48h</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-currency-table text-currency-table font-bold text-on-surface">R$ 200.000,00</span>
+<span class="block font-label-sm text-label-sm text-secondary font-medium">14,5% do total</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">2. Recursos Próprios / Liquidação</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Liberação de resgate bancário em 30 dias com certidões</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-currency-table text-currency-table font-bold text-on-surface">R$ 480.000,00</span>
+<span class="block font-label-sm text-label-sm text-outline font-medium">34,8% do total</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint"></span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">3. Financiamento Imobiliário Acelerado</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Carta de crédito Itaú Private aprovada (Taxa pré-fixada)</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-currency-table text-currency-table font-bold text-on-surface">R$ 700.000,00</span>
+<span class="block font-label-sm text-label-sm text-outline font-medium">50,7% do total</span>
+</div>
+</div>
+<!-- Total Sum Footer -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-high">
+<span class="font-title-md text-title-md text-on-surface font-bold uppercase tracking-wide">Valor Total Consolidado</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">R$ 1.380.000,00</span>
+</div>
+</div>
+<!-- Specific Clauses & Inclusions -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider">Benfeitorias &amp; Cláusulas Específicas</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">ac_unit</span>
+<span class="font-body-sm text-body-sm text-on-surface">Ar condicionado Daikin Inverter em todas as 3 suítes e no living principal mantidos.</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">chair</span>
+<span class="font-body-sm text-body-sm text-on-surface">Armários sob medida do closet Ornare, bancadas da cozinha e luminárias embutidas.</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">outdoor_grill</span>
+<span class="font-body-sm text-body-sm text-on-surface">Churrasqueira a gás em inox e deck em madeira cumaru da cobertura inclusos.</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">event</span>
+<span class="font-body-sm text-body-sm text-on-surface">Posse precária no pagamento do sinal para início do projeto de arquitetura de interiores.</span>
+</div>
+</div>
+</div>
+<!-- Buyer's Document Status Checklist -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Auditoria de Documentos:</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> RG/CPF CNH
+          </div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Renda Comprovada
+          </div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Carta Itaú
+          </div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">100% Em Conformidade</span>
+</div>
+</div>
+<!-- Seller Profile, AI Argumentation Script & Fast WhatsApp Dispatch (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Seller Profile & Negotiation Dynamics Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[22px]">medical_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Dr. Carlos Mendonça</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cirurgião Geral · Proprietário Vendedor</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+            Perfil Racional / Direto
+          </span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1 text-on-surface font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology_alt</span>
+            Motivação &amp; Alavanca de Fechamento
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Dr. Carlos necessita de capital para aporte imobiliário em Lisboa até o final do trimestre. Valoriza liquidez sem risco de desistência financeira.
+          </p>
+</div>
+<!-- AI Pitch Script Generator for Marina Costa -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">
+              Script de Argumentação Copilot (Pronto para Uso)
+            </span>
+<button class="text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:underline" id="btn-copy-pitch" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copiar
+            </button>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high/40 text-on-surface font-body-sm text-body-sm italic relative">
+<span class="font-semibold text-primary not-italic">"Dr. Carlos,</span> boa tarde! Temos uma proposta firme e formalizada de <strong class="text-on-surface not-italic font-bold">R$ 1.380.000</strong> de uma executiva de tecnologia de altíssimo perfil. O sinal de <strong class="text-on-surface not-italic font-bold">R$ 200.000</strong> é creditado via TED imediata e o restante de R$ 700.000 já possui <strong class="text-secondary not-italic font-semibold">carta de crédito 100% emitida e aprovada pelo Itaú Private</strong>. O risco de distrato da operação é literalmente zero e fechamos hoje."
+          </div>
+</div>
+<!-- Single-Click Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-sm pt-1">
+<button class="flex-1 py-2.5 px-space-md rounded-lg bg-[#25D366] text-white font-label-md text-label-md font-bold shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2" id="btn-whatsapp-seller" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+            Disparar via WhatsApp
+          </button>
+<button class="py-2.5 px-space-md rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors flex items-center justify-center gap-2" id="btn-call-seller" type="button">
+<span class="material-symbols-outlined text-[18px]">call</span>
+            Ligar para Dr. Carlos
+          </button>
+</div>
+</div>
+<!-- Broker Financial Outcomes Summary Card -->
+<div class="rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-on-primary">trending_up</span>
+</div>
+<span class="font-title-md text-title-md font-bold">Resumo da Operação Comercial</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/20 text-on-primary font-label-sm text-label-sm font-semibold">
+            Fechamento D-0
+          </span>
+</div>
+<div class="grid grid-cols-2 gap-space-md py-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary/80">VGV Transacionado</span>
+<span class="font-currency-display text-currency-display font-bold">R$ 1.380.000</span>
+<span class="font-label-sm text-label-sm text-on-primary/70">Moema Pássaros</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary/80">Honorários Marina Costa (6%)</span>
+<span class="font-currency-display text-currency-display text-secondary-container text-on-secondary-fixed font-bold">
+              R$ 82.800
+            </span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">Liquidação do sinal</span>
+</div>
+</div>
+<div class="pt-2 border-t-0 bg-surface-container-lowest/10 rounded-lg p-space-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">hotel_class</span>
+<span class="font-body-sm text-body-sm text-on-primary">
+            Aproveitamento exemplar de slot de cancelamento: Turnê realizada e proposta assinada em menos de 4 horas!
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Toast Placeholder (Native JS) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none rounded-xl bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md shadow-xl flex items-center gap-space-md" id="toast-action">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[18px]">done</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold" id="toast-title">Proposta Enviada</span>
+<span class="font-body-sm text-body-sm text-inverse-on-surface/80" id="toast-desc">Documento direcionado ao DocuSign e WhatsApp de Juliana Rios.</span>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    (function initClosingRoom() {
+      const btnDispatch = document.getElementById('btn-dispatch-minuta');
+      const btnWhatsapp = document.getElementById('btn-whatsapp-seller');
+      const btnCopyPitch = document.getElementById('btn-copy-pitch');
+      const toast = document.getElementById('toast-action');
+      const toastTitle = document.getElementById('toast-title');
+      const toastDesc = document.getElementById('toast-desc');
+
+      function showToast(title, desc) {
+        if (!toast) return;
+        toastTitle.textContent = title;
+        toastDesc.textContent = desc;
+        toast.classList.remove('translate-y-20', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-20', 'opacity-0');
+        }, 3800);
+      }
+
+      if (btnDispatch) {
+        btnDispatch.addEventListener('click', () => {
+          const originalText = btnDispatch.innerHTML;
+          btnDispatch.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Gerando Minuta DocuSign...</span>';
+          btnDispatch.disabled = true;
+          setTimeout(() => {
+            btnDispatch.innerHTML = '<span class="material-symbols-outlined text-[18px]">mark_email_read</span><span>Minuta Enviada com Sucesso</span>';
+            btnDispatch.classList.remove('bg-primary');
+            btnDispatch.classList.add('bg-secondary');
+            showToast('Minuta Digital Emitida', 'Disparado para assinatura eletrônica de Juliana Rios via WhatsApp e e-mail.');
+          }, 1400);
+        });
+      }
+
+      if (btnWhatsapp) {
+        btnWhatsapp.addEventListener('click', () => {
+          showToast('WhatsApp Inicializado', 'Script de argumentação carregado na conversa com Dr. Carlos Mendonça.');
+        });
+      }
+
+      if (btnCopyPitch) {
+        btnCopyPitch.addEventListener('click', () => {
+          const text = "Dr. Carlos, boa tarde! Temos uma proposta firme e formalizada de R$ 1.380.000 de uma executiva de tecnologia de altíssimo perfil. O sinal de R$ 200.000 é creditado via TED imediata e o restante de R$ 700.000 já possui carta de crédito 100% emitida e aprovada pelo Itaú Private. O risco de distrato da operação é literalmente zero e fechamos hoje.";
+          navigator.clipboard.writeText(text).then(() => {
+            showToast('Copiado para Área de Transferência', 'O script persuasivo está pronto para ser colado.');
+          });
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

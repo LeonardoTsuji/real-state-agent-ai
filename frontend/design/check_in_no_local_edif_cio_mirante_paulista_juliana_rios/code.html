@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#ffb95f", "surface": "#faf8ff", "primary-fixed": "#dbe1ff", "inverse-on-surface": "#eef0ff", "on-primary-fixed-variant": "#003ea8", "on-surface-variant": "#434655", "surface-tint": "#0053db", "tertiary-container": "#996100", "surface-variant": "#dae2fd", "on-secondary-fixed": "#002113", "secondary-fixed-dim": "#4edea3", "on-secondary": "#ffffff", "inverse-primary": "#b4c5ff", "surface-container": "#eaedff", "secondary": "#006c49", "primary": "#004ac6", "background": "#faf8ff", "surface-dim": "#d2d9f4", "on-primary-fixed": "#00174b", "error-container": "#ffdad6", "inverse-surface": "#283044", "primary-fixed-dim": "#b4c5ff", "surface-bright": "#faf8ff", "surface-container-high": "#e2e7ff", "on-tertiary-fixed-variant": "#653e00", "outline": "#737686", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#005236", "on-tertiary-fixed": "#2a1700", "on-secondary-container": "#00714d", "on-tertiary": "#ffffff", "surface-container-highest": "#dae2fd", "secondary-fixed": "#6ffbbe", "tertiary-fixed": "#ffddb8", "outline-variant": "#c3c6d7", "error": "#ba1a1a", "tertiary": "#784b00", "on-error-container": "#93000a", "on-tertiary-container": "#ffeedd", "surface-container-low": "#f2f3ff", "on-primary-container": "#eeefff", "on-primary": "#ffffff", "on-surface": "#131b2e", "primary-container": "#2563eb", "on-error": "#ffffff", "secondary-container": "#6cf8bb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-md": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "currency-display": [ "Manrope" ], "display-lg": [ "Manrope" ], "currency-table": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-sm": [ "Manrope" ], "body-lg": [ "Inter" ], "headline-md": [ "Manrope" ], "body-sm": [ "Inter" ], "title-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Manrope" ], "display-lg-mobile": [ "Manrope" ] }, "fontSize": { "currency-display": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "currency-table": [ "14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "title-md": [ "15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">neurology</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Corretor Copilot</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Inteligência Imobiliária</span></div></div><div class="px-space-md"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-semibold">Copilot Ativo</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v2.4</span></div></div><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Operação</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[19px]">person_search</span>Leads</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="funil-de-vendas" href="#"><span class="material-symbols-outlined text-[19px]">filter_alt</span>Funil de Vendas</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[19px]">apartment</span>Imóveis</a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="agenda" href="#"><span class="material-symbols-outlined text-[19px]">calendar_today</span>Agenda</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[19px]">check_circle</span>Tarefas</a></nav></div><div class="flex flex-col gap-space-xs px-space-sm pt-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Gestão &amp; Sistema</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[19px]">insights</span>Operações</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[19px]">settings</span>Configurações</a></nav></div></div><div class="px-space-md pt-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[18px] text-primary">bolt</span><span class="font-label-sm text-label-sm font-semibold">Ações de IA</span></div><span class="font-label-sm text-label-sm text-primary font-bold">12 pendentes</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Encerrar Sessão</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Copilot Pronto</span></div><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Horário de Brasília (14:32)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface leading-tight font-semibold">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant">CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-margin py-margin"><div class="flex flex-col w-full">
+<!-- BREADCRUMB & METADATA BAR -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center flex-wrap gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer transition-colors">Painel Corretor</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Agenda</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors font-medium text-on-surface">Visita #ENC-8924</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Check-in no Imóvel</span>
+</div>
+<!-- Live Timer Sync Tag -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-semibold text-secondary">GPS Ativo &amp; Sincronizado</span>
+<span class="text-outline">·</span>
+<span class="text-on-surface-variant font-mono">13:58:42 BRT</span>
+</div>
+</div>
+</div>
+<!-- MAIN HEADER SUMMARY -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center flex-wrap gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg lg:font-display-lg lg:text-display-lg text-on-surface font-bold tracking-tight">
+          Check-in de Visita — Edifício Mirante Paulista
+        </h1>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+          No Local (Geolocalização Validada: Vila Mariana)
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span>Rua Domingos de Morais, 1240 — AP-204</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">alarm_on</span>
+          13:58 · 2 min antes do horário previsto (14:00 - 15:00)
+        </span>
+</p>
+</div>
+<!-- Quick Voucher Launcher -->
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container-high transition-all flex items-center gap-2" id="btn-show-voucher">
+<span class="material-symbols-outlined text-[18px] text-primary">badge</span>
+        Apresentar Voucher Digital
+      </button>
+</div>
+</div>
+<!-- GRID WORKBENCH -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT & CENTER WORKFLOW AREA (8 COLS) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- GEOLOCATION RADAR CARD -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm p-space-lg">
+<!-- Visual Accent Strip -->
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<!-- Radar Visual Disc -->
+<div class="relative flex-shrink-0 w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-secondary">radar</span>
+<span class="absolute inset-0 rounded-full border-2 border-secondary animate-ping opacity-30"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Confirmação de Presença</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-mono">Precisão ±3m</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-0.5">
+                Você está a 15 metros da Portaria C
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Sinal do satélite autenticado às <span class="font-semibold text-on-surface">13:58:14</span>. Torre de telecomunicação Vila Mariana Sul sincronizada.
+              </p>
+</div>
+</div>
+<!-- PRIMARY ACTION CTA -->
+<div class="flex flex-col items-stretch md:items-end w-full md:w-auto">
+<button class="h-11 px-space-lg rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-md hover:brightness-110 active:scale-[0.99] transition-all flex items-center justify-center gap-2 whitespace-nowrap" id="btn-checkin-action" onclick="confirmCheckin()">
+<span class="material-symbols-outlined text-[20px]" id="checkin-icon" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span id="checkin-label">Confirmar Check-in Oficial</span>
+</button>
+<span class="font-label-sm text-label-sm text-outline mt-1.5 text-center md:text-right" id="checkin-sub">Notifica o proprietário e registra auditoria CRECI</span>
+</div>
+</div>
+<!-- Geo Map Mini Snippet -->
+<div class="mt-space-md pt-space-md bg-surface-container-low rounded-lg p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Rua Domingos de Morais, 1240 - Portaria Principal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vila Mariana, São Paulo - SP · CEP 04010-100</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-auto">
+<a class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-sm font-semibold transition-colors flex items-center gap-1 shadow-sm" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+              Waze / Maps
+            </a>
+</div>
+</div>
+</div>
+<!-- CLIENT ARRIVAL & PORTARIA SPLIT -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- CLIENT REAL-TIME TRACKING -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Cliente da Visita</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+                A caminho · Prevista 14:02
+              </span>
+</div>
+<div class="flex items-start gap-space-sm pt-space-xs">
+<div class="relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center font-headline-sm text-on-surface font-bold">
+                  JR
+                </div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm text-[11px] font-bold">
+                  92
+                </div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Juliana Rios</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Lead Quente</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Executiva de Tech · +55 11 97123-4567</span>
+</div>
+</div>
+<!-- WhatsApp Quote Bubble -->
+<div class="mt-space-xs p-space-md rounded-lg bg-surface-container-low text-on-surface relative">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+                Última Mensagem no WhatsApp (13:56)
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface italic leading-relaxed">
+                “Marina, chego em 3 minutos! Estou só manobrando para entrar no bolsão de vagas em frente à portaria.”
+              </p>
+</div>
+</div>
+<!-- Quick Comms Triggers -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-md pt-space-sm">
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:brightness-110 shadow-sm transition-all" onclick="window.open('https://wa.me/5511971234567')">
+<span class="material-symbols-outlined text-[18px]">send</span>
+              WhatsApp
+            </button>
+<button class="h-10 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors" onclick="alert('Discando para Juliana Rios (+55 11 97123-4567)...')">
+<span class="material-symbols-outlined text-[18px]">call</span>
+              Ligar
+            </button>
+</div>
+</div>
+<!-- RECEPTION & BUILDING ACCESS INSTRUCTIONS -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Acesso &amp; Portaria</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                Autorização Ativa
+              </span>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Zelador: Seu Antenor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ramal da Portaria: <strong class="text-on-surface">102</strong></span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">vpn_key</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Chave na Portaria C</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gaveta B-12 com crachá de vistoria do Corretor Copilot</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[19px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Autorização Prévia Transmitida</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Via Copilot WhatsApp às 14:38 de ontem (Marina Costa &amp; Juliana Rios)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-md pt-space-sm">
+<button class="h-10 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" onclick="alert('Ligando para a portaria: Ramal 102 (Seu Antenor)')">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+              Ramal 102
+            </button>
+<button class="h-10 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 hover:bg-primary hover:text-on-primary transition-colors" onclick="toggleVoucherModal(true)">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+              Ver Passe
+            </button>
+</div>
+</div>
+</div>
+<!-- HIGH CONVERSION VISIT CHECKLIST & BUYER INTERESTS -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Roteiro Guiado por IA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Checklist Estratégico de Conversão
+            </h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Progresso:</span>
+<span class="font-title-md text-title-md text-primary font-bold" id="checklist-progress-text">1 de 5 concluídos</span>
+</div>
+</div>
+<!-- Client Preferences Prompt / Copilot Pin -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-primary">psychology</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Focos de Interesse da Juliana (Perfil Tech / Pet Owner)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Varanda gourmet integrada, aceita buldogue francês, condomínio abaixo de R$ 750 (Atual: R$ 680).</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex-shrink-0">
+            Alta Afinidade (94%)
+          </span>
+</div>
+<!-- Interactive Checklist Items -->
+<div class="flex flex-col gap-space-xs" id="checklist-container">
+<!-- Item 1 (Pre-checked) -->
+<label class="group flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary accent-primary cursor-pointer" onchange="updateChecklistProgress()" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Retirar chaves na portaria C e conferir acendimento geral de luzes no AP-204
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Garante primeira impressão acolhedora e climatização prévia antes de a cliente subir.</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done</span> Concluído
+            </span>
+</label>
+<!-- Item 2 -->
+<label class="group flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<input class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary accent-primary cursor-pointer" onchange="updateChecklistProgress()" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Abrir varanda gourmet (Ponto focal favorito da Juliana)
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Destacar ponto para home office e bancada espaçosa com fechamento de vidro já aprovado.</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Ponto de Valor</span>
+</label>
+<!-- Item 3 -->
+<label class="group flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<input class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary accent-primary cursor-pointer" onchange="updateChecklistProgress()" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Apresentar vista livre da sala e insolação da tarde (Sol Poente)
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hora exata das 14h às 15h recebe excelente luminosidade natural sem superaquecimento.</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Luminosidade</span>
+</label>
+<!-- Item 4 -->
+<label class="group flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<input class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary accent-primary cursor-pointer" onchange="updateChecklistProgress()" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Entregar ficha técnica impressa / disparar folder interativo no WhatsApp
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inclui planta baixa de 68m² com opção de integração de sala ampliada.</span>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-semibold" onclick="alert('Folder digital disparado para +55 11 97123-4567')" type="button">Disparar Agora</button>
+</label>
+<!-- Item 5 -->
+<label class="group flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<input class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary accent-primary cursor-pointer" onchange="updateChecklistProgress()" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Coletar primeiras impressões &amp; engatilhar saída às 15:00 rumo a Moema
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">O 2º imóvel da turnê (Cobertura Duplex) fica a 12 min de trajeto (previsão 16:30).</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Transição Turnê</span>
+</label>
+</div>
+</div>
+</div>
+<!-- RIGHT OPERATIONAL SIDEBAR (4 COLS) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- PROPERTY MINI DOSSIER CARD -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<!-- Property Visual Showcase -->
+<div class="relative h-48 w-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern bright living room of apartment 204 in Sao Paulo Vila Mariana with large glass balcony gourmet area stylish contemporary wooden floors and sunlight pouring in high-end architectural photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkFarRjCeeKIO5ZcaY4eX1SZXD23K2ZECCS4zoUP1JzMG1fBGUXtrEYHapOBUANOSYBcgNAQHNjHpeaQLrbxsQ2hAo1RRkfuIuIWut3Cd8EGcg-gMLlg20YAPRkL3zQQEeY4l7MYbMUGVeLv6_JzVn49nFS2xLjFid6Uixm0JQ2UOigcNE8P1VuyWZ_GG-yEp2bxJryosQIerIZe1-zcB_p-LyLo2vADG8KC2lLbdCxR4zJgl5wrVxyA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-secondary">
+<div>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">AP-204 · 2º Andar</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white leading-tight mt-1">Edifício Mirante Paulista</h4>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-slate-200">VGV</span>
+<div class="font-currency-display text-currency-display text-white leading-tight">R$ 620.000</div>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<!-- Key Metrics Pills -->
+<div class="grid grid-cols-3 gap-space-xs text-center py-space-xs bg-surface-container-low rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Área</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">68 m²</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dormitórios</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">2 (1 suíte)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Garagem</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">1 Vaga (#44)</span>
+</div>
+</div>
+<!-- Financial Breakdown Micro Table -->
+<div class="flex flex-col gap-1.5 pt-space-xs font-body-sm text-body-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Condomínio Mensal:</span>
+<span class="font-semibold text-on-surface">R$ 680,00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>IPTU Mensal:</span>
+<span class="font-semibold text-on-surface">R$ 145,00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Comissão Prevista (6%):</span>
+<span class="font-semibold text-secondary font-mono">R$ 37.200,00</span>
+</div>
+</div>
+<button class="mt-space-xs h-9 w-full rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" onclick="alert('Abrindo ficha completa do imóvel #MIR-204')">
+<span class="material-symbols-outlined text-[16px]">description</span>
+            Ver Dossiê Completo do Imóvel
+          </button>
+</div>
+</div>
+<!-- ON-FIELD FAST ACTIONS -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-md flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Ações Rápidas de Campo</span>
+<!-- AI Voice Notes Launcher -->
+<button class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-center gap-space-sm text-left group" id="btn-audio-recorder" onclick="toggleAudioRecorder()">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform" id="audio-record-icon-box">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-title-md text-title-md text-on-surface font-bold" id="audio-record-title">Gravação de Notas de Áudio com IA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="audio-record-status">Transcreve feedbacks e objeções da Juliana</span>
+</div>
+</button>
+<!-- Inspection Camera Trigger -->
+<button class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-center gap-space-sm text-left group" onclick="triggerCameraCapture()">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-title-md text-title-md text-on-surface font-bold">Registrar Fotos / Vistoria</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sincroniza com o laudo de entrada do cliente</span>
+</div>
+</button>
+<!-- Finalize Visit Secondary CTA -->
+<button class="mt-space-xs h-10 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-dim transition-colors flex items-center justify-center gap-2" onclick="handleFinishVisit()">
+<span class="material-symbols-outlined text-[18px]">check_circle_outline</span>
+          Finalizar e Abrir Feedback Pós-Visita
+        </button>
+</div>
+<!-- NEXT TOUR STEP (TOUR COMPASS) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Próximo Passo da Turnê</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-mono">2 de 2</span>
+</div>
+<div class="flex items-start gap-space-sm pt-space-xs">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Luxurious penthouse duplex balcony overlooking Moema skyline in Sao Paulo with warm sunset tones modern furniture and jacuzzi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv9ace-MLrVYIX1k88yKTqahKr0aR7QhpuXsCQhN04tPxYrmTPLhuJuTy8N6Z0jJ3KOBSKF6lIGcP7uBube81x35xjUy0Scnim37SDXWV8q3E1d_kva3inbVYYiT9KOSwCcPQvkHc8m47VuQl2wjoQ-d17lRKBPlZffn0l-1s-Gdg-zo52QPUgpe7bo8nhQIUT34kqQPADGGV1LXNKa_IcbKTrkH07J2vvspcKusIFG3x59WPJQ9go4g"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">16:30 (Em 2h 30min)</span>
+<h5 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Cobertura Duplex Moema</h5>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Al. dos Arapanés, 950 · R$ 1.450.000</span>
+</div>
+</div>
+<div class="mt-space-xs pt-space-xs bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">route</span>
+            4,3 km de distância
+          </span>
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">traffic</span>
+            ~12 min sem trânsito
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- VOUCHER MODAL DIALOG (HIDDEN DEFAULT) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-md" id="voucher-modal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col">
+<div class="p-space-md bg-primary text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span class="font-headline-sm text-headline-sm font-bold">Voucher de Acesso Digital</span>
+</div>
+<button class="text-on-primary hover:opacity-80" onclick="toggleVoucherModal(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col items-center text-center gap-space-md">
+<!-- QR Code Simulation -->
+<div class="w-48 h-48 rounded-xl bg-surface-container-low p-3 flex flex-col items-center justify-center border-2 border-dashed border-outline-variant">
+<span class="material-symbols-outlined text-[110px] text-on-surface">qr_code_2</span>
+<span class="font-mono text-label-sm text-outline mt-1 font-bold">AUT-2024-MIR-8924</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Edifício Mirante Paulista — AP 204</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Válido para entrada de Marina Costa (CRECI 248.910-F) &amp; Juliana Rios</span>
+</div>
+<div class="w-full p-space-sm rounded-lg bg-surface-container-low text-left font-body-sm text-body-sm flex flex-col gap-1">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Zelador Responsável:</span>
+<span class="font-semibold text-on-surface">Seu Antenor (Ramal 102)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Gaveta de Chaves:</span>
+<span class="font-semibold text-on-surface">Portaria C / Caixa B-12</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Horário Liberado:</span>
+<span class="font-semibold text-secondary">13:45 até 15:30</span>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold" onclick="toggleVoucherModal(false)">
+          Fechar
+        </button>
+<button class="h-10 px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm" onclick="alert('Comprovante enviado com sucesso para a portaria via WhatsApp!'); toggleVoucherModal(false);">
+<span class="material-symbols-outlined text-[18px]">share</span>
+          Reenviar à Portaria
+        </button>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE LOGIC SCRIPT -->
+<script>
+    let isCheckedIn = false;
+    let isRecordingAudio = false;
+
+    function confirmCheckin() {
+      const btn = document.getElementById('btn-checkin-action');
+      const icon = document.getElementById('checkin-icon');
+      const label = document.getElementById('checkin-label');
+      const sub = document.getElementById('checkin-sub');
+
+      if (!isCheckedIn) {
+        isCheckedIn = true;
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+        icon.innerText = 'check_circle';
+        label.innerText = 'Check-in Confirmado (13:58)';
+        sub.innerText = 'Auditoria registrada e notificação enviada à Juliana e zeladoria!';
+        
+        // Audio feedback chime or prompt notification
+        const toast = document.createElement('div');
+        toast.className = 'fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-lg shadow-xl font-body-sm text-body-sm flex items-center gap-2 z-50 animate-bounce';
+        toast.innerHTML = '<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span> Check-in registrado no CRECI e agenda atualizada!';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 4000);
+      } else {
+        alert('O Check-in oficial já foi validado neste local para a visita #ENC-8924.');
+      }
+    }
+
+    function toggleVoucherModal(show) {
+      const modal = document.getElementById('voucher-modal');
+      if (show) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    document.getElementById('btn-show-voucher').addEventListener('click', () => {
+      toggleVoucherModal(true);
+    });
+
+    function toggleAudioRecorder() {
+      const iconBox = document.getElementById('audio-record-icon-box');
+      const title = document.getElementById('audio-record-title');
+      const status = document.getElementById('audio-record-status');
+
+      isRecordingAudio = !isRecordingAudio;
+
+      if (isRecordingAudio) {
+        iconBox.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+        iconBox.classList.add('bg-error', 'text-on-error', 'animate-pulse');
+        title.innerText = 'Gravando Áudio da Visita...';
+        title.classList.add('text-error');
+        status.innerText = 'IA transcrevendo em segundo plano (00:14)';
+      } else {
+        iconBox.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+        iconBox.classList.remove('bg-error', 'text-on-error', 'animate-pulse');
+        title.innerText = 'Gravação Concluída & Processada';
+        title.classList.remove('text-error');
+        status.innerText = 'Notas salvas: Juliana destacou a vista da sacada!';
+      }
+    }
+
+    function triggerCameraCapture() {
+      alert('Iniciando câmera para registro de vistorias fotográficas do AP-204...');
+    }
+
+    function updateChecklistProgress() {
+      const checkboxes = document.querySelectorAll('#checklist-container input[type="checkbox"]');
+      const total = checkboxes.length;
+      let checkedCount = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) checkedCount++;
+      });
+      document.getElementById('checklist-progress-text').innerText = `${checkedCount} de ${total} concluídos`;
+    }
+
+    function handleFinishVisit() {
+      if (confirm('Deseja encerrar a visita no Edifício Mirante Paulista e gerar o relatório para saída rumo a Moema?')) {
+        alert('Visita #ENC-8924 finalizada com sucesso! Abrindo tela de feedback e orientações de trânsito para a Cobertura em Moema.');
+      }
+    }
+  </script>
+</div></main></div></body></html>

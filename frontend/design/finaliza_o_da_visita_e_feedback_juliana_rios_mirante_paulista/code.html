@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#ffb95f", "surface": "#faf8ff", "primary-fixed": "#dbe1ff", "inverse-on-surface": "#eef0ff", "on-primary-fixed-variant": "#003ea8", "on-surface-variant": "#434655", "surface-tint": "#0053db", "tertiary-container": "#996100", "surface-variant": "#dae2fd", "on-secondary-fixed": "#002113", "secondary-fixed-dim": "#4edea3", "on-secondary": "#ffffff", "inverse-primary": "#b4c5ff", "surface-container": "#eaedff", "secondary": "#006c49", "primary": "#004ac6", "background": "#faf8ff", "surface-dim": "#d2d9f4", "on-primary-fixed": "#00174b", "error-container": "#ffdad6", "inverse-surface": "#283044", "primary-fixed-dim": "#b4c5ff", "surface-bright": "#faf8ff", "surface-container-high": "#e2e7ff", "on-tertiary-fixed-variant": "#653e00", "outline": "#737686", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#005236", "on-tertiary-fixed": "#2a1700", "on-secondary-container": "#00714d", "on-tertiary": "#ffffff", "surface-container-highest": "#dae2fd", "secondary-fixed": "#6ffbbe", "tertiary-fixed": "#ffddb8", "outline-variant": "#c3c6d7", "error": "#ba1a1a", "tertiary": "#784b00", "on-error-container": "#93000a", "on-tertiary-container": "#ffeedd", "surface-container-low": "#f2f3ff", "on-primary-container": "#eeefff", "on-primary": "#ffffff", "on-surface": "#131b2e", "primary-container": "#2563eb", "on-error": "#ffffff", "secondary-container": "#6cf8bb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-md": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "currency-display": [ "Manrope" ], "display-lg": [ "Manrope" ], "currency-table": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-sm": [ "Manrope" ], "body-lg": [ "Inter" ], "headline-md": [ "Manrope" ], "body-sm": [ "Inter" ], "title-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Manrope" ], "display-lg-mobile": [ "Manrope" ] }, "fontSize": { "currency-display": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "currency-table": [ "14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "title-md": [ "15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">neurology</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Corretor Copilot</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Inteligência Imobiliária</span></div></div><div class="px-space-md"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-semibold">Copilot Ativo</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v2.4</span></div></div><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Operação</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[19px]">person_search</span>Leads</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="funil-de-vendas" href="#"><span class="material-symbols-outlined text-[19px]">filter_alt</span>Funil de Vendas</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[19px]">apartment</span>Imóveis</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agenda" href="#"><span class="material-symbols-outlined text-[19px]">calendar_today</span>Agenda</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[19px]">check_circle</span>Tarefas</a></nav></div><div class="flex flex-col gap-space-xs px-space-sm pt-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Gestão &amp; Sistema</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[19px]">insights</span>Operações</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[19px]">settings</span>Configurações</a></nav></div></div><div class="px-space-md pt-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[18px] text-primary">bolt</span><span class="font-label-sm text-label-sm font-semibold">Ações de IA</span></div><span class="font-label-sm text-label-sm text-primary font-bold">12 pendentes</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Encerrar Sessão</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Copilot Pronto</span></div><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Horário de Brasília (14:32)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface leading-tight font-semibold">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant">CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-margin py-margin"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Top Bar / Breadcrumb / Status Hero Strip -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Breadcrumb line -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Painel Corretor</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Agenda</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Visita #ENC-8924</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-bold">Finalização &amp; Feedback Pós-Visita</span>
+</div>
+<!-- Main Title & Operational Actions Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Edifício Mirante Paulista · AP-204</h1>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">task_alt</span>
+<span>Visita Concluída · 14:00 - 14:52 (52 min)</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Turnê 1 de 2</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[17px] text-primary">pin_drop</span>
+          Rua Domingos de Morais, 1240, Vila Mariana — R$ 620.000 · Condomínio R$ 680
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-xs self-start lg:self-center">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-all" id="btn-export-pdf" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+          Exportar Relatório PDF
+        </button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-md hover:bg-primary transition-all" id="btn-save-final" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Salvar Feedback &amp; Avançar</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bento Grid Central: 12 Columns -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT MAIN COLUMN: FEEDBACK & AUDITORIA (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Lead Summary Header Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-surface-container-high overflow-hidden shadow-sm flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Portrait photography of Juliana Rios, an executive tech buyer in her early thirties, smiling gently in casual corporate blazer with bright daylight and neutral modern architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs6IvJMptj61aDYNen2KIX2JiwQWl1emO_FbPj0I2pwS6rfi065NmXchW8Q8AgsEiZhJuC8L3eAxbk3jHJ_oYZ7J5aOgBhTRtzIH2NvGMQMjW8KvxJ3s65PfYlTON_AQK6neRd0Bd_-jwVvwQwSdPxze6Ua7JOo3akSdaz2SYX_wd4OJKkmNm7iolGAUTuyiR-h-UJ-4AxP5rN6Aq0TI7DICsJX1mwT4JpYZB0WTlO"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-[11px] font-bold">
+              ★
+            </div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Juliana Rios</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Score 92 · Lead Quente</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Executiva de Tech · Orçamento máx. R$ 1.5M · Busca 2 dorms ou cobertura compacta</span>
+</div>
+</div>
+<div class="flex flex-col items-start sm:items-end sm:text-right bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Interesse no Mirante</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">Top 2 da Compradora</span>
+</div>
+</div>
+<!-- Card de Avaliação Qualitativa Detalhada -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">thumb_up</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Avaliação da Compradora (Critérios de Seleção)</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 de 5 parâmetros avaliados</span>
+</div>
+<!-- Termômetro de Interesse -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Nível Geral de Aderência do Imóvel</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">88% Match Ideal</span>
+</div>
+<!-- Barra de Progresso Visual -->
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 88%;"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span>Frio / Descartado</span>
+<span>Neutro</span>
+<span class="font-semibold text-primary">Forte Candidato a Proposta</span>
+</div>
+</div>
+<!-- Grade de Critérios Avaliados -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Critério 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">space_dashboard</span>
+                Planta &amp; Metragem (68m²)
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">sentiment_very_satisfied</span> Positivo
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Adorou a integração sala + varanda gourmet. Mencionou espaço ideal para setup de home office e luz indireta para reuniões virtuais.
+            </p>
+</div>
+<!-- Critério 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">wb_sunny</span>
+                Iluminação &amp; Acabamentos
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">sentiment_very_satisfied</span> Positivo
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Sol da tarde perfeito na sala. Piso vinílico novo e bancadas em quartzo agradaram sem necessidade de reforma imediata.
+            </p>
+</div>
+<!-- Critério 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">pets</span>
+                Aceitação Pet &amp; Convenção
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">sentiment_satisfied</span> Positivo
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Condomínio permite seu buldogue francês ("Theo") e tem área pet gramada no térreo. Ponto decisivo para Juliana.
+            </p>
+</div>
+<!-- Critério 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">directions_car</span>
+                Vaga de Garagem (#42)
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">sentiment_neutral</span> Neutro
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Vaga é demarcada e coberta, porém pilar exige manobra extra com SUV médio. Não impede a negociação, mas foi notado.
+            </p>
+</div>
+<!-- Critério 5 (Span Full) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 md:col-span-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">payments</span>
+                Relação Preço x Condomínio (R$ 620k / R$ 680 cond.)
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">verified</span> Muito Positivo
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Considerou o valor muito competitivo para a Vila Mariana. Margem tranquila para dar entrada à vista e financiar residual curto se não optar pela cobertura.
+            </p>
+</div>
+</div>
+</div>
+<!-- Player de Áudio & Transcrição com Copilot Voice -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Gravação de Voz no Desembarque</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Transcrito automaticamente via Copilot Whisper AI</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">0:48s gravado às 14:51</span>
+</div>
+<!-- Simulated Audio Waveform & Player Controls -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col sm:flex-row items-center gap-space-md">
+<button class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow hover:bg-primary-container transition-all flex-shrink-0" id="audio-play-trigger" type="button">
+<span class="material-symbols-outlined text-[24px]" id="play-icon">play_arrow</span>
+</button>
+<div class="flex flex-col w-full gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span id="audio-curr-time">0:18</span>
+<span class="text-primary font-semibold">Depoimento Espontâneo · Elevador Social</span>
+<span>0:48</span>
+</div>
+<!-- Audio Bars Waveform (CSS Simulated) -->
+<div class="flex items-center gap-1 h-8 w-full px-1">
+<span class="w-1 bg-primary h-3 rounded-full"></span>
+<span class="w-1 bg-primary h-5 rounded-full"></span>
+<span class="w-1 bg-primary h-7 rounded-full"></span>
+<span class="w-1 bg-primary h-4 rounded-full"></span>
+<span class="w-1 bg-primary h-8 rounded-full"></span>
+<span class="w-1 bg-primary h-6 rounded-full"></span>
+<span class="w-1 bg-primary h-5 rounded-full"></span>
+<span class="w-1 bg-primary h-7 rounded-full"></span>
+<span class="w-1 bg-primary h-3 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-6 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-4 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-7 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-5 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-8 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-4 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-6 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-2 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-4 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-5 rounded-full"></span>
+<span class="w-1 bg-surface-container-highest h-3 rounded-full"></span>
+</div>
+</div>
+</div>
+<!-- Box de Transcrição Literal -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">record_voice_over</span>
+            Transcrição Literal:
+          </div>
+<blockquote class="font-body-md text-body-md text-on-surface italic pl-space-sm border-l-2 border-primary/40">
+            “Marina, eu gostei muito da varanda e da luz da sala. O tamanho é ideal pro meu momento. Quero ver a cobertura em Moema agora pra comparar o padrão, mas esse do Mirante Paulista com certeza entrou no meu top 2. Se a cobertura for muito cara no condomínio, eu posso fazer proposta aqui.”
+          </blockquote>
+</div>
+<!-- Ações Sugeridas Imediatas pela IA -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">neurology</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Diretrizes Táticas do Copilot</span>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+<span><strong>Segurar formalização de proposta até 17:30:</strong> Juliana precisa sentir o peso financeiro da cobertura em Moema para valorizar o custo-benefício do Mirante.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+<span><strong>Prevenção de Objeções:</strong> Solicitar ao zelador/administradora cópia digital da ata de condomínio que homologa a circulação de pets no elevador de serviço.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Checklist de Saída da Visita -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">checklist</span>
+          Auditoria Operacional de Desocupação
+        </h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-xs px-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_box</span>
+<span>Chave na Portaria C (#8821)</span>
+</div>
+<div class="p-space-xs px-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_box</span>
+<span>Luzes apagadas &amp; Ar off</span>
+</div>
+<div class="p-space-xs px-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_box</span>
+<span>Fechadura digital trancada</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDEBAR COLUMN: PRÓXIMOS PASSOS & ROTA (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Card Próximo Imóvel da Turnê: Cobertura Moema -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Próxima Parada (Visita 2 de 2)</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cobertura Duplex Moema</h2>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-headline-sm text-headline-sm font-bold">16:30</span>
+</div>
+<!-- Foto de Visualização do Imóvel Seguinte -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Modern luxury penthouse terrace in Moema Sao Paulo with wooden deck private hot tub city view and sunset lighting in architectural style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9R919yapyKafFScZHiAvn3K6Z0LjY5mpuWb8LeXnWOY2VbCXsXTatucuaXjPs1psN1812kvG2JLGZtaDSbtSE0kUjQ9XbKRqrJvdI-ydPV_HQ7nd0OI3FeCYgkWcGULIaPhq1pc5VkSd5yCBDOIITAUYQzxZnJJ9FH5ypFjMY6p_4vc4H2QPbjEkDOvpL1V1eezd5N1h0PHuqDmvARlpJRQQFmIAAiM1MgVub7Umy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-md">
+<div class="text-inverse-on-surface flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-white leading-tight">Av. Juriti, 540 — Moema Pássaros</span>
+<span class="font-body-sm text-body-sm text-inverse-on-surface/90">142m² · 3 Suítes · 2 Vagas · R$ 1.450.000</span>
+</div>
+</div>
+</div>
+<!-- Estatísticas da Rota e Janela de Tempo -->
+<div class="grid grid-cols-3 gap-space-xs text-center bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Distância</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">4,3 km</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tempo Est.</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">12 min</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Janela Livre</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1h 26m</span>
+</div>
+</div>
+<!-- Sugestão de Parada Estratégica da IA -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary-container mt-0.5">local_cafe</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Sugestão de Parada Estratégica</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Com 1h 26m de sobra, faça parada no <strong>Santo Grão Moema</strong> (a 400m do imóvel). Bom local para rever a pasta de documentação e checar retorno da proprietária do Mirante.
+            </p>
+</div>
+</div>
+<!-- Botões de Ação Imediata da Rota -->
+<div class="flex flex-col gap-space-xs pt-1">
+<a class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface flex items-center justify-center gap-space-xs font-label-md text-label-md font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-[18px] text-primary">navigation</span>
+            Abrir Rota no Waze / Maps
+          </a>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-2 px-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface flex items-center justify-center gap-1 font-label-md text-label-md transition-all" id="btn-msg-juliana" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">chat</span>
+              WhatsApp Juliana
+            </button>
+<button class="py-2 px-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface flex items-center justify-center gap-1 font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">compare</span>
+              Dossiê Comparativo
+            </button>
+</div>
+</div>
+</div>
+<!-- Card Notificação ao Proprietário do Mirante Paulista -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">forward_to_inbox</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Transparência ao Proprietário</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dra. Helena Vaz (Proprietária AP-204)</span>
+</div>
+</div>
+</div>
+<!-- Preview do Resumo Anonimizado -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Prévia do WhatsApp Automático:</span>
+<p class="italic text-on-surface/90">
+            “Olá Helena, boa tarde! Finalizamos agora a visita no AP-204 com uma compradora muito qualificada. Ela adorou a iluminação da sala e a varanda gourmet. Está avaliando em conjunto com outra opção na região e teremos novidades até o fim da tarde. Chaves conferidas e entregues na portaria!”
+          </p>
+</div>
+<!-- Toggle Switch Envio Automático -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Disparo de Relatório</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enviar ao confirmar finalização</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-whatsapp" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<!-- Quick Metrics Mini-Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">cloud_sync</span>
+<span>CRM Sincronizado às 14:53</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold">
+          Auto-Backup Ativo
+        </span>
+</div>
+</div>
+</div>
+<!-- Microinteraction Toast (Simulado via JS) -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toast-feedback">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">Feedback Salvo com Sucesso!</span>
+<span class="font-body-sm text-body-sm opacity-80 text-white">Relatório enviado à proprietária &amp; Waze preparado para Moema.</span>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-interactions
+  const playBtn = document.getElementById('audio-play-trigger');
+  const playIcon = document.getElementById('play-icon');
+  const currTime = document.getElementById('audio-curr-time');
+  const saveBtn = document.getElementById('btn-save-final');
+  const toast = document.getElementById('toast-feedback');
+  const exportBtn = document.getElementById('btn-export-pdf');
+  const msgBtn = document.getElementById('btn-msg-juliana');
+
+  let isPlaying = false;
+  let timerInterval = null;
+  let seconds = 18;
+
+  if (playBtn) {
+    playBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        playIcon.textContent = 'pause';
+        playBtn.classList.replace('bg-primary', 'bg-tertiary-container');
+        timerInterval = setInterval(() => {
+          if (seconds < 48) {
+            seconds++;
+            currTime.textContent = '0:' + (seconds < 10 ? '0' : '') + seconds;
+          } else {
+            clearInterval(timerInterval);
+            isPlaying = false;
+            playIcon.textContent = 'play_arrow';
+            playBtn.classList.replace('bg-tertiary-container', 'bg-primary');
+          }
+        }, 1000);
+      } else {
+        clearInterval(timerInterval);
+        playIcon.textContent = 'play_arrow';
+        playBtn.classList.replace('bg-tertiary-container', 'bg-primary');
+      }
+    });
+  }
+
+  function triggerToast(message) {
+    if (toast) {
+      if (message) {
+        toast.querySelector('.font-label-md').textContent = message;
+      }
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3500);
+    }
+  }
+
+  if (saveBtn) {
+    saveBtn.addEventListener('click', () => {
+      saveBtn.disabled = true;
+      const originalText = saveBtn.innerHTML;
+      saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Processando...';
+      
+      setTimeout(() => {
+        saveBtn.disabled = false;
+        saveBtn.innerHTML = originalText;
+        triggerToast('Visita arquivada e rota para Moema aberta!');
+      }, 800);
+    });
+  }
+
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      triggerToast('Gerando PDF do Feedback da Visita...');
+    });
+  }
+
+  if (msgBtn) {
+    msgBtn.addEventListener('click', () => {
+      triggerToast('Abrindo conversa com Juliana Rios...');
+    });
+  }
+</script></main></div></body></html>

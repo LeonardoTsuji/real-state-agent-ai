@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container":"#eaedff","tertiary-fixed":"#ffddb8","tertiary-container":"#996100","secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","secondary-fixed-dim":"#4edea3","on-secondary":"#ffffff","tertiary":"#784b00","surface-container-high":"#e2e7ff","on-secondary-fixed-variant":"#005236","primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#ffeedd","inverse-on-surface":"#eef0ff","on-surface":"#131b2e","on-tertiary-fixed":"#2a1700","secondary":"#006c49","on-primary-fixed":"#00174b","surface-dim":"#d2d9f4","secondary-fixed":"#6ffbbe","on-background":"#131b2e","surface":"#faf8ff","on-tertiary":"#ffffff","surface-variant":"#dae2fd","surface-container-low":"#f2f3ff","on-tertiary-fixed-variant":"#653e00","on-error":"#ffffff","primary-fixed":"#dbe1ff","on-secondary-fixed":"#002113","on-secondary-container":"#00714d","surface-tint":"#0053db","primary-container":"#2563eb","on-primary":"#ffffff","background":"#faf8ff","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-primary-container":"#eeefff","on-primary-fixed-variant":"#003ea8","on-surface-variant":"#434655","inverse-primary":"#b4c5ff","outline-variant":"#c3c6d7","outline":"#737686","error":"#ba1a1a","inverse-surface":"#283044","primary":"#004ac6","surface-bright":"#faf8ff","surface-container-highest":"#dae2fd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-sm":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"currency-display":["Manrope"],"headline-md":["Manrope"],"currency-table":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"label-md":["Inter"],"display-lg-mobile":["Manrope"],"headline-sm":["Manrope"],"headline-lg":["Manrope"],"body-sm":["Inter"]},"fontSize":{"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Corretor</span><span class="font-headline-sm text-headline-sm text-primary font-bold">Copilot</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Inteligência Imobiliária</span></div></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">OPERAÇÃO</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">person_search</span><span>Leads</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="funil" href="#"><span class="material-symbols-outlined text-[20px]">filter_alt</span><span>Funil de Vendas</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Imóveis</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Agenda</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span>Tarefas</span></a></nav></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">GESTÃO &amp; SISTEMA</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Operações</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Configurações</span></a></nav></div></div><div class="p-space-md border-t border-outline-variant/20"><div class="bg-surface-container-low border border-primary-fixed-dim/40 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-2"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Copilot Ativo</span><span class="font-label-sm text-[10px] text-secondary font-medium">Online · IA Conectada</span></div></div><span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-[16px] text-primary">domain</span><span class="text-on-surface font-semibold">Painel Corretor</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">Gestão Ativa</span></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">schedule</span><span>14:32 BRT (GMT-3)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 border border-secondary-fixed-dim/60 text-on-secondary-container"><span class="material-symbols-outlined text-[15px]">arrow_back_ios_new</span><span class="font-label-sm text-label-sm font-semibold">Copilot Pronto</span></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-5 w-px bg-outline-variant/30"></div><div class="flex items-center gap-3 pl-1"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Corretora Autônoma · CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Toast Notificação de Envio Realizado -->
+<div class="px-space-xl pt-space-md">
+<div class="bg-surface-container-lowest shadow-md rounded-xl p-space-md flex flex-wrap md:flex-nowrap items-center justify-between gap-space-md relative overflow-hidden transition-all duration-300" id="toastSuccess">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[22px]">send</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Convite de encaixe enviado com sucesso para Juliana Rios via WhatsApp!</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+              Slot pré-reservado
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            O horário foi bloqueado temporariamente por 45 minutos no funil de visitas até a resposta da cliente.
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto justify-end">
+<a class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-colors font-label-md text-label-md" href="https://web.whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Ver conversa no WhatsApp Web</span>
+</a>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="document.getElementById('toastSuccess').style.display='none'">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sub-Header da Agenda & Filtros Rápidos -->
+<div class="px-space-xl pt-space-lg flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Agenda de Visitas</h1>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container rounded-full text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">event_available</span>
+<span class="font-semibold text-on-surface">Quarta-feira, 14 de Outubro de 2026</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">3 compromissos programados · Rota otimizada pela Zona Sul e Centro-Sul de São Paulo</p>
+</div>
+<!-- Controles da Agenda -->
+<div class="flex items-center gap-2 self-start md:self-auto">
+<div class="flex bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1.5 rounded bg-surface-container-lowest shadow-sm font-label-md text-label-md font-semibold text-primary">Dia</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors">Semana</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors">Mês</button>
+</div>
+<div class="h-6 w-px bg-outline-variant/30 mx-1"></div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium">Hoje</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+<button class="ml-2 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-medium transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Novo Encaixe</span>
+</button>
+</div>
+</div>
+<!-- Layout Principal: Linha do Tempo Diária + Painel Lateral do Encaixe -->
+<div class="px-space-xl py-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<!-- Coluna Esquerda: Linha do Tempo das Visitas (7 colunas) -->
+<div class="xl:col-span-7 flex flex-col space-y-space-md">
+<!-- Indicador de Status Geral do Dia -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Realizadas</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-0.5">1 visita</span>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-semibold">Encaixe IA Pendente</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-0.5">1 slot</span>
+</div>
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">hourglass_top</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Confirmadas Hoje</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-0.5">1 visita</span>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+</div>
+</div>
+<!-- Timeline Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col space-y-space-lg">
+<!-- Marcador Horário Matutino: 10:00 - 11:00 (Concluída) -->
+<div class="relative flex items-start gap-space-md group">
+<div class="flex flex-col items-center shrink-0 w-20 pt-1">
+<span class="font-currency-table text-currency-table font-semibold text-on-surface">10:00</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">11:00</span>
+<div class="w-0.5 h-full bg-surface-container-high my-2"></div>
+</div>
+<!-- Card Concluído -->
+<div class="flex-1 bg-surface-container-low rounded-xl p-space-md transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">task_alt</span>
+                  Concluída
+                </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Finalizado às 10:55</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Perdizes · SP</span>
+</div>
+<div class="mt-2.5 flex items-start justify-between gap-3">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Carlos Eduardo Silveira</h2>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">apartment</span>
+<span>Studio Perdizes Prime (Unidade 104)</span>
+<span class="text-outline-variant">·</span>
+<span class="font-semibold text-on-surface">R$ 490.000</span>
+</div>
+</div>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-primary rounded font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span>Ver Notas</span>
+<span class="material-symbols-outlined text-[15px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Intervalo de Almoço / Otimização da IA -->
+<div class="flex items-center gap-4 pl-24 text-on-surface-variant font-label-sm text-[12px] opacity-75">
+<div class="h-px bg-surface-container-highest flex-1"></div>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[14px]">restaurant</span>
+            Almoço e Deslocamento Livre (11:00 - 13:45)
+          </span>
+<div class="h-px bg-surface-container-highest flex-1"></div>
+</div>
+<!-- SLOT DE ENCAIXE ATIVO: 14:00 - 15:00 (Destaque Principal) -->
+<div class="relative flex items-start gap-space-md group">
+<div class="flex flex-col items-center shrink-0 w-20 pt-1">
+<span class="font-currency-table text-currency-table font-bold text-tertiary">14:00</span>
+<span class="font-label-sm text-[11px] text-tertiary-container font-semibold">15:00</span>
+<div class="w-1.5 h-full rounded-full bg-tertiary-fixed-dim/60 my-2"></div>
+</div>
+<!-- Card do Encaixe com Destaque Âmbar/Dourado -->
+<div class="flex-1 bg-surface-container-lowest rounded-xl p-space-lg shadow-md transition-all relative overflow-hidden bg-gradient-to-br from-tertiary-fixed/20 via-surface-container-lowest to-surface-container-low">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<!-- Topo do Card de Encaixe -->
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold shadow-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+                  Pré-reserva Ativa · Aguardando Confirmação
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">mark_chat_read</span>
+                  WhatsApp às 14:33
+                </span>
+</div>
+<!-- Match & Deslocamento IA Badge -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>94% Match · 12 min p/ próxima</span>
+</div>
+</div>
+<!-- Conteúdo Principal do Card -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mt-2">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center shrink-0 overflow-hidden shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Portrait photography of Juliana Rios, an elegant Brazilian real estate prospective buyer woman in her 30s with a warm and decisive demeanor, soft studio daylight, crisp executive look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM4tv3i7KRvKNcRLE2lKfgIuaYBHDSDGc0V9QJaqRYlppL6OqdR8-Jxiuu4mDn_aMt0OJ0pHOWL4UzjnVgaEKZ5LdTV0mPsVzf4l0haERgA0zAuDjPC_Y8cfV9CJZweJe4yKJjFWHVMXxDPV7Xnyytdb9792tufgaBq3PdXMv7F5s-6aL10EAERAn3Sg2yWVXpt3EiFYaJ2RqkK5A2l9K8LtwpMyu9-tswVswXUP3X"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Juliana Rios</h3>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary-container text-on-secondary-container">LEAD QUENTE</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">domain</span>
+                      Edifício Mirante Paulista (AP-204)
+                    </span>
+<span class="text-outline-variant">·</span>
+<span>Vila Mariana</span>
+<span class="text-outline-variant">·</span>
+<span class="font-currency-table text-currency-table font-bold text-on-surface">R$ 620.000</span>
+</div>
+</div>
+</div>
+<!-- Miniatura do Imóvel Proposto -->
+<div class="hidden md:flex items-center gap-2.5 bg-surface-container-low p-2 rounded-lg">
+<div class="w-14 h-12 rounded bg-surface-dim overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Modern upscale apartment living room interior in Vila Mariana, open plan gourmet balcony, morning sunlight streaming through wide glass doors, cozy minimalist decor with natural wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjeXepOF8tRHzf51-iMDk-t05FOQVmG9naYwxdQ5HTHkxOAaK7OFEUMo4LzB2qbEv21o6_JCuCKCCkBWL6nfKR2xZFv9BK-zUfsLVFSzhQD9TfMY1ZfYPpzGSb5lNRU5VGw0sASpgSo7MRo-1AIOEziOM_iIRX-UqTBBx4DkEr3KIsJp9uSjAoc4NK1oGDffX6YVqw8Z5nulC0psN9tlTNxOONa0qCSvbIsgIqeHnx"/>
+</div>
+<div class="flex flex-col pr-2">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase">Favoritado</span>
+<span class="font-body-sm text-[12px] font-semibold text-on-surface">68m² · 2 Quartos</span>
+</div>
+</div>
+</div>
+<!-- Timer de Expiração Regressivo -->
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/80 p-3 rounded-lg">
+<div class="flex items-center justify-between text-on-surface font-label-md text-label-md mb-1.5">
+<div class="flex items-center gap-1.5 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[17px]">timer</span>
+<span id="countdownLabel">Tempo restante de pré-reserva: 43 min</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Expira às 15:15 BRT</span>
+</div>
+<!-- Barra de Progresso Visual do Tempo -->
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary to-tertiary-fixed-dim transition-all duration-1000 rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Rodapé com Ações Rápidas no Card -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-2">
+<span class="font-body-sm text-[12px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">psychology</span>
+                Sugestão baseada no cancelamento prévio de Marcelo Tavares.
+              </span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Reenviar Mensagem</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md transition-colors flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Confirmar Manualmente</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg text-error hover:bg-error-container/30 font-label-md text-label-md transition-colors" title="Liberar horário">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Indicador de Deslocamento Rápido no Mapa -->
+<div class="flex items-center gap-3 pl-24">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">directions_car</span>
+<span>Deslocamento calculado: 12 min (4,3 km via Av. 23 de Maio / Av. Ibirapuera)</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">traffic</span>
+<span class="text-secondary font-semibold">Trânsito Livre</span>
+</div>
+</div>
+<!-- Horário Vespertino: 16:30 - 17:30 (Visita Fixada / Agendada) -->
+<div class="relative flex items-start gap-space-md group">
+<div class="flex flex-col items-center shrink-0 w-20 pt-1">
+<span class="font-currency-table text-currency-table font-semibold text-on-surface">16:30</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">17:30</span>
+<div class="w-0.5 h-full bg-surface-container-high my-2"></div>
+</div>
+<!-- Card Visita Agendada -->
+<div class="flex-1 bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Confirmada
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cliente Notificada via Calendário</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Moema Nobre · SP</span>
+</div>
+<div class="mt-2.5 flex items-start justify-between gap-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Juliana Rios</h3>
+<span class="font-label-sm text-[11px] text-primary bg-primary-fixed/50 px-1.5 py-0.2 rounded font-semibold">Visita Âncora</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">villa</span>
+<span>Cobertura Duplex Moema (Unidade 1801)</span>
+<span class="text-outline-variant">·</span>
+<span class="font-semibold text-on-surface">R$ 1.450.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Ver no Maps">
+<span class="material-symbols-outlined text-[18px]">map</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Opções">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Coluna Direita: Painel Lateral de Detalhes do Slot Selecionado (5 colunas) -->
+<div class="xl:col-span-5 flex flex-col space-y-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col space-y-space-md relative overflow-hidden">
+<!-- Header do Painel -->
+<div class="flex items-start justify-between pb-space-sm border-b border-surface-container-high/60">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Slot 14:00 - 15:00</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold mt-0.5">Status: Aguardando Confirmação</span>
+</div>
+<div class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold">
+            ID #ENC-8924
+          </div>
+</div>
+<!-- Mini Card do Lead Juliana Rios -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Dados da Compradora</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-secondary font-bold bg-secondary-container/50 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+              Score 92 · Altíssima Propensão
+            </span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-13 h-13 rounded-full overflow-hidden shrink-0 shadow-sm ring-2 ring-primary-fixed">
+<img class="w-full h-full object-cover" data-alt="Portrait photography of Juliana Rios, an elegant Brazilian real estate prospective buyer woman in her 30s with a warm and decisive demeanor, soft studio daylight, crisp executive look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKfT-FUNLNTmOdHAtJOEI3Ff0UnZeE7st-HicnzkZq0VG77-3UvW-ZnL0vfGfq3rQhSooodrzMhSHQlPESG7jAIKqR70jeYzJYmalGGd6ga5h7-BkwhVrWoHG4RoCMVdcDctwcjHoTRWv37Y67JObuHLtSKEkYLmOBkcdLL2wAo2e617D8m0BgJL6MuZ4ONUEnhgvi_jsodq0zzam8X5-6GIr4HBkryXRUVIREVJMe"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Juliana Rios</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Executiva de Tech · Orçamento R$ 1.5M</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">phone_iphone</span>
+<span class="font-currency-table text-currency-table text-on-surface font-semibold">(11) 97123-4567</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Imóvel do Encaixe -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col space-y-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Imóvel Proposto no Encaixe</span>
+<div class="flex items-center gap-3">
+<div class="w-20 h-16 rounded-lg overflow-hidden shrink-0 shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Modern upscale apartment living room interior in Vila Mariana, open plan gourmet balcony, morning sunlight streaming through wide glass doors, cozy minimalist decor with natural wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKMsx5VeoxVO_rx9lCbfU2xX_MClQX2Xzu0qj4yGhYQnshRgxcKIcDBF-T6SNfKgaHIQOr4bQcoz50WODcxMYoYCMsrHHhJMXdno7J4JCIV7tu7AnJft33FiCeD4DP5Rh8DSt-9ktqyXZetBtfRm1s6xrhN4P1GSNMJWke-bumRKtTtcyRP-5piuSaBc7PGUqocsth9ybXoTCloei-lh-la5yKPp18ne45wbE52Ylo"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface truncate">Mirante Paulista · AP-204</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rua Domingos de Morais, Vila Mariana</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-currency-display text-[17px] text-primary font-bold">R$ 620.000</span>
+<span class="font-label-sm text-[11px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Cond: R$ 680</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Balão de Prévia da Mensagem Enviada no WhatsApp -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">chat_bubble</span>
+              Mensagem Enviada no WhatsApp
+            </span>
+<span class="font-label-sm text-[11px] text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+              Entregue e lida pelo cliente
+            </span>
+</div>
+<!-- Mockup Balão WhatsApp Corporativo -->
+<div class="bg-[#dcf8c6]/30 dark:bg-[#054740]/20 p-space-md rounded-2xl rounded-tr-xs shadow-xs relative">
+<p class="font-body-md text-[13.5px] leading-relaxed text-on-surface select-text">
+              "Oi Juliana! Tudo bem? Como já temos nossa visita marcada hoje às 16:30 na Cobertura em Moema, tive um cancelamento às 14:00 e liberou um horário perfeito no <strong class="font-semibold text-primary">Edifício Mirante Paulista</strong> (aquele apê de 68m² na Vila Mariana com varanda gourmet que você favoritou). Fica a apenas 12 min de Moema. Gostaria de passar lá comigo antes? Consigo segurar essa vaga pra você até 15:15!"
+            </p>
+<div class="mt-2.5 flex items-center justify-end gap-1.5">
+<span class="font-label-sm text-[10px] text-on-surface-variant">14:33</span>
+<!-- Duplo Check Azul WhatsApp -->
+<span class="material-symbols-outlined text-[15px] text-[#34B7F1]" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+</div>
+</div>
+<!-- Card de Contingência da IA (Next Action) -->
+<div class="bg-surface-container-high/50 rounded-xl p-space-md flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Regra de Contingência Ativa</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 leading-snug">
+              Se Juliana não responder até <span class="font-semibold text-primary">15:15</span>, o Copilot oferecerá automaticamente o slot para <span class="font-semibold text-on-surface">Thiago Prado</span> (fila de espera com interesse compatível na Vila Mariana).
+            </p>
+</div>
+</div>
+<!-- Botões de Ação no Rodapé do Painel Lateral -->
+<div class="pt-space-sm flex flex-col space-y-2">
+<!-- Botão Primário WhatsApp Web -->
+<a class="w-full py-2.5 px-space-md rounded-lg bg-[#25D366] hover:bg-[#1EBE5D] text-white font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm transition-all hover:scale-[1.01] active:scale-[0.99]" href="https://web.whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Abrir no WhatsApp Web</span>
+</a>
+<!-- Botão Secundário: Forçar Confirmação -->
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-colors" id="btnManualConfirm" onclick="alert('Visita confirmada manualmente! A agenda de Juliana foi atualizada no calendário.')">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span>Forçar Confirmação da Visita</span>
+</button>
+<!-- Botão Terciário: Cancelar Pré-reserva -->
+<button class="w-full py-2 px-space-md rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/20 font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" onclick="if(confirm('Deseja realmente cancelar a pré-reserva e liberar este horário para outros compradores?')) { alert('Slot liberado com sucesso.'); }">
+<span class="material-symbols-outlined text-[16px]">close</span>
+<span>Cancelar Pré-reserva e Liberar Slot</span>
+</button>
+</div>
+</div>
+<!-- Card Informativo de Logística da Rota -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">navigation</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Navegação Integrada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Waze &amp; Google Maps sincronizados</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">
+          Exportar Rota
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simulação de Timer Regressivo Suave no Front-end
+  (function() {
+    let minutesLeft = 43;
+    let secondsLeft = 18;
+    const label = document.getElementById('countdownLabel');
+
+    if (label) {
+      setInterval(function() {
+        if (secondsLeft > 0) {
+          secondsLeft--;
+        } else {
+          if (minutesLeft > 0) {
+            minutesLeft--;
+            secondsLeft = 59;
+          }
+        }
+        const formattedSec = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+        label.textContent = `Tempo restante de pré-reserva: ${minutesLeft}m ${formattedSec}s`;
+      }, 1000);
+    }
+  })();
+</script></main></div></body></html>

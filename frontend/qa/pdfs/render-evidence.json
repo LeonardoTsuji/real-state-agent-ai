@@ -1,0 +1,44 @@
+[
+  {
+    "a4" : true,
+    "file" : "visit_report.pdf",
+    "footerOnEveryPage" : true,
+    "noEmptyPages" : true,
+    "pages" : 1
+  },
+  {
+    "a4" : true,
+    "file" : "dossier.pdf",
+    "footerOnEveryPage" : true,
+    "noEmptyPages" : true,
+    "pages" : 1
+  },
+  {
+    "a4" : true,
+    "file" : "receipt.pdf",
+    "footerOnEveryPage" : true,
+    "noEmptyPages" : true,
+    "pages" : 2
+  },
+  {
+    "a4" : true,
+    "file" : "acceptance.pdf",
+    "footerOnEveryPage" : true,
+    "noEmptyPages" : true,
+    "pages" : 2
+  },
+  {
+    "a4" : true,
+    "file" : "draft.pdf",
+    "footerOnEveryPage" : true,
+    "noEmptyPages" : true,
+    "pages" : 2
+  },
+  {
+    "a4" : true,
+    "file" : "report.pdf",
+    "footerOnEveryPage" : true,
+    "noEmptyPages" : true,
+    "pages" : 2
+  }
+]

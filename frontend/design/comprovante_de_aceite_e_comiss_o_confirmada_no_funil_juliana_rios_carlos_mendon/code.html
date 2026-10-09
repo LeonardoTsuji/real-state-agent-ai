@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#ffb95f", "surface": "#faf8ff", "primary-fixed": "#dbe1ff", "inverse-on-surface": "#eef0ff", "on-primary-fixed-variant": "#003ea8", "on-surface-variant": "#434655", "surface-tint": "#0053db", "tertiary-container": "#996100", "surface-variant": "#dae2fd", "on-secondary-fixed": "#002113", "secondary-fixed-dim": "#4edea3", "on-secondary": "#ffffff", "inverse-primary": "#b4c5ff", "surface-container": "#eaedff", "secondary": "#006c49", "primary": "#004ac6", "background": "#faf8ff", "surface-dim": "#d2d9f4", "on-primary-fixed": "#00174b", "error-container": "#ffdad6", "inverse-surface": "#283044", "primary-fixed-dim": "#b4c5ff", "surface-bright": "#faf8ff", "surface-container-high": "#e2e7ff", "on-tertiary-fixed-variant": "#653e00", "outline": "#737686", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#005236", "on-tertiary-fixed": "#2a1700", "on-secondary-container": "#00714d", "on-tertiary": "#ffffff", "surface-container-highest": "#dae2fd", "secondary-fixed": "#6ffbbe", "tertiary-fixed": "#ffddb8", "outline-variant": "#c3c6d7", "error": "#ba1a1a", "tertiary": "#784b00", "on-error-container": "#93000a", "on-tertiary-container": "#ffeedd", "surface-container-low": "#f2f3ff", "on-primary-container": "#eeefff", "on-primary": "#ffffff", "on-surface": "#131b2e", "primary-container": "#2563eb", "on-error": "#ffffff", "secondary-container": "#6cf8bb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-md": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "currency-display": [ "Manrope" ], "display-lg": [ "Manrope" ], "currency-table": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-sm": [ "Manrope" ], "body-lg": [ "Inter" ], "headline-md": [ "Manrope" ], "body-sm": [ "Inter" ], "title-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Manrope" ], "display-lg-mobile": [ "Manrope" ] }, "fontSize": { "currency-display": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "currency-table": [ "14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "title-md": [ "15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">neurology</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Corretor Copilot</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Inteligência Imobiliária</span></div></div><div class="px-space-md"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-semibold">Copilot Ativo</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v2.4</span></div></div><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Operação</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[19px]">person_search</span>Leads</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="funil-de-vendas" href="#"><span class="material-symbols-outlined text-[19px]">filter_alt</span>Funil de Vendas</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[19px]">apartment</span>Imóveis</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agenda" href="#"><span class="material-symbols-outlined text-[19px]">calendar_today</span>Agenda</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[19px]">check_circle</span>Tarefas</a></nav></div><div class="flex flex-col gap-space-xs px-space-sm pt-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Gestão &amp; Sistema</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[19px]">insights</span>Operações</a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[19px]">settings</span>Configurações</a></nav></div></div><div class="px-space-md pt-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[18px] text-primary">bolt</span><span class="font-label-sm text-label-sm font-semibold">Ações de IA</span></div><span class="font-label-sm text-label-sm text-primary font-bold">12 pendentes</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Encerrar Sessão</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Copilot Pronto</span></div><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Horário de Brasília (14:32)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface leading-tight font-semibold">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant">CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-margin py-margin"><div class="flex flex-col w-full gap-space-lg">
+<!-- 1. HEADER DE STATUS & BREADCRUMBS -->
+<div class="flex flex-col gap-space-sm">
+<!-- Breadcrumb bar -->
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md flex-wrap">
+<a class="hover:text-primary transition-colors" href="#">Painel Corretor</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Funil de Vendas</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-secondary font-semibold">Negócios Ganhos (Won)</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold truncate">Juliana Rios &amp; Dr. Carlos Mendonça (Cobertura Moema)</span>
+</nav>
+<!-- Main action title bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Negócio Ganho: Aceite Formal &amp; Comissão Confirmada</h1>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wide">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            🎉 Venda Fechada (Won)
+          </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Minuta Assinada (DocuSign)
+          </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">account_balance</span>
+            Sinal Compensado R$ 200k
+          </span>
+<span class="font-body-sm text-body-sm text-outline ml-1">ID da Transação: #CTR-2026-8924</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-3.5 h-10 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Exportar Dossiê (PDF)
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3.5 h-10 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+          Cartório / Banco
+        </button>
+<button class="inline-flex items-center gap-1.5 px-4 h-10 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all shadow-md font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+          Emitir Recibo de Honorários (CRECI)
+        </button>
+</div>
+</div>
+</div>
+<!-- 2. BANNER DE CELEBRAÇÃO & IMPACTO OPERACIONAL -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary-container via-primary to-surface-tint p-space-lg text-on-primary shadow-lg">
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 rounded-xl bg-on-primary/15 backdrop-blur-md flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px] text-secondary-fixed">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Turnaround Recorde</span>
+<span class="text-primary-fixed font-body-sm text-body-sm">Ciclo Homologado</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-primary">
+            Parabéns, Marina! Fechamento homologado com sucesso em menos de 6 horas.
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed">
+            Do encaixe inteligente no slot ocioso das 11:00 à celebração noturna com minuta assinada às 19:45. VGV de <strong class="text-on-primary">R$ 1.380.000</strong> com honorários integrais de <strong class="text-secondary-fixed">R$ 82.800</strong> garantidos em conta custódia.
+          </p>
+</div>
+</div>
+<!-- Quick KPI Chips -->
+<div class="grid grid-cols-3 gap-space-xs shrink-0 bg-on-primary/10 backdrop-blur-md p-space-sm rounded-xl">
+<div class="flex flex-col px-space-sm py-1">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Tempo Total</span>
+<span class="font-currency-display text-currency-display text-on-primary font-bold">5h 45m</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Encaixe no mesmo dia</span>
+</div>
+<div class="flex flex-col px-space-sm py-1">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Negociação</span>
+<span class="font-currency-display text-currency-display text-on-primary font-bold">-4,8%</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Dentro do teto acordado</span>
+</div>
+<div class="flex flex-col px-space-sm py-1">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">NPS Ambas Partes</span>
+<span class="font-currency-display text-currency-display text-secondary-fixed font-bold">10 / 10</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Compradora &amp; Vendedor</span>
+</div>
+</div>
+</div>
+<!-- Ambient flare decoration -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-72 h-72 rounded-full bg-inverse-primary/20 blur-3xl pointer-events-none"></div>
+</div>
+<!-- 3. GRID PRINCIPAL: 70% ESQUERDA (Dossiê + Auditoria + Liquidação) | 30% DIREITA (Comissão + Meta + Pós-Venda) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- COLUNA ESQUERDA (8 / 12 colunas = ~67%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- CARD A: COMPROVANTE OFICIAL DE ACEITE & VALIDAÇÃO VINCULANTE -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Comprovante Oficial de Aceite &amp; Validação Vinculante</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Minuta Digital nº 2026-8924 · Certificação Criptográfica ICP-Brasil</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span> Vínculo Jurídico Estabelecido
+          </span>
+</div>
+<!-- Property Identity Banner -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="w-full sm:w-36 h-24 rounded-lg overflow-hidden shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Fotografia arquitetônica de uma cobertura duplex de alto padrão em Moema São Paulo, com ampla varanda envidraçada integrada à sala de estar com piso de madeira nobre e iluminação dourada de fim de tarde." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH_k9DNKAWCb_O5w8LHnoQYq2DHNnZxrAL9a459--u79qB_D551YE_U9In0WN3TVyuBJ-iKkB2bzCeV-lwDQtBgBlKfesosYF2_KJ_XAtvmWEMXg_lnT4W1Im2Kct_Lpwb611ppUj2QBM2j90Dj-Wd4kaX5CP-w4VEgzgu4cj3n-99D13h_9R0qU7vYbFwolLwzyV3Lk3-tRXI5E010HlLWuGyFSmlPBg16o4wWVM6etALh2DbJtu2pg"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm font-semibold">Duplex 1801</span>
+</div>
+<div class="flex flex-col gap-1 w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Edifício Pássaros Moema · Cobertura 1801</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">R$ 1.380.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+              Av. Rouxinol, 720, Moema Pássaros, São Paulo - SP
+            </p>
+<div class="flex items-center gap-space-md pt-1 font-label-sm text-label-sm text-outline-variant flex-wrap">
+<span class="text-on-surface-variant font-medium">188m² privativos</span>
+<span>•</span>
+<span class="text-on-surface-variant font-medium">3 suítes</span>
+<span>•</span>
+<span class="text-on-surface-variant font-medium">3 vagas demarcadas + depósito</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Hash: 0x8f4b...39e1</span>
+</div>
+</div>
+</div>
+<!-- Envolvidos e Signatários (Grid 2 cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Vendedor -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Vendedor / Proprietário</span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> Assinado
+              </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md font-bold text-on-surface">
+                CM
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Dr. Carlos Mendonça</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CPF 118.***.***-25</span>
+</div>
+</div>
+<div class="pt-2 text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-0.5">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> DocuSign ICP-Brasil às 18:15</span>
+<span class="text-outline text-label-sm font-label-sm pl-4">IP Certificado · Chave Pública A3</span>
+</div>
+</div>
+<!-- Compradora -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Compradora / Proponente</span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> Assinado
+              </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md font-bold text-on-surface">
+                JR
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Juliana Rios</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CPF 342.***.***-80</span>
+</div>
+</div>
+<div class="pt-2 text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-0.5">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> DocuSign FaceID + Gov.br às 18:42</span>
+<span class="text-outline text-label-sm font-label-sm pl-4">Geolocalização validada em São Paulo</span>
+</div>
+</div>
+</div>
+<!-- Corretora Intermediadora Certification -->
+<div class="p-space-sm px-space-md rounded-lg bg-surface-container-low flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Marina Costa</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CRECI 248.910-F · Homologação e fé pública intermediária às 18:45</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+            Visualizar Minuta Completa (DocuSign)
+          </button>
+</div>
+</div>
+<!-- CARD B: CRONOGRAMA DE LIQUIDAÇÃO FINANCEIRA & COMPROVANTE DE ENTRADA -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Cronograma de Liquidação &amp; Fluxo Financeiro</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Valor Total Transacionado: R$ 1.380.000,00</p>
+</div>
+</div>
+<span class="font-label-md text-label-md px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-medium">Conta Garantia Itaú Private</span>
+</div>
+<!-- Milestones Pipeline -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<!-- Step 1: Sinal (COMPENSADO) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">1. Sinal de Entrada &amp; Reserva Vinculante</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">14,5%</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">CONCLUÍDO &amp; COMPENSADO · TED Banco Itaú Escrow #98421-0</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md sm:text-right">
+<div>
+<span class="font-currency-display text-currency-display font-bold text-secondary">R$ 200.000,00</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Compensação 19:10 (Hoje)</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md font-medium transition-colors shadow-sm inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt</span> Comprovante
+                </button>
+</div>
+</div>
+</div>
+<!-- Step 2: Recursos Próprios (EM CURSO) -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold font-label-md">
+                  2
+                </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">2. Recursos Próprios / Liquidação de Chaves</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold">34,8%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Previsão em 30 dias (14/11/2026) · Condicionado a Certidões Vintenárias</span>
+</div>
+</div>
+<div class="sm:text-right">
+<span class="font-currency-display text-currency-display font-bold text-on-surface">R$ 480.000,00</span>
+<p class="font-label-sm text-label-sm text-outline">Aguardando Dossiê Cartorário</p>
+</div>
+</div>
+</div>
+<!-- Step 3: Financiamento Itaú -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold font-label-md">
+                  3
+                </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">3. Financiamento Imobiliário Itaú Private</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold">50,7%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Carta de Crédito Pré-Aprovada · Emissão de Contrato de Repasse Bancário: 20/10</span>
+</div>
+</div>
+<div class="sm:text-right">
+<span class="font-currency-display text-currency-display font-bold text-on-surface">R$ 700.000,00</span>
+<p class="font-label-sm text-label-sm text-secondary font-medium">Score A+ Validado</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Cláusulas Anexas Homologadas -->
+<div class="mt-space-xs p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+            Cláusulas Especiais Homologadas no Aceite
+          </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-1">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong>Mobiliário Fixo Integrado:</strong> Armários planejados Ornare da cozinha, suíte master e aparelhos split inverter inclusos.
+              </span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong>Posse Precária para Arquitetura:</strong> Acesso facultado em 5 dias úteis para medição técnica e cronograma de reforma.
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD C: CHECKLIST DE PÓS-VENDA & PRÓXIMAS ETAPAS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">checklist</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Plano de Execução &amp; Próximas Etapas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 de 5 marcos operacionais finalizados com sucesso</p>
+</div>
+</div>
+<div class="w-32 bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Concluído 1 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface line-through opacity-75">Aceite formal do proprietário Dr. Carlos Mendonça</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Concluído 18:15</span>
+</div>
+<!-- Concluído 2 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface line-through opacity-75">Assinatura digital da minuta preliminar (DocuSign ICP-Brasil)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Concluído 18:45</span>
+</div>
+<!-- Concluído 3 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<span class="font-body-md text-body-md text-on-surface line-through opacity-75">Compensação bancária do sinal de garantia (R$ 200.000 TED)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Compensado 19:10</span>
+</div>
+<!-- Pendente 4 (Em andamento) -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px] animate-spin">sync</span>
+</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Solicitação de certidões cíveis e de ônus reais no 14º CRI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Em processamento pela assessoria jurídica parceira (Dra. Camila Prado)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Em Andamento</span>
+</div>
+<!-- Pendente 5 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Entrega das chaves provisórias e termo de autorização para arquitetura</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Agendada para segunda-feira às 10:00 com Juliana Rios na portaria</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Segunda, 10:00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUNA DIREITA (4 / 12 colunas = ~33%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- CARD A: DESTAQUE HONORÁRIOS & COMISSÃO CONFIRMADA -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Accent top border glow -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary to-secondary-container"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">price_check</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Honorários Corretagem (6,0%)</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Confirmada</span>
+</div>
+<div class="flex flex-col">
+<span class="font-currency-display text-[36px] leading-[44px] text-on-surface font-extrabold tracking-tight">
+            R$ 82.800,00
+          </span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+            Liberada para liquidação em Conta Vinculada
+          </span>
+</div>
+<!-- Regra de Repasse das Parcelas -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Regra de Recebimento de Honorários</span>
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block">1ª Parcela (50% no Sinal)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Disponível D+1 (Amanhã)</span>
+</div>
+<span class="font-currency-table text-currency-table font-bold text-on-surface">R$ 41.400,00</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block">2ª Parcela (50% na Escritura)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Previsto para liquidação final</span>
+</div>
+<span class="font-currency-table text-currency-table font-bold text-on-surface">R$ 41.400,00</span>
+</div>
+</div>
+<!-- Dados Bancários da Corretora -->
+<div class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Conta de Destino</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Chave PIX / TED Validada</span>
+</div>
+<span class="font-semibold text-on-surface">Marina Costa ME (CRECI 248.910-F)</span>
+<span>Banco Itaú Unibanco (341) · Agência 0932 · CC 48210-9</span>
+</div>
+<button class="w-full h-11 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all font-label-md text-label-md font-bold shadow-md flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+          Solicitar TED da 1ª Parcela (R$ 41.400)
+        </button>
+</div>
+<!-- CARD B: ATUALIZAÇÃO AUTOMÁTICA NO FUNIL DE VENDAS & META -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">filter_alt</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Status no Funil de Vendas</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Sincronizado
+          </span>
+</div>
+<!-- Funil stage progression visual -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Etapa Anterior</span>
+<span class="font-semibold text-outline">Proposta Enviada</span>
+</div>
+<div class="flex items-center justify-center my-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">emoji_events</span>
+              Ganho &amp; Fechado (Won)
+            </span>
+<span>R$ 1.380.000</span>
+</div>
+</div>
+<!-- Meta Mensal de Outubro -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Meta de Outubro / 2026</span>
+<span class="text-secondary font-bold">87,3% Atingida</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-3 overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full transition-all duration-1000" style="width: 87.3%;"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Realizado: <strong class="text-on-surface">R$ 104.800</strong></span>
+<span>Meta: <strong>R$ 120.000</strong></span>
+</div>
+<p class="font-label-sm text-label-sm text-outline mt-1">
+            Faltam apenas R$ 15.200 para alcançar 100% da meta de comissões do mês!
+          </p>
+</div>
+</div>
+<!-- CARD C: AÇÕES DE FIDELIZAÇÃO E DEPOIMENTO (COPILOT CRM) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Copilot CRM · Próximas Ações</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Fidelização &amp; Encantamento</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Suggestion 1: Mimo -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">celebration</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-body-md font-semibold text-on-surface">Enviar Presente de Boas-Vindas</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Kit Champanhe Moët &amp; Chandon + Taças personalizadas para Juliana Rios no endereço de trabalho.
+              </p>
+</div>
+</div>
+<!-- Suggestion 2: NPS -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">star</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-body-md font-semibold text-on-surface">Disparo de Pesquisa NPS &amp; Avaliação</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Pesquisa de 1 clique programada automaticamente via WhatsApp para amanhã às 10:00.
+              </p>
+</div>
+</div>
+</div>
+<button class="w-full h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          Gerar Mensagem de Celebração WhatsApp
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

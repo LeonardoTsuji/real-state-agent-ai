@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container":"#eaedff","tertiary-fixed":"#ffddb8","tertiary-container":"#996100","secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","secondary-fixed-dim":"#4edea3","on-secondary":"#ffffff","tertiary":"#784b00","surface-container-high":"#e2e7ff","on-secondary-fixed-variant":"#005236","primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#ffeedd","inverse-on-surface":"#eef0ff","on-surface":"#131b2e","on-tertiary-fixed":"#2a1700","secondary":"#006c49","on-primary-fixed":"#00174b","surface-dim":"#d2d9f4","secondary-fixed":"#6ffbbe","on-background":"#131b2e","surface":"#faf8ff","on-tertiary":"#ffffff","surface-variant":"#dae2fd","surface-container-low":"#f2f3ff","on-tertiary-fixed-variant":"#653e00","on-error":"#ffffff","primary-fixed":"#dbe1ff","on-secondary-fixed":"#002113","on-secondary-container":"#00714d","surface-tint":"#0053db","primary-container":"#2563eb","on-primary":"#ffffff","background":"#faf8ff","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-primary-container":"#eeefff","on-primary-fixed-variant":"#003ea8","on-surface-variant":"#434655","inverse-primary":"#b4c5ff","outline-variant":"#c3c6d7","outline":"#737686","error":"#ba1a1a","inverse-surface":"#283044","primary":"#004ac6","surface-bright":"#faf8ff","surface-container-highest":"#dae2fd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-sm":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"currency-display":["Manrope"],"headline-md":["Manrope"],"currency-table":["Inter"],"body-md":["Inter"],"display-lg":["Manrope"],"label-md":["Inter"],"display-lg-mobile":["Manrope"],"headline-sm":["Manrope"],"headline-lg":["Manrope"],"body-sm":["Inter"]},"fontSize":{"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Corretor</span><span class="font-headline-sm text-headline-sm text-primary font-bold">Copilot</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Inteligência Imobiliária</span></div></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">OPERAÇÃO</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">person_search</span><span>Leads</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="funil" href="#"><span class="material-symbols-outlined text-[20px]">filter_alt</span><span>Funil de Vendas</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Imóveis</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Agenda</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span>Tarefas</span></a></nav></div><div class="px-space-md pt-space-lg"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">GESTÃO &amp; SISTEMA</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="operacoes" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Operações</span></a><a class="flex items-center gap-3 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Configurações</span></a></nav></div></div><div class="p-space-md border-t border-outline-variant/20"><div class="bg-surface-container-low border border-primary-fixed-dim/40 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-2"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Copilot Ativo</span><span class="font-label-sm text-[10px] text-secondary font-medium">Online · IA Conectada</span></div></div><span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/20"><span class="material-symbols-outlined text-[16px] text-primary">domain</span><span class="text-on-surface font-semibold">Painel Corretor</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">Gestão Ativa</span></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">schedule</span><span>14:32 BRT (GMT-3)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 border border-secondary-fixed-dim/60 text-on-secondary-container"><span class="material-symbols-outlined text-[15px]">arrow_back_ios_new</span><span class="font-label-sm text-label-sm font-semibold">Copilot Pronto</span></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-5 w-px bg-outline-variant/30"></div><div class="flex items-center gap-3 pl-1"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Corretora Autônoma · CRECI 248.910-F</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full relative">
+<!-- BACKGROUND AGENDA DE VISITAS (Simulated underneath modal scrim) -->
+<div class="w-full px-space-xl py-space-lg select-none filter blur-[2px] opacity-40 pointer-events-none transition duration-200">
+<!-- Top Stats Row -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Total Hoje</span>
+<span class="font-display-lg text-display-lg text-on-surface font-bold">4 Visitas</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">event</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Confirmadas</span>
+<span class="font-display-lg text-display-lg text-secondary font-bold">3 Agendadas</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Aguardando Confirmação</span>
+<span class="font-display-lg text-display-lg text-tertiary-container font-bold">1 Pendente</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/40 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">hourglass_top</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Taxa de Pontualidade</span>
+<span class="font-display-lg text-display-lg text-primary font-bold">96%</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+</div>
+</div>
+<!-- Calendar View Placeholder Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-3">
+<h2 class="font-headline-md text-headline-md text-on-surface">Outubro 2026</h2>
+<span class="font-label-md text-label-md bg-surface-container px-2.5 py-1 rounded-md text-on-surface-variant">Semana 42</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md">Hoje</button>
+<div class="flex bg-surface-container-low rounded-lg p-0.5">
+<button class="p-1 text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">chevron_left</span></button>
+<button class="p-1 text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-5 gap-space-md h-96">
+<div class="bg-surface-container-low/50 rounded-lg p-2.5 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Seg, 12</span>
+<div class="bg-surface-container-lowest p-2 rounded shadow-sm text-xs">09:30 - Lucas Rezende</div>
+</div>
+<div class="bg-surface-container-low/50 rounded-lg p-2.5 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Ter, 13</span>
+<div class="bg-surface-container-lowest p-2 rounded shadow-sm text-xs">11:00 - Camila Duarte</div>
+</div>
+<div class="bg-primary-fixed/20 rounded-lg p-2.5 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Qua, 14 (Hoje)</span>
+<div class="bg-primary-container text-on-primary p-2.5 rounded shadow-sm text-xs">
+<span class="font-semibold block">14:00 - Rafael Almeida</span>
+<span>Mirante Paulista AP-204</span>
+</div>
+</div>
+<div class="bg-surface-container-low/50 rounded-lg p-2.5 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Qui, 15</span>
+<div class="bg-surface-container-lowest p-2 rounded shadow-sm text-xs">15:30 - Amanda Rios</div>
+</div>
+<div class="bg-surface-container-low/50 rounded-lg p-2.5 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Sex, 16</span>
+<div class="bg-surface-container-lowest p-2 rounded shadow-sm text-xs">Livre no período matutino</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FIXED MODAL BACKDROP OVERLAY (SCRIM) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-inverse-surface/45 backdrop-blur-sm overflow-y-auto" id="modal-container">
+<!-- MODAL DIALOG CONTAINER (720px width desktop, pure surface with crisp elevation) -->
+<div class="relative w-full max-w-[720px] bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden my-auto animate-in fade-in zoom-in-95 duration-150">
+<!-- 1. MODAL HEADER -->
+<div class="px-6 pt-6 pb-4 flex items-start justify-between bg-surface-container-lowest">
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed/60 flex items-center justify-center text-tertiary shadow-sm flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">edit_calendar</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight">
+                Gerenciar Compromisso — Remarcar ou Cancelar
+              </h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Atualize o status da visita com Rafael Almeida para manter a agenda sincronizada e notificar o Copilot.
+            </p>
+</div>
+</div>
+<button aria-label="Fechar" class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors ml-3 flex-shrink-0" id="btn-close-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- SCROLLABLE INTERIOR BODY -->
+<div class="px-6 py-2 space-y-4 max-h-[calc(88vh-140px)] overflow-y-auto">
+<!-- 2. RESUMO DA VISITA ATUAL (Context Card) -->
+<div class="bg-surface-container-low p-4 rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
+<div class="flex items-center justify-between pb-2.5 mb-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">info</span>
+              Resumo do Agendamento Atual
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Visita Confirmada
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<!-- Lead Details -->
+<div class="flex items-center gap-2.5 bg-surface-container-lowest p-2.5 rounded-lg shadow-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-title-md text-title-md font-bold flex-shrink-0">
+                RA
+              </div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate leading-tight">Rafael Almeida</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant truncate block">(11) 98765-4321</span>
+</div>
+</div>
+<!-- Property Details -->
+<div class="flex items-center gap-2.5 bg-surface-container-lowest p-2.5 rounded-lg shadow-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+</div>
+<div class="min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate block leading-tight">Mirante Paulista · AP 204</span>
+<span class="font-currency-table text-currency-table text-secondary font-semibold">R$ 620.000</span>
+</div>
+</div>
+<!-- Current Schedule -->
+<div class="flex items-center gap-2.5 bg-surface-container-lowest p-2.5 rounded-lg shadow-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed/40 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold block leading-tight">Qua, 14/10 · 14h às 15h</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">Horário de Brasília (GMT-3)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. AÇÃO PRETENDIDA (Tabs / Selector de Ação) -->
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold block mb-2">
+            Selecione a Ação Desejada
+          </label>
+<div class="grid grid-cols-2 gap-3" role="tablist">
+<!-- Option A: Remarcar (Active) -->
+<button aria-selected="true" class="flex flex-col text-left p-3.5 rounded-xl bg-primary-fixed/20 shadow-sm transition-all relative" id="tab-reschedule" role="tab">
+<div class="flex items-center justify-between w-full mb-1">
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">event_repeat</span>
+<span>Remarcar Visita</span>
+</div>
+<div class="w-4 h-4 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">
+                Definir nova data e horário preservando o histórico e score do lead.
+              </p>
+</button>
+<!-- Option B: Cancelar -->
+<button aria-selected="false" class="flex flex-col text-left p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all" id="tab-cancel" role="tab">
+<div class="flex items-center justify-between w-full mb-1">
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-outline font-semibold">
+<span class="material-symbols-outlined text-[20px]">event_busy</span>
+<span>Cancelar Visita</span>
+</div>
+<div class="w-4 h-4 rounded-full bg-surface-container flex items-center justify-center text-outline"></div>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">
+                Desmarcar compromisso e informar motivo para calibração da IA.
+              </p>
+</button>
+</div>
+</div>
+<!-- 4. CONTEÚDO DINÂMICO DO FLUXO (Painel Remarcação Ativo) -->
+<div class="space-y-4 pt-1" id="reschedule-view">
+<!-- Seletor de Nova Data e Horário -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold block mb-3">
+              Nova Janela de Agendamento
+            </span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-medium mb-1">Nova Data</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[18px] absolute left-3 pointer-events-none">calendar_month</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md font-medium focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20" type="text" value="16/10/2026 (Sexta-feira)"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-medium mb-1">Horário Início</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[18px] absolute left-3 pointer-events-none">alarm</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md font-medium focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20" type="text" value="10:00"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-medium mb-1">Horário Término</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline text-[18px] absolute left-3 pointer-events-none">alarm_on</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md font-medium focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20" type="text" value="11:00"/>
+</div>
+</div>
+</div>
+<!-- Validador Inteligente de Conflito de Horário -->
+<div class="mt-3.5 p-3 rounded-xl bg-secondary-container/30 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">verified</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-secondary-container font-semibold leading-tight">
+                  Horário 100% Livre e Sem Conflitos
+                </span>
+<p class="font-body-sm text-[12px] text-on-secondary-container/90 mt-0.5 leading-snug">
+                  Nenhum evento registrado no fuso de SP. Tempo de deslocamento estimado do último compromisso: <strong>14 minutos</strong> (janela suficiente de segurança).
+                </p>
+</div>
+</div>
+</div>
+<!-- Motivo da Remarcação (Dropdown ou Radio-pills) -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold mb-2.5">
+              Motivo da Remarcação <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+<label class="flex items-center gap-2.5 p-2.5 rounded-lg bg-primary-fixed/25 text-on-surface cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary focus:ring-primary" name="reason" type="radio"/>
+<span class="font-label-md text-label-md font-semibold text-primary">Solicitação do cliente (conflito de agenda)</span>
+</label>
+<label class="flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-primary" name="reason" type="radio"/>
+<span class="font-label-md text-label-md">Problema com chaves / proprietário</span>
+</label>
+<label class="flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-primary" name="reason" type="radio"/>
+<span class="font-label-md text-label-md">Condições climáticas / trânsito</span>
+</label>
+<label class="flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-primary" name="reason" type="radio"/>
+<span class="font-label-md text-label-md">Outro motivo específico</span>
+</label>
+</div>
+</div>
+<!-- Notificação Inteligente (Checkboxes e Prévia Copilot) -->
+<div class="bg-surface-container-low/70 p-4 rounded-xl shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-primary">auto_awesome</span>
+                Ações Automatizadas Copilot
+              </span>
+<span class="font-label-sm text-[11px] text-primary font-medium">3 selecionadas</span>
+</div>
+<div class="space-y-2.5">
+<!-- Checkbox 1: WhatsApp -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-0.5 w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Enviar confirmação via WhatsApp para Rafael Almeida</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 bg-surface-container-low p-2 rounded text-italic">
+                      💬 <em>"Olá Rafael! Confirmando que reagendamos nossa visita ao Edifício Mirante Paulista (AP-204) para esta sexta-feira (16/10) às 10:00. O endereço é Rua Domingos de Morais, 1200. Te aguardo lá!"</em>
+</p>
+</div>
+</label>
+</div>
+<!-- Checkbox 2: Portaria -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Notificar zelador / portaria do Edifício Mirante Paulista</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Atualiza a autorização de entrada na portaria digital para o novo dia</span>
+</div>
+</label>
+</div>
+<!-- Checkbox 3: Sincronização Google Calendar -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sincronizar com Google Agenda &amp; Notificações do Smartphone</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Move o bloco na agenda de Marina Costa automaticamente</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. ALERTA DE REGRA DE NEGÓCIO -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary-container text-[18px] flex-shrink-0 mt-0.5">lock_clock</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-relaxed">
+<strong>Regra de Integridade:</strong> Cancelamentos ou remarcações exigem confirmação deliberada para evitar desencontros e manter a calibração de probabilidade de fechamento da IA no pipeline.
+          </p>
+</div>
+</div>
+<!-- 6. RODAPÉ DO MODAL (Action Buttons) -->
+<div class="px-6 py-4 bg-surface-container-low/60 flex items-center justify-between gap-3 flex-wrap">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium transition-colors shadow-sm" id="btn-cancel-return">
+          Voltar para a Agenda
+        </button>
+<div class="flex items-center gap-2.5 ml-auto">
+<!-- Botão de cancelamento definitivo estilizado -->
+<button class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-error-container text-error font-label-md text-label-md font-semibold transition-colors shadow-sm flex items-center gap-1.5" id="btn-def-cancel">
+<span class="material-symbols-outlined text-[17px]">cancel</span>
+<span>Cancelar Definitivamente</span>
+</button>
+<!-- Botão primário em destaque -->
+<button class="px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md hover:shadow-lg flex items-center gap-2" id="btn-confirm-reschedule">
+<span>Confirmar e Remarcar</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for tab switching and simulated two-click flow
+  const tabReschedule = document.getElementById('tab-reschedule');
+  const tabCancel = document.getElementById('tab-cancel');
+  const btnClose = document.getElementById('btn-close-modal');
+  const btnReturn = document.getElementById('btn-cancel-return');
+  const btnDefCancel = document.getElementById('btn-def-cancel');
+  const btnConfirmReschedule = document.getElementById('btn-confirm-reschedule');
+  const modalContainer = document.getElementById('modal-container');
+
+  // Toggle Tab selection states
+  tabCancel.addEventListener('click', () => {
+    tabCancel.classList.remove('bg-surface-container-low');
+    tabCancel.classList.add('bg-error-container/40', 'text-error');
+    tabCancel.querySelector('.material-symbols-outlined').classList.add('text-error');
+    
+    tabReschedule.classList.remove('bg-primary-fixed/20');
+    tabReschedule.classList.add('bg-surface-container-low');
+    tabReschedule.querySelector('.material-symbols-outlined').classList.remove('text-primary');
+
+    btnConfirmReschedule.classList.add('opacity-50', 'pointer-events-none');
+    btnDefCancel.classList.add('bg-error', 'text-on-error');
+    btnDefCancel.classList.remove('bg-surface-container-lowest', 'text-error');
+  });
+
+  tabReschedule.addEventListener('click', () => {
+    tabReschedule.classList.add('bg-primary-fixed/20');
+    tabReschedule.classList.remove('bg-surface-container-low');
+    tabReschedule.querySelector('.material-symbols-outlined').classList.add('text-primary');
+
+    tabCancel.classList.remove('bg-error-container/40', 'text-error');
+    tabCancel.classList.add('bg-surface-container-low');
+    
+    btnConfirmReschedule.classList.remove('opacity-50', 'pointer-events-none');
+    btnDefCancel.classList.remove('bg-error', 'text-on-error');
+    btnDefCancel.classList.add('bg-surface-container-lowest', 'text-error');
+  });
+
+  // Simulated Two-Click confirmation on Definitive Cancel
+  let cancelConfirmState = false;
+  btnDefCancel.addEventListener('click', () => {
+    if (!cancelConfirmState) {
+      cancelConfirmState = true;
+      btnDefCancel.innerText = 'Tem certeza? Confirmar (3s)';
+      btnDefCancel.classList.add('bg-error', 'text-on-error');
+      setTimeout(() => {
+        cancelConfirmState = false;
+        btnDefCancel.innerHTML = '<span class="material-symbols-outlined text-[17px]">cancel</span> Cancelar Definitivamente';
+        btnDefCancel.classList.remove('bg-error', 'text-on-error');
+      }, 3000);
+    } else {
+      modalContainer.style.display = 'none';
+    }
+  });
+
+  // Close handlers
+  [btnClose, btnReturn].forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalContainer.style.display = 'none';
+    });
+  });
+
+  // Confirm Remarcar button action
+  btnConfirmReschedule.addEventListener('click', () => {
+    btnConfirmReschedule.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> Sincronizando...';
+    setTimeout(() => {
+      modalContainer.style.display = 'none';
+    }, 700);
+  });
+</script></main></div></body></html>

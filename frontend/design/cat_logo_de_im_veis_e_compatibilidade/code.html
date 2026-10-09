@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-container":"#ffeedd","on-secondary-fixed-variant":"#005236","on-tertiary-fixed-variant":"#653e00","surface-container-low":"#f2f3ff","primary-fixed":"#dbe1ff","on-primary-container":"#eeefff","surface-container-lowest":"#ffffff","secondary-container":"#6cf8bb","secondary-fixed-dim":"#4edea3","error":"#ba1a1a","error-container":"#ffdad6","primary-container":"#2563eb","on-secondary":"#ffffff","primary":"#004ac6","outline-variant":"#c3c6d7","on-primary-fixed-variant":"#003ea8","surface-bright":"#faf8ff","tertiary-container":"#996100","primary-fixed-dim":"#b4c5ff","on-secondary-container":"#00714d","surface-container-high":"#e2e7ff","on-background":"#131b2e","background":"#faf8ff","on-tertiary":"#ffffff","on-error":"#ffffff","inverse-surface":"#283044","inverse-primary":"#b4c5ff","on-primary":"#ffffff","tertiary":"#784b00","on-primary-fixed":"#00174b","secondary":"#006c49","on-surface":"#131b2e","surface-dim":"#d2d9f4","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002113","outline":"#737686","on-error-container":"#93000a","secondary-fixed":"#6ffbbe","surface-variant":"#dae2fd","on-surface-variant":"#434655","surface-tint":"#0053db","on-tertiary-fixed":"#2a1700","surface":"#faf8ff","tertiary-fixed":"#ffddb8","inverse-on-surface":"#eef0ff","tertiary-fixed-dim":"#ffb95f","surface-container":"#eaedff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-2xl":"3rem","gutter":"1.5rem","gutter-mobile":"1rem","margin":"2rem"},"fontFamily":{"display-lg-mobile":["Manrope"],"label-md":["Inter"],"currency-table":["Inter"],"currency-display":["Manrope"],"display-lg":["Manrope"],"body-sm":["Inter"],"body-lg":["Inter"],"title-md":["Inter"],"headline-sm":["Manrope"],"label-sm":["Inter"],"headline-lg":["Manrope"],"headline-md":["Manrope"],"body-md":["Inter"]},"fontSize":{"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo Corretor Copilot" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WuHTKbFdGkAHzlVzrK5jvzP8tbG-KCgdwvP2YfRwo8KRhtN4R6oUVhlKuxSx_vOwbJI7PbPlwH8O6hW15KuaGjGUz5iRpMcgTaCpQljsgxLS74sXPk24x-b0sruDH9kVlY2aSjo7FB2XFYMYb71N1QeuBNwWCqcICcHxIg50lULtFG6owqvYL-GPH4Cmnh20I1VoYkzPOFirVoN3Z3hnc7S6D0z5_E_LFwmMtojcJHuA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Corretor Copilot</span><span class="inline-flex items-center mt-1 px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm w-fit leading-none">CRM + IA</span></div></div></div><div class="px-space-md pt-space-md"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Operação</span><nav class="flex flex-col gap-1 mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="leads" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-title-md text-title-md">Leads</span></div><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm leading-none">24</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="funil" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-title-md text-title-md">Funil</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="imoveis" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span><span class="font-title-md text-title-md">Imóveis</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="agenda" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-title-md text-title-md">Agenda</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="tarefas" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="font-title-md text-title-md">Tarefas</span></div></a></nav></div><div class="px-space-md pt-space-lg"><div class="h-px bg-surface-container-high mx-space-sm mb-space-md"></div><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Gestão &amp; Sistema</span><nav class="flex flex-col gap-1 mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="operacoes" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-md text-title-md">Operações</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Configurações</span></div></a></nav></div></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span><span class="font-label-md text-label-md text-on-surface">Copilot Ativo</span></div><span class="w-2 h-2 rounded-full bg-secondary"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-outline">domain</span><span>Painel Corretor</span><span class="text-outline">/</span><span class="text-on-surface font-label-md text-label-md">Gestão Ativa</span></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">schedule</span><span>Horário de Brasília (GMT-3)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2"><button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-primary text-[18px]">neurology</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Copilot Pronto</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBvYdfRfshOYKeG_T2PmFmiBW7B9eMcrjzpdEmrSiWsCyLK8EsCIvlpxoEtk5-Q4Zlv-77q2dxwcDST7eBITNanIaaJUnjSj4yvXtX3gILvgSBQ6JIK_TC9_-LOHY5TlHERISBccG5nQ_LKoGL-bqY2xERRTnGQw-nCOdgbbpbOtkMJbFcn-RrESJaPpKePfj-rXC2C1SdgeiFxyfgRgvcFcaq63j5ub8CxuCpXzbB"/><div class="hidden lg:flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-tight">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Corretora Autônoma · CRECI 248.910-F</span></div><div class="relative group"><button class="flex items-center text-outline hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">expand_more</span></button><div class="hidden group-hover:block absolute right-0 top-full pt-2 w-48 z-50"><div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_6px_-1px_rgba(15,23,42,0.07)] p-1.5 flex flex-col"><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md" data-path="perfil" href="#"><span class="material-symbols-outlined text-[18px]">person</span>Meu Perfil</a><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[18px]">settings</span>Configurações</a><div class="h-px bg-surface-container-high my-1"></div><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Sair</a></div></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-xl pb-space-2xl"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Metadata Strip -->
+<div class="flex flex-wrap items-center justify-between gap-y-3 pb-space-md">
+<nav class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+        Início
+      </a>
+<span class="text-outline">/</span>
+<span class="font-title-md text-title-md text-on-surface">Imóveis</span>
+</nav>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Sincronização Ativa: ZAP / VivaReal / OLX
+      </span>
+<span class="hidden sm:inline text-outline">•</span>
+<span class="hidden sm:inline">Última atualização às 10:42</span>
+</div>
+</div>
+<!-- Page Header -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg pb-space-lg">
+<div class="flex flex-col max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Catálogo de Imóveis</h1>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md font-semibold">
+          42 cadastrados
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+          8 Matches Críticos
+        </span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-1.5">
+        Gerencie seu portfólio de imóveis, analise compatibilidade com leads ativos e faça associações diretas com suporte de IA preditiva.
+      </p>
+</div>
+<!-- Actions Group -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-10 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">file_upload</span>
+        Importar imóveis
+      </button>
+<button class="h-10 px-4 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:bg-primary transition-colors shadow-sm flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+        Novo imóvel
+      </button>
+</div>
+</section>
+<!-- Advanced Filters Module -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Search Input -->
+<div class="lg:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-10 pl-10 pr-3 rounded-lg bg-surface text-on-surface placeholder-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-all" placeholder="Cód. AP-204, condomínio, endereço ou palavra-chave..." type="text" value="Vila Mariana"/>
+</div>
+<!-- Purpose Filter -->
+<div class="lg:col-span-2">
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer">
+<option value="todos">Finalidade: Todas</option>
+<option selected="" value="venda">Finalidade: Venda</option>
+<option value="locacao">Finalidade: Locação</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Property Type Filter -->
+<div class="lg:col-span-2">
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer">
+<option value="todos">Tipo: Todos</option>
+<option selected="" value="apartamento">Tipo: Apartamento</option>
+<option value="casa">Tipo: Casa</option>
+<option value="studio">Tipo: Studio</option>
+<option value="cobertura">Tipo: Cobertura</option>
+<option value="comercial">Tipo: Comercial</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Neighborhood Filter -->
+<div class="lg:col-span-2">
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer">
+<option value="todos">Região: Todas</option>
+<option selected="" value="vila-mariana">Vila Mariana</option>
+<option value="pinheiros">Pinheiros</option>
+<option value="moema">Moema</option>
+<option value="perdizes">Perdizes</option>
+<option value="jardins">Jardins</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Price Range Filter -->
+<div class="lg:col-span-2">
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer">
+<option value="todos">Faixa de Preço</option>
+<option selected="" value="ate-650">Até R$ 650.000</option>
+<option value="650-1m">R$ 650k - R$ 1.0M</option>
+<option value="1m-2m">R$ 1.0M - R$ 2.0M</option>
+<option value="acima-2m">Acima de R$ 2.0M</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Secondary Row: AI Match & Quantitative Filter Controls -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-2.5">
+<!-- Copilot Lead Match Engine Dropdown -->
+<div class="lg:col-span-5 flex items-center gap-2">
+<div class="flex items-center gap-1.5 shrink-0 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology</span>
+          Match IA:
+        </div>
+<div class="relative w-full">
+<select class="w-full h-9 px-3 pr-8 rounded-md bg-surface-container-lowest text-on-surface font-title-md text-title-md appearance-none focus:outline-none cursor-pointer">
+<option value="none">Selecione lead para calcular aderência...</option>
+<option selected="" value="lead-rafael">Rafael Almeida (Match Alto · 96% afinidade)</option>
+<option value="lead-beatriz">Beatriz Mendonça (Pinheiros · R$ 2.5M)</option>
+<option value="lead-juliana">Juliana Rios (Moema · R$ 1.8M)</option>
+<option value="lead-carlos">Carlos Silveira (Perdizes · R$ 400k)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Bedrooms -->
+<div class="lg:col-span-2">
+<div class="relative">
+<select class="w-full h-9 px-3 pr-8 rounded-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer">
+<option value="0">Quartos mín.: Qualquer</option>
+<option value="1">1+ quarto</option>
+<option selected="" value="2">2+ quartos</option>
+<option value="3">3+ quartos</option>
+<option value="4">4+ quartos</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Garage Spots -->
+<div class="lg:col-span-2">
+<div class="relative">
+<select class="w-full h-9 px-3 pr-8 rounded-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none cursor-pointer">
+<option value="0">Vagas mín.: Qualquer</option>
+<option selected="" value="1">1+ vaga</option>
+<option value="2">2+ vagas</option>
+<option value="3">3+ vagas</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="lg:col-span-3 flex items-center justify-end gap-2">
+<button class="h-9 px-3 rounded-md bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+          Limpar
+        </button>
+<button class="h-9 px-4 rounded-md bg-primary-container text-on-primary-container hover:bg-primary font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+          Aplicar Filtros
+        </button>
+</div>
+</div>
+</section>
+<!-- Summary, Tabs & Quick Ordering -->
+<section class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md">
+<!-- Filter Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 md:pb-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface font-semibold shrink-0" type="button">
+        Todos <span class="ml-1 text-on-surface-variant font-normal">42</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md font-semibold shrink-0 flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span>
+        Alta compatibilidade <span class="px-1.5 py-0.2 bg-surface-container-lowest rounded-full text-primary font-bold">8</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-md text-label-md shrink-0" type="button">
+        Disponíveis <span class="ml-1 opacity-70">37</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-md text-label-md shrink-0" type="button">
+        Em negociação <span class="ml-1 opacity-70">5</span>
+</button>
+</div>
+<!-- Right Controls: Count, Sort, Grid/List Switch -->
+<div class="flex items-center gap-space-md self-end md:self-auto">
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden lg:inline">
+        Mostrando <strong class="text-on-surface font-semibold">6</strong> de 42 imóveis
+      </span>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase hidden sm:inline">Ordenar:</span>
+<div class="relative">
+<select class="h-9 px-3 pr-8 rounded-lg bg-surface-container-lowest text-on-surface font-title-md text-title-md appearance-none focus:outline-none cursor-pointer shadow-sm">
+<option selected="">Maior compatibilidade com Rafael Almeida</option>
+<option>Menor preço (R$)</option>
+<option>Maior preço (R$)</option>
+<option>Mais recentes</option>
+<option>Maior metragem privativa</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex items-center bg-surface-container rounded-lg p-0.5">
+<button class="w-8 h-8 rounded-md bg-surface-container-lowest text-primary flex items-center justify-center shadow-xs" title="Visualização em Grade" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="w-8 h-8 rounded-md text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Visualização em Tabela" type="button">
+<span class="material-symbols-outlined text-[18px]">view_list</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Real Estate Catalog Grid (6 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Card 1 (Destaque Principal com Match IA 96%) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col group relative transition-all duration-300 hover:shadow-xl">
+<!-- Top Image with Visual Overlay -->
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern architectural apartment facade building in Vila Mariana São Paulo Brazil, warm afternoon golden sunlight illuminating sleek glass balconies and vertical green gardens against a soft blue sky, high-end real estate photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4_A2yKiZFLaLZqcyc6Wkz2I0ww6-SjxJ4rFs_cwJErXHNR3FRHoDzWzhyqaykpHnpcRVUu0CPSfKvcOAd29la8__541SEd6HiIZPoX-Bb3iISKJP35yfYhl_qBvpZydCNnjlR0zapoLYkTnKFUPDdu0qT-ctAF7UNibXhzmXojLf6xgdAJF8InFqoMXwwB4lnSYOMeqTk5VZwa-Bf5v98l3RaJghYHoyoQOaXWpbR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20"></div>
+<!-- Badges on Image -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+            96% Match com Rafael Almeida
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold">
+            AP-204
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-black/40 backdrop-blur font-label-sm text-label-sm font-medium uppercase tracking-wider text-white">Venda Exclusiva</span>
+<div class="font-currency-display text-currency-display text-white mt-1 drop-shadow-sm">R$ 620.000</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Disponível</span>
+</div>
+</div>
+<!-- Card Body Content -->
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<!-- Title & Location -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 group-hover:text-primary transition-colors">
+            Apartamento Edifício Mirante Paulista
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0">location_on</span>
+<span class="truncate">Rua Domingos de Morais, Vila Mariana · São Paulo - SP</span>
+</p>
+<!-- Property Specs Row -->
+<div class="grid grid-cols-4 gap-1 py-3 my-3 bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-on-surface">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">square_foot</span>
+<span class="font-semibold mt-0.5">68 m²</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Área priv.</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">bed</span>
+<span class="font-semibold mt-0.5">2 qtos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 suíte</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">directions_car</span>
+<span class="font-semibold mt-0.5">1 vaga</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Coberta</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">outdoor_grill</span>
+<span class="font-semibold mt-0.5">Gourmet</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Varanda</span>
+</div>
+</div>
+<!-- Financial Sub-fees -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md px-1">
+<span>Condomínio: <strong class="text-on-surface font-semibold">R$ 680/mês</strong></span>
+<span>IPTU: <strong class="text-on-surface font-semibold">R$ 145/mês</strong></span>
+</div>
+<!-- Copilot Insight Callout -->
+<div class="mt-3 p-2.5 rounded-lg bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">neurology</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">Insight do Copilot</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight mt-0.5">
+                Excelente aderência ao orçamento (teto R$ 650k) e proximidade de 450m do metrô Santa Cruz, requisito prioritário de Rafael.
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 h-9 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:bg-primary transition-colors flex items-center justify-center gap-1.5 shadow-sm" onclick="document.getElementById('associationModal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+            Associar ao Lead
+          </button>
+<button class="h-9 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">event</span>
+<span class="hidden sm:inline">Visita</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center" title="Ver Detalhes" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2 (88% Match Rafael Almeida) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Interior of a modern contemporary living room in a Sao Paulo apartment with integrated balcony, large porcelain floor tiles, minimalist furniture, warm ambient lighting and plants." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDef51ITvjtdg3HQt9UbNSSaC-fxUkBXwQxFz6METZ32KGJFH_DxLJADKEVHLDBgVTc5Ba86DKid2DKrHO3DubwjdmTgdN1QvjNrhglZzUVF0ewy_K2IoM3y0TzMUB_hjh_nF4tIMK8XSvKjUZX6zxTN7z8eQrQATtJOBG8T9B9EibqStwTHVqLRP8_-W_WVhN3EYxkZSXIDLEThpPImPcMxqHFKWzNv1U3ehFJgnip"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+            88% Match com Rafael Almeida
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold">
+            AP-310
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-black/40 backdrop-blur font-label-sm text-label-sm uppercase tracking-wider text-white">Venda</span>
+<div class="font-currency-display text-currency-display text-white mt-1">R$ 590.000</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Disponível</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 group-hover:text-primary transition-colors">
+            Residencial Vila Mariana Smart
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">location_on</span>
+<span class="truncate">Rua Vergueiro, 2450, Vila Mariana · São Paulo - SP</span>
+</p>
+<div class="grid grid-cols-4 gap-1 py-3 my-3 bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-on-surface">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">square_foot</span>
+<span class="font-semibold mt-0.5">62 m²</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Área priv.</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">bed</span>
+<span class="font-semibold mt-0.5">2 qtos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pronto</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">directions_car</span>
+<span class="font-semibold mt-0.5">1 vaga</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rotativa</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">fitness_center</span>
+<span class="font-semibold mt-0.5">Lazer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Completo</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md px-1">
+<span>Condomínio: <strong class="text-on-surface font-semibold">R$ 550/mês</strong></span>
+<span>IPTU: <strong class="text-on-surface font-semibold">R$ 110/mês</strong></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 bg-surface-container p-2 rounded-lg line-clamp-2">
+            Valor abaixo do teto orçamentário. Excelente opção para apresentação como alternativa de menor custo fixo.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 h-9 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" onclick="document.getElementById('associationModal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">person_add</span>
+            Associar ao Lead
+          </button>
+<button class="h-9 px-4 rounded-lg bg-surface-container-lowest shadow-xs text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors" type="button">
+            Ver Detalhes
+          </button>
+</div>
+</div>
+</article>
+<!-- Card 3 (Perdizes - Carlos Silveira) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Compact modern studio apartment with intelligent carpentry design, foldaway workspace, open kitchen bar and large window overlooking trees in Perdizes Sao Paulo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv0Oc8kCZEZOXDe07NkILfDPIMegvgbm4OcHKszdduD3hXuZC6Zc1nfQYMaZ51buV7GJamGrCsjjiU91jLwhoW4iXIE83dm7Y4syZD9hOPL_nik_udX7cHB2QFYq14m8kg8kMdOFRasz0Oh6Z_U6BphACxLqAiEf1XRESUOvUpUo_H6xxCeHTsHCXfptqnb3r8-QkLX4pYcFtv-rPf1X7kceiCiT2pzvy0S3t5J0HM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">person</span>
+            Compatível com Carlos Silveira
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold">
+            ST-105
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-black/40 backdrop-blur font-label-sm text-label-sm uppercase tracking-wider text-white">Venda</span>
+<div class="font-currency-display text-currency-display text-white mt-1">R$ 380.000</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Disponível</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 group-hover:text-primary transition-colors">
+            Studio Moderno Perdizes Prime
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">location_on</span>
+<span class="truncate">Rua Cardoso de Almeida, Perdizes · São Paulo - SP</span>
+</p>
+<div class="grid grid-cols-4 gap-1 py-3 my-3 bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-on-surface">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">square_foot</span>
+<span class="font-semibold mt-0.5">38 m²</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Privativa</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">bed</span>
+<span class="font-semibold mt-0.5">1 quarto</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Studio</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">directions_car</span>
+<span class="font-semibold mt-0.5">1 vaga</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fixa</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">pool</span>
+<span class="font-semibold mt-0.5">Rooftop</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Piscina</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md px-1">
+<span>Condomínio: <strong class="text-on-surface font-semibold">R$ 410/mês</strong></span>
+<span>IPTU: <strong class="text-on-surface font-semibold">R$ 90/mês</strong></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 bg-surface-container p-2 rounded-lg line-clamp-2">
+            Projetado para renda passiva ou primeiro imóvel. Mobiliado e com ar-condicionado já instalado.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 h-9 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" onclick="document.getElementById('associationModal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">person_add</span>
+            Associar ao Lead
+          </button>
+<button class="h-9 px-4 rounded-lg bg-surface-container-lowest shadow-xs text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors" type="button">
+            Ver Detalhes
+          </button>
+</div>
+</div>
+</article>
+<!-- Card 4 (Pinheiros - Beatriz Mendonça) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luxury architectural residence in Pinheiros neighborhood with lap swimming pool, tropical landscaping, large glass sliding doors and warm outdoor illumination at dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVYv8WyF66bxCJERzdqegoS3AlAVXltOb8Fbadi5jlYnwJulV04G5ar6QNz7x0Qvb3dbZKzn-VXIE7Wx-Lcr8dqEq66x7mbE5xR0CwC_iuWxBxgNCBsIol3j83bcOEaAxeYAQOMSodu-XWW826mnTZutUZFOhfyCQwGxwCt1dtZ4ffcb23W3WbEL8Ec6l-rI0DDvYRUe90fx7F4rLIRgtOZUY9pVQ-IkiMTk5c3mhu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">person</span>
+            Compatível com Beatriz Mendonça
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold">
+            CA-502
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-black/40 backdrop-blur font-label-sm text-label-sm uppercase tracking-wider text-white">Venda</span>
+<div class="font-currency-display text-currency-display text-white mt-1">R$ 2.400.000</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">calendar_month</span>
+            Visita Agendada
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 group-hover:text-primary transition-colors">
+            Casa Alto de Pinheiros Jardim
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">location_on</span>
+<span class="truncate">Av. Pedroso de Morais, Pinheiros · São Paulo - SP</span>
+</p>
+<div class="grid grid-cols-4 gap-1 py-3 my-3 bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-on-surface">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">square_foot</span>
+<span class="font-semibold mt-0.5">320 m²</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Terreno</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">bed</span>
+<span class="font-semibold mt-0.5">4 qtos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 suítes</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">directions_car</span>
+<span class="font-semibold mt-0.5">4 vagas</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Garagem</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">pool</span>
+<span class="font-semibold mt-0.5">Piscina</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Privada</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md px-1">
+<span>Condomínio: <strong class="text-on-surface font-semibold">Isento</strong></span>
+<span>IPTU: <strong class="text-on-surface font-semibold">R$ 890/mês</strong></span>
+</div>
+<div class="mt-3 p-2 rounded-lg bg-surface-container flex items-center justify-between text-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[16px]">schedule</span>
+              Visita amanhã às 15:30
+            </span>
+<span class="text-primary font-semibold font-label-sm text-label-sm">Com Beatriz M.</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="w-full h-9 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+            Ver Detalhes do Imóvel
+          </button>
+</div>
+</div>
+</article>
+<!-- Card 5 (Moema - Juliana Rios) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Upscale penthouse duplex balcony overlooking Moema tree canopies in Sao Paulo, designer outdoor lounge, private jacuzzi hot tub, elegant travertine stone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1DUylxsfKte1prJZqbI24SgR3TyFEw61HHFigM73-zRP_q89XUcFAdc8HfsWKKTSAaH_we3bdTaY2NawPTetDv4InmAqIICvW7cU3J_iRVTjReL6o39LMDWJ0BxFFY9BkfIPO2_ryW-0A2iZ-69HKx7nexfQ8cKIExIaOZAj-ynBlNQQTpCgQZQ4FNsEu7reG3KijDG1VIIYhqzTIDFDwBQPzmeEYeGJd2P9OIVEg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">person</span>
+            Compatível com Juliana Rios
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold">
+            CB-804
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-black/40 backdrop-blur font-label-sm text-label-sm uppercase tracking-wider text-white">Venda</span>
+<div class="font-currency-display text-currency-display text-white mt-1">R$ 1.850.000</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Disponível</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 group-hover:text-primary transition-colors">
+            Cobertura Duplex Moema Pássaros
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">location_on</span>
+<span class="truncate">Al. dos Arapanés, Moema · São Paulo - SP</span>
+</p>
+<div class="grid grid-cols-4 gap-1 py-3 my-3 bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-on-surface">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">square_foot</span>
+<span class="font-semibold mt-0.5">180 m²</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Duplex</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">bed</span>
+<span class="font-semibold mt-0.5">3 suítes</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Amplas</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">directions_car</span>
+<span class="font-semibold mt-0.5">3 vagas</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depósito</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">hot_tub</span>
+<span class="font-semibold mt-0.5">Jacuzzi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deck sol</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md px-1">
+<span>Condomínio: <strong class="text-on-surface font-semibold">R$ 1.620/mês</strong></span>
+<span>IPTU: <strong class="text-on-surface font-semibold">R$ 480/mês</strong></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 bg-surface-container p-2 rounded-lg line-clamp-2">
+            Fora da rota de aviões de Congonhas. Pé direito duplo na sala de estar com vista livre definitiva.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="w-full h-9 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+            Ver Detalhes do Imóvel
+          </button>
+</div>
+</div>
+</article>
+<!-- Card 6 (Jardins - Marcelo Prado) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional classic apartment interior in Jardim Paulista Sao Paulo with hardwood parquet flooring, tall ceilings, French windows and tasteful architectural renovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXNojUsLRY5sB5QgqxYPUAUjps8fTrFaiV3NClv6XffWs3UeC74UYRq3rLsey67weSLIK_7rhJm3mMvyfQEF3iv54HjWZzK7_AlyT1rzIs0IC7NibVmOn2jcCKFPT5nJsVCzGE0WgJCG9zYMuRkSn_TPsOsBWEJEYpfSuG5Woz7OX7VmwwCSNKj4RFBNyuq1mJM9UHffjswcgPCJle8MqhKD0P5cIq4zOBRXz2Wz4O"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20"></div>
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">person</span>
+            Compatível com Marcelo Prado
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm font-semibold">
+            AP-912
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<span class="inline-block px-2 py-0.5 rounded bg-black/40 backdrop-blur font-label-sm text-label-sm uppercase tracking-wider text-white">Venda</span>
+<div class="font-currency-display text-currency-display text-white mt-1">R$ 1.200.000</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">contract</span>
+            Proposta em Análise
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 group-hover:text-primary transition-colors">
+            Edifício Jardim Paulista Classic
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">location_on</span>
+<span class="truncate">Al. Lorena, Jardim Paulista · São Paulo - SP</span>
+</p>
+<div class="grid grid-cols-4 gap-1 py-3 my-3 bg-surface-container-low rounded-lg text-center font-body-sm text-body-sm text-on-surface">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">square_foot</span>
+<span class="font-semibold mt-0.5">115 m²</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Útil</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">bed</span>
+<span class="font-semibold mt-0.5">3 qtos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 suíte</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">directions_car</span>
+<span class="font-semibold mt-0.5">2 vagas</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fixas</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-outline">solar_power</span>
+<span class="font-semibold mt-0.5">Face Norte</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Iluminado</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md px-1">
+<span>Condomínio: <strong class="text-on-surface font-semibold">R$ 1.150/mês</strong></span>
+<span>IPTU: <strong class="text-on-surface font-semibold">R$ 290/mês</strong></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 bg-surface-container p-2 rounded-lg line-clamp-2">
+            Proposta de R$ 1.150.000 enviada por Marcelo Prado aguardando retorno dos proprietários até sexta-feira.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="w-full h-9 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+            Ver Detalhes do Imóvel
+          </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Standard CRM Pagination Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm mb-space-2xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span>Exibindo de <strong class="text-on-surface font-semibold">1</strong> a <strong class="text-on-surface font-semibold">6</strong> de um total de <strong class="text-on-surface font-semibold">42</strong> imóveis</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="h-9 px-3 rounded-lg bg-surface-container text-outline cursor-not-allowed flex items-center gap-1 font-label-md text-label-md" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+        Anterior
+      </button>
+<button class="w-9 h-9 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold" type="button">
+        1
+      </button>
+<button class="w-9 h-9 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md" type="button">
+        2
+      </button>
+<button class="w-9 h-9 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md" type="button">
+        3
+      </button>
+<span class="px-2 text-outline">...</span>
+<button class="w-9 h-9 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md" type="button">
+        7
+      </button>
+<button class="h-9 px-3 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 font-label-md text-label-md font-medium" type="button">
+        Próxima
+        <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Interactive Modal: Associar Imóvel ao Lead (Controlled via Vanilla JS) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" id="associationModal">
+<!-- Backdrop Overlay -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs transition-opacity" onclick="document.getElementById('associationModal').classList.add('hidden')"></div>
+<!-- Modal Content Box -->
+<div class="relative bg-surface-container-lowest rounded-xl max-w-xl w-full p-space-lg shadow-2xl z-10 flex flex-col gap-space-md">
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">link</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Associar Imóvel ao Lead</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conecte o imóvel selecionado à carteira ativa com cálculo preditivo.</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg text-outline hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center" onclick="document.getElementById('associationModal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Quick Property Target Pill -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">apartment</span>
+<div>
+<div class="font-title-md text-title-md text-on-surface">AP-204 · Mirante Paulista (Vila Mariana)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">R$ 620.000 · 68 m² · 2 quartos</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+          96% IA Match
+        </span>
+</div>
+<!-- Modal Form Controls -->
+<div class="space-y-space-md">
+<!-- Select Lead -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Lead de Destino</label>
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface text-on-surface font-body-md text-body-md appearance-none focus:outline-none">
+<option selected="">Rafael Almeida (Orçamento: até R$ 650.000 · Vila Mariana)</option>
+<option>Beatriz Mendonça (Orçamento: até R$ 2.6M · Pinheiros)</option>
+<option>Juliana Rios (Orçamento: até R$ 1.9M · Moema)</option>
+<option>Carlos Silveira (Orçamento: até R$ 420.000 · Perdizes)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Association Status & AI Score override -->
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Estado da Associação</label>
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none">
+<option selected="" value="sugerido">Sugerido pelo Corretor</option>
+<option value="enviado">Enviado por WhatsApp</option>
+<option value="interessado">Lead Demonstrou Interesse</option>
+<option value="rejeitado">Rejeitado pelo Lead</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Pontuação de Match</label>
+<div class="relative">
+<input class="w-full h-10 px-3 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none" max="100" min="0" type="number" value="96"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-outline">%</span>
+</div>
+</div>
+</div>
+<!-- Copilot Suggested Message Template Preview -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1 flex items-center justify-between">
+<span>Mensagem Copilot Pré-Redigida (WhatsApp)</span>
+<span class="text-primary font-label-sm text-label-sm flex items-center gap-1 cursor-pointer hover:underline">
+<span class="material-symbols-outlined text-[14px]">autorenew</span> Regenerar
+            </span>
+</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none resize-none" rows="3">Olá Rafael! Encontrei exatamente o perfil que você busca na Vila Mariana: 68 m², 2 quartos com 1 suíte, varanda gourmet e condomínio baixo (R$ 680), por R$ 620.000. Gostaria de agendar uma visita amanhã?</textarea>
+</div>
+</div>
+<!-- Modal Footer Action Buttons -->
+<div class="flex items-center justify-between pt-2">
+<button class="h-10 px-4 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-colors" onclick="document.getElementById('associationModal').classList.add('hidden')" type="button">
+          Cancelar
+        </button>
+<div class="flex items-center gap-2">
+<button class="h-10 px-4 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5 shadow-sm" onclick="confirmAssociation(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Salvar &amp; Enviar WhatsApp</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vanilla Interactive Handler -->
+<script>
+  function confirmAssociation(btn) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span> Associação Concluída!`;
+    btn.classList.remove('bg-primary-container');
+    btn.classList.add('bg-secondary');
+    setTimeout(() => {
+      document.getElementById('associationModal').classList.add('hidden');
+      btn.innerHTML = originalText;
+      btn.classList.remove('bg-secondary');
+      btn.classList.add('bg-primary-container');
+    }, 1200);
+  }
+</script></main></div></body></html>

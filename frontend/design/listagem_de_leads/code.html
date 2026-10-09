@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-container":"#ffeedd","on-secondary-fixed-variant":"#005236","on-tertiary-fixed-variant":"#653e00","surface-container-low":"#f2f3ff","primary-fixed":"#dbe1ff","on-primary-container":"#eeefff","surface-container-lowest":"#ffffff","secondary-container":"#6cf8bb","secondary-fixed-dim":"#4edea3","error":"#ba1a1a","error-container":"#ffdad6","primary-container":"#2563eb","on-secondary":"#ffffff","primary":"#004ac6","outline-variant":"#c3c6d7","on-primary-fixed-variant":"#003ea8","surface-bright":"#faf8ff","tertiary-container":"#996100","primary-fixed-dim":"#b4c5ff","on-secondary-container":"#00714d","surface-container-high":"#e2e7ff","on-background":"#131b2e","background":"#faf8ff","on-tertiary":"#ffffff","on-error":"#ffffff","inverse-surface":"#283044","inverse-primary":"#b4c5ff","on-primary":"#ffffff","tertiary":"#784b00","on-primary-fixed":"#00174b","secondary":"#006c49","on-surface":"#131b2e","surface-dim":"#d2d9f4","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002113","outline":"#737686","on-error-container":"#93000a","secondary-fixed":"#6ffbbe","surface-variant":"#dae2fd","on-surface-variant":"#434655","surface-tint":"#0053db","on-tertiary-fixed":"#2a1700","surface":"#faf8ff","tertiary-fixed":"#ffddb8","inverse-on-surface":"#eef0ff","tertiary-fixed-dim":"#ffb95f","surface-container":"#eaedff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem","space-lg":"1.5rem","space-2xl":"3rem","gutter":"1.5rem","gutter-mobile":"1rem","margin":"2rem"},"fontFamily":{"display-lg-mobile":["Manrope"],"label-md":["Inter"],"currency-table":["Inter"],"currency-display":["Manrope"],"display-lg":["Manrope"],"body-sm":["Inter"],"body-lg":["Inter"],"title-md":["Inter"],"headline-sm":["Manrope"],"label-sm":["Inter"],"headline-lg":["Manrope"],"headline-md":["Manrope"],"body-md":["Inter"]},"fontSize":{"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo Corretor Copilot" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WuHTKbFdGkAHzlVzrK5jvzP8tbG-KCgdwvP2YfRwo8KRhtN4R6oUVhlKuxSx_vOwbJI7PbPlwH8O6hW15KuaGjGUz5iRpMcgTaCpQljsgxLS74sXPk24x-b0sruDH9kVlY2aSjo7FB2XFYMYb71N1QeuBNwWCqcICcHxIg50lULtFG6owqvYL-GPH4Cmnh20I1VoYkzPOFirVoN3Z3hnc7S6D0z5_E_LFwmMtojcJHuA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Corretor Copilot</span><span class="inline-flex items-center mt-1 px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm w-fit leading-none">CRM + IA</span></div></div></div><div class="px-space-md pt-space-md"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Operação</span><nav class="flex flex-col gap-1 mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="leads" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-title-md text-title-md">Leads</span></div><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm leading-none">24</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="funil" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-title-md text-title-md">Funil</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="imoveis" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span><span class="font-title-md text-title-md">Imóveis</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="agenda" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-title-md text-title-md">Agenda</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="tarefas" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="font-title-md text-title-md">Tarefas</span></div></a></nav></div><div class="px-space-md pt-space-lg"><div class="h-px bg-surface-container-high mx-space-sm mb-space-md"></div><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Gestão &amp; Sistema</span><nav class="flex flex-col gap-1 mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="operacoes" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-md text-title-md">Operações</span></div></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Configurações</span></div></a></nav></div></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span><span class="font-label-md text-label-md text-on-surface">Copilot Ativo</span></div><span class="w-2 h-2 rounded-full bg-secondary"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-outline">domain</span><span>Painel Corretor</span><span class="text-outline">/</span><span class="text-on-surface font-label-md text-label-md">Gestão Ativa</span></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">schedule</span><span>Horário de Brasília (GMT-3)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2"><button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-primary text-[18px]">neurology</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Copilot Pronto</span></div></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBvYdfRfshOYKeG_T2PmFmiBW7B9eMcrjzpdEmrSiWsCyLK8EsCIvlpxoEtk5-Q4Zlv-77q2dxwcDST7eBITNanIaaJUnjSj4yvXtX3gILvgSBQ6JIK_TC9_-LOHY5TlHERISBccG5nQ_LKoGL-bqY2xERRTnGQw-nCOdgbbpbOtkMJbFcn-RrESJaPpKePfj-rXC2C1SdgeiFxyfgRgvcFcaq63j5ub8CxuCpXzbB"/><div class="hidden lg:flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-tight">Marina Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Corretora Autônoma · CRECI 248.910-F</span></div><div class="relative group"><button class="flex items-center text-outline hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">expand_more</span></button><div class="hidden group-hover:block absolute right-0 top-full pt-2 w-48 z-50"><div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_6px_-1px_rgba(15,23,42,0.07)] p-1.5 flex flex-col"><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md" data-path="perfil" href="#"><span class="material-symbols-outlined text-[18px]">person</span>Meu Perfil</a><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[18px]">settings</span>Configurações</a><div class="h-px bg-surface-container-high my-1"></div><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Sair</a></div></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-xl pb-space-2xl"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg">
+<!-- Header Context & Quick Actions -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span>Início</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Leads</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Gestão de Leads</h1>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant font-medium">(28 leads ativos)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Central operacional inteligente para qualificação, follow-ups e avanço de negociações imobiliárias.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">upload_file</span>
+<span>Importar</span>
+</button>
+<button class="px-4 py-2.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md font-semibold transition-all transform active:scale-95 flex items-center gap-2 shadow-md" onclick="openLeadModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>+ Novo lead</span>
+</button>
+</div>
+</div>
+<!-- Copilot Proactive Intelligence Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start md:items-center gap-3.5 pl-2">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Insight do Copilot</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Prioridade Alta</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<strong>Rafael Almeida</strong> interagiu há 45 minutos no anúncio de Vila Mariana. Recomendado envio de simulação de financiamento pelo WhatsApp agora.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 pl-2 md:pl-0">
+<button class="px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant hover:bg-primary-fixed-dim font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Enviar WhatsApp Sugerido</span>
+</button>
+<button class="p-1.5 text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Filters & Search Toolbar -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Search bar -->
+<div class="md:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-outline">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="searchInput" placeholder="Buscar por nome, telefone ou e-mail..." type="text"/>
+</div>
+<!-- Budget / Value Range -->
+<div class="md:col-span-4 relative">
+<div class="flex items-center gap-2 w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">payments</span>
+<span class="font-label-sm text-label-sm text-outline">Valor:</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none w-full cursor-pointer">
+<option value="all">Todas as faixas</option>
+<option value="500">Até R$ 500.000</option>
+<option value="1000">R$ 500k - R$ 1.000.000</option>
+<option value="2000">R$ 1.000.000 - R$ 2.500.000</option>
+<option value="plus">Acima de R$ 2.500.000</option>
+</select>
+</div>
+</div>
+<!-- Date Range Filter -->
+<div class="md:col-span-3 relative">
+<div class="flex items-center justify-between w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span>
+<span class="font-label-md text-label-md text-on-surface">Últimos 7 dias</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline">keyboard_arrow_down</span>
+</div>
+</div>
+</div>
+<!-- Quick Stage Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 pt-1 scrollbar-none text-nowrap">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-2 shrink-0">Estágio:</span>
+<button class="stage-pill active px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold transition-all shadow-sm" type="button">
+          Todos (28)
+        </button>
+<button class="stage-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" type="button">
+          Novo (4)
+        </button>
+<button class="stage-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" type="button">
+          Contatado (6)
+        </button>
+<button class="stage-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" type="button">
+          Qualificado (8)
+        </button>
+<button class="stage-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" type="button">
+          Visita agendada (5)
+        </button>
+<button class="stage-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" type="button">
+          Negociação (3)
+        </button>
+<button class="stage-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" type="button">
+          Ganho (1)
+        </button>
+<button class="stage-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all" type="button">
+          Perdido (1)
+        </button>
+</div>
+</div>
+<!-- Comparative Table Section -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-11">
+<th class="px-space-md py-3 font-semibold">Lead</th>
+<th class="px-space-md py-3 font-semibold">Canais de Contato</th>
+<th class="px-space-md py-3 font-semibold">Estágio do Funil</th>
+<th class="px-space-md py-3 font-semibold">Preferência / Perfil</th>
+<th class="px-space-md py-3 font-semibold">Última Interação</th>
+<th class="px-space-md py-3 font-semibold text-right">Ação</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1: Rafael Almeida (Principal Highlight) -->
+<tr class="hover:bg-primary-fixed/20 transition-colors bg-primary-fixed/10 group">
+<td class="px-space-md py-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md flex items-center justify-center font-bold shrink-0">
+                    RA
+                  </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Rafael Almeida</span>
+<span class="material-symbols-outlined text-primary text-[16px]" title="Lead sugerido pelo Copilot">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Potencial Alto · Investidor</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<a class="w-6 h-6 rounded-md bg-secondary-container text-on-secondary-container flex items-center justify-center hover:opacity-80 transition-opacity" href="https://wa.me/5511987654321" target="_blank" title="Conversar no WhatsApp">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">(11) 98765-4321</span>
+</div>
+<div class="flex items-center gap-2">
+<a class="w-6 h-6 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center hover:text-primary transition-colors" href="mailto:rafael.almeida@email.com" title="Enviar E-mail">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-surface-variant">rafael.almeida@email.com</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Qualificado
+                </span>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col max-w-xs">
+<span class="font-currency-table text-currency-table text-on-surface">Apto Vila Mariana</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Até R$ 650.000 · 2 qts · 1 vaga</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Hoje às 11:20</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">forum</span>
+                    Msg WhatsApp recebida
+                  </span>
+</div>
+</td>
+<td class="px-space-md py-4 text-right">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md font-semibold transition-all inline-flex items-center gap-1 shadow-sm" onclick="showLeadDrawer('Rafael Almeida', 'rafael.almeida@email.com', '(11) 98765-4321', 'Apto Vila Mariana até R$ 650k')" type="button">
+<span>Abrir detalhe</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Beatriz Mendonça -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-title-md text-title-md flex items-center justify-center font-bold shrink-0">
+                    BM
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Beatriz Mendonça</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Família · 1ª Aquisição</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<a class="w-6 h-6 rounded-md bg-secondary-container text-on-secondary-container flex items-center justify-center hover:opacity-80 transition-opacity" href="https://wa.me/5511991238844" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">(11) 99123-8844</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline italic">E-mail não informado</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Visita agendada
+                </span>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col max-w-xs">
+<span class="font-currency-table text-currency-table text-on-surface">Casa Alto de Pinheiros</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">R$ 2.400.000 · 4 qts · Piscina</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Ontem às 16:40</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event</span>
+                    Agendada p/ Sábado 10h
+                  </span>
+</div>
+</td>
+<td class="px-space-md py-4 text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors inline-flex items-center gap-1" onclick="showLeadDrawer('Beatriz Mendonça', '', '(11) 99123-8844', 'Casa Alto de Pinheiros')" type="button">
+<span>Ver detalhes</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Carlos Eduardo Silveira -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-title-md text-title-md flex items-center justify-center font-bold shrink-0">
+                    CS
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Carlos Eduardo Silveira</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Indicação de parceiro</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<a class="w-6 h-6 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center hover:text-primary transition-colors" href="mailto:carlos.edu@gmail.com">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">carlos.edu@gmail.com</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline italic">Telefone pendente</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed-dim/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Contatado
+                </span>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col max-w-xs">
+<span class="font-currency-table text-currency-table text-on-surface">Studio Perdizes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Até R$ 390.000 · Renda p/ locação</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Há 2 dias</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">mail</span>
+                    Portfólio enviado
+                  </span>
+</div>
+</td>
+<td class="px-space-md py-4 text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors inline-flex items-center gap-1" onclick="showLeadDrawer('Carlos Eduardo Silveira', 'carlos.edu@gmail.com', '', 'Studio Perdizes')" type="button">
+<span>Ver detalhes</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Juliana Rios -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-title-md text-title-md flex items-center justify-center font-bold shrink-0">
+                    JR
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Juliana Rios</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Lead Novo via Portal</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<a class="w-6 h-6 rounded-md bg-secondary-container text-on-secondary-container flex items-center justify-center hover:opacity-80 transition-opacity" href="https://wa.me/5511976541122" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">(11) 97654-1122</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline italic">E-mail não informado</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Novo
+                </span>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col max-w-xs">
+<span class="font-currency-table text-currency-table text-on-surface">Cobertura Moema</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">R$ 1.850.000 · 3 suítes</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Há 3 dias</span>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">hourglass_empty</span>
+                    Aguardando 1º contato
+                  </span>
+</div>
+</td>
+<td class="px-space-md py-4 text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors inline-flex items-center gap-1" onclick="showLeadDrawer('Juliana Rios', '', '(11) 97654-1122', 'Cobertura Moema')" type="button">
+<span>Ver detalhes</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Marcelo Prado -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-title-md text-title-md flex items-center justify-center font-bold shrink-0">
+                    MP
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Marcelo Prado</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Proposta Formalizada</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<a class="w-6 h-6 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center hover:text-primary transition-colors" href="mailto:marcelo.p@empresa.com.br">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">marcelo.p@empresa.com.br</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline italic">WhatsApp corporativo</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Negociação
+                </span>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col max-w-xs">
+<span class="font-currency-table text-currency-table text-on-surface">Apto Jardim Paulista</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">R$ 1.200.000 · Entrada 40%</span>
+</div>
+</td>
+<td class="px-space-md py-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Há 4 dias</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">description</span>
+                    Minuta em análise
+                  </span>
+</div>
+</td>
+<td class="px-space-md py-4 text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors inline-flex items-center gap-1" onclick="showLeadDrawer('Marcelo Prado', 'marcelo.p@empresa.com.br', '', 'Apto Jardim Paulista')" type="button">
+<span>Ver detalhes</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Toolbar -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+          Exibindo <span class="font-semibold text-on-surface">1 a 5</span> de <span class="font-semibold text-on-surface">28 leads</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-outline cursor-not-allowed flex items-center justify-center" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm" type="button">
+            1
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center justify-center" type="button">
+            2
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center justify-center" type="button">
+            3
+          </button>
+<span class="text-outline font-label-sm text-label-sm px-1">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center justify-center" type="button">
+            6
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal / Drawer Lateral: + Novo Lead -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/40 backdrop-blur-xs flex items-center justify-end transition-opacity duration-300" id="leadModal">
+<div class="w-full max-w-lg h-full bg-surface-container-lowest shadow-2xl p-space-lg flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300" id="modalBox">
+<div class="flex flex-col gap-space-md">
+<!-- Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Novo Lead</h2>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeLeadModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Mandatory Contact Helper Alert -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Importante:</strong> Preencha pelo menos um meio de contato (e-mail ou telefone/WhatsApp) para que o Copilot possa gerar sugestões de abordagem.
+          </p>
+</div>
+<!-- Form fields -->
+<form class="flex flex-col gap-4" id="newLeadForm" onsubmit="handleLeadSubmit(event)">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="leadName">Nome completo *</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="leadName" placeholder="Ex.: Mariana Fernandes" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="leadPhone">Telefone / WhatsApp</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">call</span>
+<input class="w-full h-10 pl-10 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="leadPhone" placeholder="(11) 90000-0000" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="leadEmail">E-mail</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">mail</span>
+<input class="w-full h-10 pl-10 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="leadEmail" placeholder="exemplo@email.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="leadStage">Estágio Inicial</label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none" id="leadStage">
+<option value="novo">Novo</option>
+<option value="contatado">Contatado</option>
+<option value="qualificado">Qualificado</option>
+<option value="visita">Visita agendada</option>
+<option value="negociacao">Negociação</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="leadNotes">Observações e Preferências</label>
+<textarea class="p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest resize-none" id="leadNotes" placeholder="Tipo de imóvel, bairro desejado, faixa de investimento ou contexto da conversa..." rows="3"></textarea>
+</div>
+<div class="hidden p-2.5 rounded-lg bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center gap-2" id="validationWarning">
+<span class="material-symbols-outlined text-[18px]">error</span>
+<span>Por favor, insira o E-mail ou o Telefone do lead para prosseguir.</span>
+</div>
+</form>
+</div>
+<!-- Action Footer -->
+<div class="pt-space-md flex items-center justify-end gap-3 mt-6">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-colors" onclick="closeLeadModal()" type="button">
+          Cancelar
+        </button>
+<button class="px-5 py-2.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md font-semibold transition-all shadow-md flex items-center gap-2" form="newLeadForm" id="btnSaveLead" type="submit">
+<span>Salvar lead</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Detail Slide-Over (Micro-view do Lead Selecionado) -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/30 backdrop-blur-xs flex items-center justify-end" id="leadDetailDrawer">
+<div class="w-full max-w-md h-full bg-surface-container-lowest shadow-2xl p-space-lg flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300" id="detailBox">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">contact_page</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Ficha do Lead</h2>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeLeadDetailDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface" id="detailName">Rafael Almeida</span>
+<div class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-2" id="detailPhone">
+<span class="material-symbols-outlined text-[16px] text-secondary">phone</span>
+              (11) 98765-4321
+            </span>
+<span class="flex items-center gap-2" id="detailEmail">
+<span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+              rafael.almeida@email.com
+            </span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Preferência Registrada</span>
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">apartment</span>
+<span class="font-body-md text-body-md text-on-surface" id="detailPref">Apto Vila Mariana, até R$ 650k, 2 qts</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-primary-fixed/20 flex flex-col gap-2">
+<div class="flex items-center gap-1.5 text-primary font-semibold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span>Sugestão de Ação do Copilot</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Envie a lista de 3 imóveis compatíveis com o perfil antes das 18h para aproveitar o engajamento de hoje.
+          </p>
+<button class="mt-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container text-label-sm font-semibold flex items-center justify-center gap-2 shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Compartilhar Seleção via WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-end">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" onclick="closeLeadDetailDrawer()" type="button">
+          Fechar
+        </button>
+</div>
+</div>
+</div>
+<script>
+    function openLeadModal() {
+      const modal = document.getElementById('leadModal');
+      const box = document.getElementById('modalBox');
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        box.classList.remove('translate-x-full');
+      }, 10);
+    }
+
+    function closeLeadModal() {
+      const modal = document.getElementById('leadModal');
+      const box = document.getElementById('modalBox');
+      box.classList.add('translate-x-full');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.getElementById('validationWarning').classList.add('hidden');
+      }, 300);
+    }
+
+    function handleLeadSubmit(e) {
+      e.preventDefault();
+      const phone = document.getElementById('leadPhone').value.trim();
+      const email = document.getElementById('leadEmail').value.trim();
+      const warning = document.getElementById('validationWarning');
+
+      if (!phone && !email) {
+        warning.classList.remove('hidden');
+        return;
+      }
+      warning.classList.add('hidden');
+
+      const btn = document.getElementById('btnSaveLead');
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">sync</span> Salvando...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.innerHTML = '<span>Salvar lead</span>';
+        btn.disabled = false;
+        closeLeadModal();
+        alert('Lead cadastrado com sucesso!');
+        document.getElementById('newLeadForm').reset();
+      }, 600);
+    }
+
+    function showLeadDrawer(name, email, phone, pref) {
+      document.getElementById('detailName').innerText = name;
+      document.getElementById('detailEmail').innerHTML = `<span class="material-symbols-outlined text-[16px] text-primary">mail</span> ${email || 'Não informado'}`;
+      document.getElementById('detailPhone').innerHTML = `<span class="material-symbols-outlined text-[16px] text-secondary">phone</span> ${phone || 'Não informado'}`;
+      document.getElementById('detailPref').innerText = pref;
+
+      const drawer = document.getElementById('leadDetailDrawer');
+      const box = document.getElementById('detailBox');
+      drawer.classList.remove('hidden');
+      setTimeout(() => {
+        box.classList.remove('translate-x-full');
+      }, 10);
+    }
+
+    function closeLeadDetailDrawer() {
+      const drawer = document.getElementById('leadDetailDrawer');
+      const box = document.getElementById('detailBox');
+      box.classList.add('translate-x-full');
+      setTimeout(() => {
+        drawer.classList.add('hidden');
+      }, 300);
+    }
+
+    // Toggle filter pills visual state
+    document.querySelectorAll('.stage-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.stage-pill').forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-sm');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      });
+    });
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#ffeedd","secondary-fixed":"#6ffbbe","on-tertiary":"#ffffff","secondary-container":"#6cf8bb","on-surface-variant":"#434655","on-surface":"#131b2e","on-error-container":"#93000a","on-secondary":"#ffffff","surface-dim":"#d2d9f4","surface-container-highest":"#dae2fd","primary-fixed":"#dbe1ff","primary-container":"#2563eb","surface-tint":"#0053db","surface-container":"#eaedff","error":"#ba1a1a","on-secondary-fixed":"#002113","surface-bright":"#faf8ff","secondary-fixed-dim":"#4edea3","on-background":"#131b2e","on-primary-container":"#eeefff","on-tertiary-fixed":"#2a1700","inverse-primary":"#b4c5ff","tertiary-container":"#996100","surface-container-high":"#e2e7ff","on-primary-fixed-variant":"#003ea8","inverse-on-surface":"#eef0ff","surface":"#faf8ff","on-error":"#ffffff","on-secondary-container":"#00714d","primary":"#004ac6","on-tertiary-fixed-variant":"#653e00","secondary":"#006c49","on-secondary-fixed-variant":"#005236","inverse-surface":"#283044","tertiary":"#784b00","background":"#faf8ff","tertiary-fixed-dim":"#ffb95f","outline":"#737686","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-primary-fixed":"#00174b","surface-variant":"#dae2fd","outline-variant":"#c3c6d7","surface-container-low":"#f2f3ff","tertiary-fixed":"#ffddb8","error-container":"#ffdad6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1rem","space-2xl":"3rem","space-xs":"0.25rem","space-xl":"2rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem","margin":"2rem"},fontFamily:{"headline-sm":["Manrope"],"currency-table":["Inter"],"headline-md":["Manrope"],"display-lg":["Manrope"],"headline-lg":["Manrope"],"display-lg-mobile":["Manrope"],"title-md":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"currency-display":["Manrope"],"body-lg":["Inter"],"label-sm":["Inter"],"body-md":["Inter"]},fontSize:{"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"currency-table":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"title-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md px-space-md"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Copilot Imob</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operador Suite</span></div></div><div class="h-[1px] bg-outline-variant/30 w-full"></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><span class="font-label-sm text-label-sm text-outline px-space-xs py-1 uppercase tracking-wider">Gestão</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px]">person_search</span><span class="font-body-md text-body-md">Leads</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="funil-de-vendas" href="#"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-body-md text-body-md">Funil de Vendas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="imoveis" href="#"><span class="material-symbols-outlined text-[20px]">home_work</span><span class="font-body-md text-body-md">Imóveis</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="agenda" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-body-md text-body-md">Agenda</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tarefas" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="font-body-md text-body-md">Tarefas</span></a><div class="mt-space-sm pt-space-xs"><span class="font-label-sm text-label-sm text-outline px-space-xs py-1 uppercase tracking-wider">Operações</span></div><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 pl-space-md transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="jobs-recentes" href="#"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span class="font-body-md text-body-md">Jobs recentes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 pl-space-md rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="metricas" href="#"><span class="material-symbols-outlined text-[18px]">insights</span><span class="font-body-md text-body-md">Métricas</span></a></nav></div><div class="px-space-md"><div class="bg-surface-container-high/60 rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-container ring-2 ring-secondary"></span><span class="font-label-sm text-label-sm text-on-surface">IA Copilot Online</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v2.4</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container rounded-lg p-1 gap-1"><button class="px-space-sm py-1 rounded bg-surface-container-lowest font-label-md text-label-md text-on-surface shadow-xs transition-colors" type="button">Operações</button><button class="px-space-sm py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Visão global</button></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full"><span class="material-symbols-outlined text-[16px] text-primary">bolt</span><span class="font-label-sm text-label-sm text-on-surface-variant">Fila Operador: <strong class="text-on-surface font-semibold">4 ações pendentes</strong></span></div></div><div class="flex items-center gap-space-md"><button aria-label="Alertas" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="h-6 w-[1px] bg-outline-variant/40"></div><div class="relative group"><button class="flex items-center gap-space-sm p-1 rounded-lg hover:bg-surface-container transition-colors text-left" type="button"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Lucas Mendes</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Operador</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></button><div class="absolute right-0 top-full mt-2 w-56 bg-surface-container-lowest rounded-xl shadow-lg border border-outline-variant/20 py-2 hidden group-hover:block"><div class="px-space-md py-space-xs border-b border-outline-variant/20 mb-1"><p class="font-label-sm text-label-sm text-outline">Sessão Operador</p><p class="font-body-sm text-body-sm text-on-surface truncate">lucas.mendes@copilot.imob</p></div><a class="flex items-center gap-space-sm px-space-md py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container transition-colors" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">settings</span>Configurações</a><a class="flex items-center gap-space-sm px-space-md py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container transition-colors" data-path="preferencias-operador" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>Preferências de Automação</a><div class="h-[1px] bg-outline-variant/20 my-1"></div><a class="flex items-center gap-space-sm px-space-md py-2 font-body-sm text-body-sm text-error hover:bg-error-container/30 transition-colors" data-path="logout" href="#"><span class="material-symbols-outlined text-[18px] text-error">logout</span>Encerrar Sessão</a></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Toast Notificação Pós-Ação (Oculto inicialmente) -->
+<div class="fixed top-20 right-8 z-50 transform translate-y-[-20px] opacity-0 pointer-events-none transition-all duration-300 ease-out flex items-center gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-xl max-w-md" id="toastFeedback">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface">Job reenfileirado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acompanhe o resultado nos detalhes da fila operacional.</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors ml-auto" onclick="hideToast()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Breadcrumb & Top Bar -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+        Operações
+      </a>
+<span class="text-outline-variant font-normal">/</span>
+<a class="hover:text-primary transition-colors" href="#">Jobs recentes</a>
+<span class="text-outline-variant font-normal">/</span>
+<span class="text-on-surface font-semibold">Detalhes</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-md">
+<a class="flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors shadow-xs" href="#" onclick="history.back(); return false;" title="Voltar para jobs">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</a>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Detalhes do Processamento</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm" id="badgeHeaderStatus">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+              Com falha
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Execução operacional rastreada via Pipeline Core do Copilot</span>
+</div>
+</div>
+<!-- Ações de topo -->
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all shadow-xs" onclick="simularAtualizacao()" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" id="refreshIcon">refresh</span>
+<span>Atualizar</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all transform active:scale-95" id="btnOpenReplayTop" onclick="openModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Reenfileirar job</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Banner de Advertência Contextual de Falha Crítica -->
+<div class="relative overflow-hidden bg-error-container/40 p-space-md rounded-2xl mb-space-xl shadow-xs" id="bannerAlerta">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-error/15 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">error_circle_rounded</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0 pr-space-xl">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-error">Execução interrompida após 3 tentativas</span>
+<span class="px-2 py-0.5 rounded bg-error/10 text-error font-label-sm text-label-sm uppercase">Timeout 504</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+          O processador assíncrono finalizou o ciclo com falha persistente de rede externa. Como Operador autenticado (<strong class="font-semibold">Lucas Mendes</strong>), você possui permissão para limpar o lock e reinserir esta tarefa com parâmetros regenerados.
+        </p>
+</div>
+</div>
+</div>
+<!-- Grid Principal de Conteúdo -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Coluna Esquerda: Cartões de Resumo e Métricas (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Card 1: Resumo do Processamento -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Resumo do Processamento</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase px-2 py-1 rounded bg-surface-container text-on-surface-variant font-medium">Batch PDF v2</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Identificador com botão Copiar -->
+<div class="flex flex-col gap-1.5 p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Identificador Completo (UUID)</span>
+<div class="flex items-center justify-between gap-space-sm">
+<span class="font-currency-table text-currency-table text-on-surface font-semibold tracking-tight truncate select-all" id="jobIdText">
+                job-6a4d-9102-fa11-44321c7e1b55
+              </span>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm shadow-xs transition-colors shrink-0" id="btnCopyJob" onclick="copiarIdJob()" title="Copiar ID completo">
+<span class="material-symbols-outlined text-[15px]" id="copyIcon">content_copy</span>
+<span id="copyLabel">Copiar</span>
+</button>
+</div>
+</div>
+<!-- Tipo de Processamento -->
+<div class="flex flex-col gap-1.5 p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Tipo de Processamento</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">picture_as_pdf</span>
+<span class="font-title-md text-title-md text-on-surface">Geração de dossiê PDF de imóvel</span>
+</div>
+</div>
+<!-- Status Atual -->
+<div class="flex flex-col gap-1.5 p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Status Atual</span>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md" id="badgeCardStatus">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                Com falha
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Código 0xFA4</span>
+</div>
+</div>
+<!-- Tentativas Realizadas / Limite -->
+<div class="flex flex-col gap-1.5 p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Tentativas Realizadas / Limite</span>
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-error font-semibold" id="tentativasTxt">3 de 3 tentativas esgotadas</span>
+<div class="flex gap-1" id="retryDots">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Metadados Relacionados da Operação -->
+<div class="pt-space-sm flex flex-wrap items-center gap-space-lg text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+<span>Imóvel Ref: <strong class="text-on-surface font-semibold">AP-JARDINS-988</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+<span>Solicitante: <strong class="text-on-surface font-semibold">Lucas Mendes</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">hard_drive</span>
+<span>Worker: <strong class="text-on-surface font-semibold">pod-worker-br-south-03</strong></span>
+</div>
+</div>
+</div>
+<!-- Card 3: Detalhamento da Falha e Segurança -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-error/10 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">report_problem</span>
+</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Detalhamento da Falha</h2>
+</div>
+<span class="flex items-center gap-1 text-secondary font-label-sm text-label-sm bg-secondary/10 px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+            Sanitizado
+          </span>
+</div>
+<!-- Mensagem de Erro Sanitizada -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Diagnóstico Técnico Filtrado</span>
+<div class="bg-surface-container-high/60 rounded-xl p-space-md font-mono text-body-sm text-on-surface flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">terminal</span>
+<p class="leading-relaxed">
+              Tempo limite excedido na renderização remota dos anexos fotográficos de alta resolução.
+            </p>
+</div>
+</div>
+<!-- Mensagem Compreensível sobre o Estado -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Interpretação Funcional para Operador</span>
+<div class="p-space-md rounded-xl bg-surface-container-low text-body-md text-on-surface leading-relaxed">
+            O serviço de compilação de documentos atingiu o número máximo de tentativas sem obter resposta das fontes de mídia externas. O arquivo não foi gerado.
+          </div>
+</div>
+<!-- Nota de Segurança e Compliance -->
+<div class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-high/30">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0">shield</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-semibold">Nota de Segurança Operacional:</strong> Este log foi processado pelo filtro de integridade. Sem payloads internos, sem credenciais, sem stack traces ou tokens de autenticação expostos aos operadores de ponta.
+          </p>
+</div>
+</div>
+</div>
+<!-- Coluna Direita: Datas, Linha do Tempo e Ação Destacada (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-xl">
+<!-- Card 2: Datas e Linha do Tempo -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Datas e Ciclo de Vida</h2>
+</div>
+<!-- Stepper Vertical do Job -->
+<div class="relative flex flex-col gap-space-lg pl-space-md before:absolute before:left-[23px] before:top-2 before:bottom-2 before:w-[2px] before:bg-surface-container-high">
+<!-- Ponto 1: Criação -->
+<div class="relative flex items-start gap-space-md">
+<div class="w-4 h-4 rounded-full bg-secondary ring-4 ring-surface-container-lowest shrink-0 mt-1"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Criação do Job</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Hoje às 15:22:40</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Disparado por trigger de publicação</span>
+</div>
+</div>
+<!-- Ponto 2: Tentativas / Atualização -->
+<div class="relative flex items-start gap-space-md">
+<div class="w-4 h-4 rounded-full bg-tertiary-fixed-dim ring-4 ring-surface-container-lowest shrink-0 mt-1"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Última Atualização</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Hoje às 15:23:55</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tentativa 3 encerrada com status 504</span>
+</div>
+</div>
+<!-- Ponto 3: Próxima Tentativa -->
+<div class="relative flex items-start gap-space-md">
+<div class="w-4 h-4 rounded-full bg-error ring-4 ring-surface-container-lowest shrink-0 mt-1" id="dotProximaTentativa"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Próxima Tentativa Automática</span>
+<span class="font-title-md text-title-md text-error font-semibold" id="txtProximaTentativa">Não disponível</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Limite máximo atingido pelo orquestrador</span>
+</div>
+</div>
+</div>
+<div class="h-[1px] bg-outline-variant/20 w-full my-space-xs"></div>
+<!-- Métricas Rápidas de Duração -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tempo Total</span>
+<span class="font-currency-display text-currency-display text-on-surface">1m 15s</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Payload I/O</span>
+<span class="font-currency-display text-currency-display text-on-surface">42.8 MB</span>
+</div>
+</div>
+</div>
+<!-- Card Lateral de Ação do Operador -->
+<div class="bg-gradient-to-br from-surface-container-lowest via-surface-container to-surface-container-high rounded-2xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Ação Recomendada</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Os servidores de mídia externa responderam normalizados nos últimos 3 minutos. Reenfileirar reativará o pipeline imediatamente sem perda de parâmetros.
+        </p>
+<button class="w-full flex items-center justify-center gap-space-sm h-11 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all transform active:scale-98" onclick="openModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">replay</span>
+<span>Reenfileirar este job agora</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL / DIÁLOGO DE CONFIRMAÇÃO DE REPLAY SOBREPOSTO NA TELA -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/40 backdrop-blur-sm transition-opacity duration-200 opacity-0 pointer-events-none" id="modalOverlay">
+<!-- Container do Modal -->
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl shadow-2xl p-space-xl flex flex-col gap-space-lg transform scale-95 transition-all duration-200 ease-out" id="modalContainer">
+<!-- Cabeçalho do Modal -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">replay</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Reenfileirar processamento?</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ação Operacional Restrita</span>
+</div>
+</div>
+<button aria-label="Fechar janela" class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Texto Explicativo -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        Este job será colocado novamente na fila para uma nova tentativa. Os locks de concorrência anteriores serão revogados e os nós de compilação reprocessarão o documento.
+      </p>
+<!-- Detalhes Resumidos no Modal (Caixa informativa destacada) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/15">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">ID do Job</span>
+<span class="font-currency-table text-currency-table text-on-surface font-semibold">job-6a4d-9102-fa11-44321c7e1b55</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-outline-variant/15">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tipo de Processamento</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Geração de dossiê PDF de imóvel</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-outline-variant/15">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Status Atual</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+            Com falha
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tentativas Realizadas</span>
+<span class="font-label-md text-label-md text-error font-semibold">3 / 3</span>
+</div>
+</div>
+<!-- Botões de Ação do Modal -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-xs" onclick="closeModal()" type="button">
+          Cancelar
+        </button>
+<button class="flex items-center gap-1.5 px-space-lg h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all transform active:scale-95" id="btnConfirmReplay" onclick="executarReplay()" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Confirmar reenvio</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    function openModal() {
+      const modal = document.getElementById('modalOverlay');
+      const container = document.getElementById('modalContainer');
+      modal.classList.remove('pointer-events-none', 'opacity-0');
+      modal.classList.add('opacity-100');
+      container.classList.remove('scale-95');
+      container.classList.add('scale-100');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modalOverlay');
+      const container = document.getElementById('modalContainer');
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      container.classList.remove('scale-100');
+      container.classList.add('scale-95');
+    }
+
+    function copiarIdJob() {
+      const id = document.getElementById('jobIdText').innerText.trim();
+      navigator.clipboard.writeText(id).then(() => {
+        const copyLabel = document.getElementById('copyLabel');
+        const copyIcon = document.getElementById('copyIcon');
+        copyLabel.innerText = 'Copiado!';
+        copyIcon.innerText = 'done';
+        setTimeout(() => {
+          copyLabel.innerText = 'Copiar';
+          copyIcon.innerText = 'content_copy';
+        }, 2000);
+      });
+    }
+
+    function simularAtualizacao() {
+      const icon = document.getElementById('refreshIcon');
+      icon.classList.add('animate-spin');
+      setTimeout(() => {
+        icon.classList.remove('animate-spin');
+      }, 750);
+    }
+
+    function executarReplay() {
+      const btn = document.getElementById('btnConfirmReplay');
+      btn.disabled = true;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span>Reenfileirando...</span>`;
+
+      setTimeout(() => {
+        closeModal();
+        btn.disabled = false;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">send</span><span>Confirmar reenvio</span>`;
+
+        // 1. Mostrar toast informativo
+        showToast();
+
+        // 2. Transicionar status visual para 'Aguardando' / nova tentativa
+        aplicarEstadoReenfileirado();
+      }, 800);
+    }
+
+    function aplicarEstadoReenfileirado() {
+      // Header Status
+      const badgeH = document.getElementById('badgeHeaderStatus');
+      badgeH.className = 'inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm';
+      badgeH.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> Aguardando execução';
+
+      // Card Status
+      const badgeC = document.getElementById('badgeCardStatus');
+      badgeC.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-md text-label-md';
+      badgeC.innerHTML = '<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Em fila (Reenfileirado)';
+
+      // Tentativas
+      const tentativas = document.getElementById('tentativasTxt');
+      tentativas.className = 'font-title-md text-title-md text-primary font-semibold';
+      tentativas.innerText = 'Nova tentativa 4 alocada';
+
+      const dots = document.getElementById('retryDots');
+      dots.innerHTML = `
+        <span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+      `;
+
+      // Linha do tempo
+      const dotProxima = document.getElementById('dotProximaTentativa');
+      dotProxima.className = 'w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-lowest shrink-0 mt-1';
+
+      const txtProxima = document.getElementById('txtProximaTentativa');
+      txtProxima.className = 'font-title-md text-title-md text-primary font-semibold';
+      txtProxima.innerText = 'Imediata (~15s na fila)';
+
+      // Desabilitar botões de ação repetida
+      const topBtn = document.getElementById('btnOpenReplayTop');
+      topBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      topBtn.setAttribute('disabled', 'true');
+      topBtn.innerHTML = `<span class="material-symbols-outlined text-[18px]">hourglass_top</span><span>Na fila</span>`;
+
+      // Atualizar banner de alerta para sucesso
+      const banner = document.getElementById('bannerAlerta');
+      banner.className = 'relative overflow-hidden bg-secondary-container/30 p-space-md rounded-2xl mb-space-xl shadow-xs transition-all duration-300';
+      banner.innerHTML = `
+        <div class="flex items-start gap-space-md">
+          <div class="w-10 h-10 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[24px]">task_alt</span>
+          </div>
+          <div class="flex flex-col gap-1 min-w-0 pr-space-xl">
+            <div class="flex items-center gap-space-sm">
+              <span class="font-headline-sm text-headline-sm text-on-secondary-container">Job reenfileirado com prioridade operacional</span>
+              <span class="px-2 py-0.5 rounded bg-secondary/20 text-on-secondary-container font-label-sm text-label-sm uppercase">Fila Prioritária</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              A tarefa foi readicionada ao despachante do nó <code class="bg-surface-container px-1 py-0.5 rounded text-on-surface font-semibold">pod-worker-br-south-03</code>. Os caches de mídia foram purgados.
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toastFeedback');
+      toast.classList.remove('translate-y-[-20px]', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        hideToast();
+      }, 5000);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('toastFeedback');
+      toast.classList.add('translate-y-[-20px]', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+
+    // Fechar ao pressionar ESC
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+</div></main></div></body></html>
